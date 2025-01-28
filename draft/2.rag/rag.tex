@@ -1,0 +1,265 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{float}
+
+\input{word-comments.tex}
+
+\title{Generación Aumentada con Recuperación}
+\author{Anabel Benítez González}
+\date{}
+
+\begin{document}
+
+\tableofcontents 
+
+\maketitle
+
+Los modelos de lenguaje de gran tamaño (LLMs) han demostrado un éxito notable en diversas tareas relacionadas con el procesamiento del lenguaje natural \cite{makridakis2023largelanguagemodels}. Estos modelos están entrenados con grandes volúmenes de datos y utilizan miles de millones de parámetros para generar contenido en tareas como responder preguntas, traducir idiomas y completar oraciones; sin embargo, aún enfrentan limitaciones. Un problema destacado es la generación de ``alucinaciones'' \cite{zhang2023sirenssongaiocean}.
+
+La Generación Aumentada con Recuperación (RAG, por sus siglas en inglés) es un enfoque que combina LLMs con sistemas de recuperación de información para optimizar las respuestas generadas al incorporar datos de una base de conocimiento autorizada \cite{gao2024retrievalaugmentedgenerationlargelanguage}. RAG se utiliza para extender las capacidades de los LLMs a dominios específicos o bases de conocimiento internas de una organización sin requerir un reentrenamiento del modelo \cite{gao2024retrievalaugmentedgenerationlargelanguage}.
+
+El flujo de trabajo de RAG tiene tres pasos: recuperación, aumento de la consulta y generación de la respuesta. A continuación se describe cada uno.
+\begin{enumerate}
+     \item Recuperación: En este primer paso, se realiza una búsqueda a partir de una consulta del usuario para seleccionar la información más relevante de una base de datos o fuente de conocimiento.
+    \item Aumento de la consulta: La información recopilada se integra con la consulta original del usuario, lo que genera un contexto para la siguiente fase del proceso.
+    \item Generación de la respuesta: Finalmente, se suministra a un LLM la consulta ampliada con el contexto, con el objetivo de producir una respuesta más precisa y relevante que la que se habría obtenido utilizando únicamente la consulta inicial del usuario.
+\end{enumerate}
+
+En las siguientes secciones, se brindan detalles de cada uno de estos pasos y se describe el proceso de construcción del componente de recuperación. 
+
+\section{Construcción del recuperador}
+
+El proceso de construcción del recuperador consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
+
+Un corpus es un conjunto de datos o documentos que se utilizan como fuente de información para un sistema de recuperación. Este conjunto puede incluir textos en diversos formatos, como PDF, HTML, Word o Markdown.
+
+Cuando el corpus está en formatos como los mencionados, el proceso comienza con la limpieza y extracción de los datos en bruto. Estos datos se transforman a un formato uniforme de texto plano, garantizando una base homogénea para las etapas posteriores.
+
+\subsection{División del Corpus}
+
+Las técnicas de división de documentos consisten en fragmentar textos extensos en segmentos más pequeños \cite{gong2020recurrentchunkingmechanismslongtext}. Esto se basa en dos principios. En primer lugar, cada fragmento debe ser semánticamente independiente y contener una idea clara, para minimizar la ambigüedad; por ejemplo, el término ``naranja'' puede referirse a una fruta o a un color, dependiendo del contexto en el que se utilice. En segundo lugar, trabajar con fragmentos más pequeños optimiza el uso de recursos en la etapa de codificación, ya que procesar documentos extensos puede ser computacionalmente costoso, mientras que dividirlos en partes más cortas permite un análisis menos demandante en términos de memoria y tiempo.
+
+El principal desafío de las técnicas de división es encontrar el tamaño óptimo del fragmento para lograr un mejor equilibrio entre la semántica del texto y la eficiencia de codificación.
+
+Existen tres tipos de técnicas de división:
+\begin{itemize}
+    \item División con longitud fija: Esta técnica es la más sencilla y consiste en dividir los documentos en fragmentos secuenciales de una longitud predeterminada. Por ejemplo, al especificar un parámetro de longitud, cada segmento contiene una cantidad fija de \textit{tokens}.
+    \item División semántica: En este enfoque, los fragmentos se generan respetando las estructuras semánticas del texto. La segmentación puede realizarse utilizando delimitadores naturales, como el punto, la coma o el carácter de nueva línea, que marcan límites lógicos dentro del contenido. Herramientas de procesamiento de lenguaje natural como NLTK \cite{nltk2001} y spaCy \cite{spacy2016} facilitan este tipo de división al proporcionar métodos para identificar y dividir oraciones o párrafos.
+    \item División basada en contenido: Este método utiliza características estructurales específicas del texto para realizar la segmentación. Es efectivo cuando los documentos contienen patrones o formatos definidos. Por ejemplo, el código de programación puede segmentarse en bloques de funciones.
+\end{itemize}
+
+Una vez que el texto ha sido dividido en fragmentos, se procede a la codificación de cada uno de ellos.
+
+\subsection{Codificación de Fragmentos}
+
+La codificación se refiere a convertir datos textuales en representaciones vectoriales. La vectorización permite representar textos de manera que documentos con significados similares se encuentren más cerca entre sí en el espacio vectorial. 
+
+Según la densidad de los vectores resultantes, existen dos tipos de métodos de codificación: codificación dispersa, donde la mayoría de los valores en el vector son ceros, y codificación densa, donde todos o casi todos los valores tienen contenido.
+
+En la codificación dispersa se representa el texto creando vectores de alta dimensionalidad donde la mayoría de los elementos son ceros. Algunos ejemplos de codificación dispersa son:
+\begin{itemize} 
+    \item Codificación one-hot \cite{harris2010digital}: Representa cada palabra mediante un vector binario de alta dimensionalidad, cuyo tamaño es igual al del vocabulario. En este vector, el valor correspondiente a la palabra es marcado como 1, mientras que el resto de los valores se mantienen en 0. Este método es sencillo, pero poco eficiente para representar relaciones semánticas entre palabras.
+    \item Bolsa de palabras (Bag of Words - BoW) \cite{harris1954distributional}: Expande la codificación one-hot al contar la frecuencia de cada palabra en un documento. Aunque mejora la capacidad de representar la información textual, BoW no captura la estructura sintáctica ni el orden de las palabras. 
+    \item TF-IDF (Term Frequency-Inverse Document Frequency) \cite{rajaraman2011data}: Refina el modelo BoW ajustando la frecuencia de las palabras en función de su importancia relativa dentro de un corpus. Aumenta el peso de las palabras frecuentes en un documento, pero menos comunes en el resto del corpus, lo que ayuda a resaltar términos más significativos para la descripción del contenido de los documentos. 
+\end{itemize}
+
+En la codificación densa, se generan vectores en los que cada dimensión captura características semánticas del texto. Estos vectores, conocidos como \textit{embeddings}, representan matemáticamente palabras, frases o documentos en un espacio vectorial de alta dimensionalidad. En este espacio, cada entidad textual se asocia a un vector denso que refleja tanto relaciones semánticas como contextuales entre las palabras. Esto permite que términos con significados similares estén representados por vectores cercanos, facilitando la identificación de patrones y relaciones en el lenguaje.
+
+Los \textit{embeddings} facilitan la búsqueda de información al permitir que los sistemas de recuperación se basen en la similitud semántica del contenido en lugar de realizar búsquedas por coincidencias exactas de palabras clave. Por ejemplo, si un usuario consulta por ``fármacos que alivian el dolor'', el sistema tiene la capacidad de identificar información relevante sobre ``medicamentos analgésicos'', incluso cuando esas palabras exactas no están presentes en los datos.
+
+Los embeddings pueden generarse de diversas maneras, siendo las más comunes las basadas en redes neuronales profundas, especialmente \textit{transformers} \cite{vaswani2017attention}, por ejemplo:
+
+\begin{itemize} 
+    \item BERT (Bidirectional Encoder Representations from Transformers) y variantes \cite{rajaraman2011data}: Modelos de lenguaje preentrenados que emplean arquitecturas de \textit{transformers} para generar \textit{embeddings}. Estos modelos procesan el texto de manera bidireccional, lo que significa que consideran tanto el contexto anterior como el posterior a cada palabra. Al hacerlo, pueden captar relaciones entre palabras que se encuentran lejos unas de otras en el texto, ya que no dependen únicamente de la secuencia lineal, sino que analizan cómo las palabras se influyen mutuamente desde ambos lados. Esta técnica contrasta con modelos anteriores, que solo consideraban el contexto en una sola dirección.
+    \item Encoders basados en LLM: Aprovechan la capacidad representacional avanzada de modelos de LLMs, como el modelo \textit{text-embedding-ada-002} \cite{openai2022textembada}. Estos encoders producen embeddings de alta calidad que capturan complejas relaciones semánticas.
+\end{itemize}
+
+Una vez que los fragmentos han sido codificados en \textit{embeddings}, el siguiente paso es organizar estos vectores en una base de datos vectorial \cite{wu2024retrievalaugmentedgenerationnaturallanguage}. Aunque es posible almacenarlos en bases de datos tradicionales u otros sistemas de almacenamiento, las bases de datos vectoriales resultan más adecuadas debido a su optimización para operaciones como la búsqueda de similitud y el cálculo de distancias en espacios multidimensionales \cite{han2023comprehensivesurveyvectordatabase}.
+
+\subsection{Indexación y Construcción del \textit{Datastore}}
+
+La indexación en bases de datos vectoriales es el proceso de organizar los vectores almacenados para facilitar su búsqueda eficiente. Consiste en construir estructuras de datos que permiten reducir el tiempo necesario para encontrar los vectores más similares a un vector de consulta, optimizando así las consultas \textit{k-nearest neighbors} (KNN) \cite{johnson2021billion}. La indexación se adapta a la métrica de similitud seleccionada.
+
+Las métricas de similitud son fundamentales en los sistemas de recuperación, ya que cuantifican la relación entre el vector de consulta y los vectores almacenados en la base de datos. Estas métricas proporcionan un valor numérico que refleja la proximidad entre los vectores en un espacio vectorial. Algunas métricas de similitud comunes son:
+
+\begin{itemize}
+    \item Similitud Coseno: Evalúa el coseno del ángulo entre dos vectores en un espacio vectorial, considerando únicamente su orientación relativa y no su magnitud. La fórmula es:
+    \[
+    \text{Similitud coseno}(A, B) = \frac{A \cdot B}{\|A\| \|B\|},
+    \]
+    donde \(A \cdot B\) representa el producto escalar de \(A\) y \(B\), y \(\|A\|\) y \(\|B\|\) son las magnitudes de los vectores.
+    
+    \item Distancia Euclidiana: Mide la distancia directa entre dos elementos en un espacio multidimensional. Es útil para medir la proximidad entre vectores, aunque puede verse afectada por las escalas de los datos. La fórmula es:
+    \[
+    \text{Distancia euclidiana}(A, B) = \sqrt{\sum_{i=1}^{n} (A_i - B_i)^2},
+    \]
+    donde \(A_i\) representa el $i$-ésimo componente del vector \(A\).
+    
+    \item Distancia Manhattan: La distancia Manhattan, también conocida como L1, mide la suma de las diferencias absolutas entre las coordenadas de dos vectores. La fórmula es:
+    \[
+    \text{Distancia Manhattan}(A, B) = \sum_{i=1}^{n} |A_i - B_i|.
+    \]
+\end{itemize}
+
+El \textit{datastore} en bases de datos vectoriales organiza la información en pares \textit{llave-valor}. Las llaves representan identificadores únicos de los \textit{embeddings} mientras que los valores almacenan información asociada relevante, como descripciones o metadatos. Un aspecto clave es determinar qué almacenar como valores; por ejemplo, en tareas de preguntas y respuestas, una estrategia efectiva es almacenar los \textit{embeddings} de preguntas como llaves y los pares \textit{pregunta-respuesta} como valores; esto facilita el proceso de generación al utilizar las recuperaciones como demostraciones para los modelos.
+
+Una vez construido el recuperador, el siguiente paso es entender cómo se realiza la consulta al sistema para obtener los resultados más relevantes. En la siguiente sección se explica el proceso de consulta al recuperador.
+
+\section{Consulta al Recuperador}
+
+El proceso de consulta al recuperador incluye tres pasos: codificación de la consulta, búsqueda de los fragmentos similares y post-procesamiento de la información recuperada.
+
+Primeramente, para alinearse con el espacio de \textit{embeddings} preconstruido, se codifican las consultas utilizando el mismo codificador empleado durante la etapa de codificación del corpus.
+
+Por ejemplo, si un usuario realiza la consulta:
+``¿Qué es la fotosíntesis?'', esta se transforma en un vector de \textit{embedding} que representa semánticamente su contenido dentro del espacio vectorial preconstruido. Este espacio fue generado previamente al codificar un corpus que contiene textos como:
+\begin{itemize} 
+    \item ``La fotosíntesis es el proceso mediante el cual las plantas convierten la luz solar en energía química.'' 
+    \item ``Durante este proceso, las plantas utilizan dióxido de carbono y agua para producir glucosa y liberar oxígeno.''
+\end{itemize}
+
+Una vez que la consulta ha sido codificada, el siguiente paso es la búsqueda de fragmentos similares en la base de datos. Esto se realiza utilizando algoritmos diseñados para identificar las \(k\) entradas más cercanas a la consulta en el espacio de \textit{embeddings} de la base de datos. Los métodos de búsqueda de vecinos más cercanos (KNN) permiten recuperar datos en función de su similitud con la consulta inicial y, por eso, se utilizan comúnmente \cite{johnson2021billion}.
+
+Después de recuperar los fragmentos similares a la consulta inicial, el post-procesamiento de resultados busca refinar la información recuperada con el fin de presentarla de manera más relevante y alineada con las posibles necesidades del usuario. Este paso es importante, ya que los resultados obtenidos mediante algoritmos de búsqueda pueden contener información irrelevante, redundante o de menor calidad. Una de las técnicas de post-procesamiento más destacadas es \textit{re-ranking} \cite{mortaheb2025rerankingcontextmultimodalretrieval}.
+
+Luego de recuperar los textos relevantes, el siguiente paso consiste en ampliar la consulta original incorporando esta información, creando así una consulta extendida que sirva como entrada para el modelo generador.
+
+\section{Fusiones de recuperación}
+
+Las fusiones de recuperación se centran en cómo combinar la información recuperada con la consulta inicial para mejorar la calidad de las respuestas generadas. El objetivo de este proceso es utilizar la información recuperada de manera que enriquezca la respuesta final, brindando un contexto adicional que permita una mayor precisión y relevancia en la generación de respuestas.
+
+Una técnica común es la concatenación de texto. Este enfoque consiste en unir los fragmentos o documentos recuperados sin procesar con la consulta inicial, obteniendo de esta manera la consulta extendida. Este enfoque es especialmente útil cuando se trabaja con LLMs, los cuales operan como sistemas cerrados y generalmente se accede a ellos a través de APIs (Application Programming Interface), por ejemplo: OpenAI API \cite{openai_api} y Gemini API \cite{gemini_model}.
+
+La consulta extendida se envía al LLM, lo que permite generar una respuesta más completa y contextualizada basada en la información relevante.
+
+El diseño de plantillas de \textit{prompts} es importante en las fusiones de recuperación. Estas plantillas permiten integrar la información recuperada con la consulta inicial, facilitando el proceso de generación de respuestas precisas y relevantes. La optimización de estas plantillas mejora la interacción entre el sistema y el usuario, logrando que las respuestas sean más precisas y adecuadas al contexto \cite{sahoo2024systematicsurveypromptengineering}.
+
+Con la misma consulta ``¿Qué es la fotosíntesis?'' y los fragmentos recuperados, el sistema puede utilizar una plantilla de \textit{prompt} para integrar la información con la consulta inicial, adaptándola a un contexto educativo:
+``Eres un consultor para estudiantes de biología de secundaria. Tu tarea es explicar conceptos de manera clara y sencilla. Pregunta: ¿Qué es la fotosíntesis? Contexto: La fotosíntesis es el proceso por el cual las plantas convierten la luz solar en energía química. Este proceso ocurre en los cloroplastos y utiliza dióxido de carbono, agua y luz solar. También produce oxígeno como subproducto, que es esencial para la vida en la Tierra. Respuesta:''
+
+Esta plantilla no solo integra la información recuperada, sino que también proporciona un marco contextual para ajustar el tono y el nivel de detalle de la respuesta, asegurando que sea adecuada para estudiantes de secundaria.
+
+Después de tener la consulta extendida, el siguiente paso en el sistema RAG es generar la respuesta en lenguaje natural.
+
+\section{Generación}
+
+El proceso mediante el cual un LLM genera una respuesta comienza con la recepción de un \textit{prompt}. La respuesta generada depende de dos factores principales: el conocimiento paramétrico del modelo, adquirido durante su entrenamiento, y la información proporcionada en el \textit{prompt}.
+
+El conocimiento paramétrico se refiere a los patrones, hechos y relaciones que el modelo ha aprendido durante su fase de entrenamiento, al ser expuesto a grandes volúmenes de texto y datos. Sin embargo, este conocimiento puede volverse desactualizado con el tiempo. Por ejemplo, un modelo entrenado con datos previos a ciertos eventos significativos puede carecer de información actualizada sobre esos eventos, limitando así la precisión y relevancia de sus respuestas.
+
+El \textit{prompt} es el mensaje o entrada proporcionado al modelo para generar una respuesta. Su función es establecer el tema o guiar al modelo hacia la información solicitada. La estructura del \textit{prompt} influye directamente en la respuesta generada, ya que define qué tipo de información será relevante y cómo debe presentarse. Una formulación precisa del \textit{prompt} ayuda al modelo a generar una respuesta que se ajuste mejor a las expectativas del usuario \cite{sahoo2024systematicsurveypromptengineering}.
+
+En un sistema RAG, el \textit{prompt} aumentado, que incluye tanto la consulta original como los fragmentos recuperados, se presenta al LLM como entrada. La generación de la respuesta en esta etapa combina el conocimiento paramétrico del modelo con la información recuperada, lo que permite obtener respuestas más precisas y contextualizadas, en comparación con las generadas por el modelo sin mecanismos de recuperación \cite{gao2024retrievalaugmentedgenerationlargelanguage}.\\
+
+RAG complementa las respuestas del LLM con información recuperada en tiempo real, permitiendo generar respuestas basadas en datos específicos y añadir referencias que permiten al usuario verificar su veracidad. 
+
+El chatbot del Capítulo \ref{bot}, diseñado para estudiantes de programación, utiliza RAG para responder preguntas sobre conceptos del curso. Las respuestas incluyen referencias a la bibliografía oficial del curso.
+
+En el siguiente capítulo se describe el proceso de recopilación, redacción y resolución de ejercicios de programación. Estos ejercicios se integran en el chatbot para fomentar la práctica y el aprendizaje basado en la resolución de problemas.
+
+\begin{thebibliography}{99}
+
+\bibitem{harris2010digital}
+David Harris and Sarah Harris.
+\textit{Digital Design and Computer Architecture}. 
+Morgan Kaufmann Publishers Inc., 2010.
+
+\bibitem{harris1954distributional}
+Zellig S. Harris.
+\textit{Distributional Structure}. 
+Word, 10(2-3):146--162, 1954.
+
+\bibitem{rajaraman2011data}
+Anand Rajaraman and Jeffrey David Ullman.
+\textit{Data Mining}. 
+Cambridge University Press, pages 1--17, 2011.
+
+\bibitem{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 
+\textit{Attention Is All You Need}. 
+arXiv preprint arXiv:1706.03762, 2023. 
+Available online: \url{https://arxiv.org/abs/1706.03762}.
+
+\bibitem{zhang2023sirenssongaiocean}
+Yue Zhang, Yafu Li, Leyang Cui, Deng Cai, Lemao Liu, Tingchen Fu, Xinting Huang, Enbo Zhao, Yu Zhang, Yulong Chen, Longyue Wang, Anh Tuan Luu, Wei Bi, Freda Shi, and Shuming Shi. 
+\textit{Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models}. 
+arXiv preprint arXiv:2309.01219, 2023. 
+Available online: \url{https://arxiv.org/abs/2309.01219}.
+
+\bibitem{gong2020recurrentchunkingmechanismslongtext}
+Hongyu Gong, Yelong Shen, Dian Yu, Jianshu Chen, and Dong Yu. 
+\textit{Recurrent Chunking Mechanisms for Long-Text Machine Reading Comprehension}. 
+arXiv preprint arXiv:2005.08056, 2020. 
+Available online: \url{https://arxiv.org/abs/2005.08056}.
+
+\bibitem{makridakis2023largelanguagemodels}
+Spyros Makridakis, Fotios Petropoulos, and Yanfei Kang. 
+\textit{Large Language Models: Their Success and Impact}. 
+Forecasting, vol. 5, pp. 536-549, August 2023. 
+Available online: \url{https://doi.org/10.3390/forecast5030030}.
+
+\bibitem{nltk2001}
+NLTK. 
+NLTK. 
+Available at: \url{https://www.nltk.org/}.
+
+\bibitem{spacy2016}
+Explosion. 
+spaCy. 
+Available at: \url{https://spacy.io/}.
+
+\bibitem{openai2022textembada}
+OpenAI.
+\textit{Text-Emb-Ada}. 
+Available at: \url{https://platform.openai.com/docs/guides/embeddings}.
+
+\bibitem{johnson2021billion}
+Jeff Johnson, Matthijs Douze, and Hervé Jégou. 
+\textit{Billion-scale similarity search with GPUs}. 
+arXiv preprint arXiv:1702.08734, 2017. 
+Available online: \url{https://arxiv.org/abs/1702.08734}.
+
+\bibitem{openai_api}
+OpenAI. 
+\textit{OpenAI API}. 
+Available online: \url{https://platform.openai.com/}
+
+\bibitem{gemini_model}
+Google DeepMind. 
+\textit{Gemini AI}. 
+Available online: \url{https://aistudio.google.com/}
+
+\bibitem{gao2024retrievalaugmentedgenerationlargelanguage}
+Yunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, Jiawei Sun, Meng Wang, and Haofen Wang. 
+\textit{Retrieval-Augmented Generation for Large Language Models: A Survey}. 
+2024. Available online: \url{https://arxiv.org/abs/2312.10997}.
+
+\bibitem{sahoo2024systematicsurveypromptengineering}
+Pranab Sahoo, Ayush Kumar Singh, Sriparna Saha, Vinija Jain, Samrat Mondal, and Aman Chadha. 
+\textit{A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications}. 
+2024. Available online: \url{https://arxiv.org/abs/2402.07927}.
+
+\bibitem{mortaheb2025rerankingcontextmultimodalretrieval}
+Matin Mortaheb, Mohammad A. Amir Khojastepour, Srimat T. Chakradhar, and Sennur Ulukus. 
+\textit{Re-ranking the Context for Multimodal Retrieval Augmented Generation}. 
+arXiv preprint arXiv:2501.04695, 2025. 
+Available online: \url{https://arxiv.org/abs/2501.04695}.
+
+\bibitem{han2023comprehensivesurveyvectordatabase}
+Yikun Han, Chunjiang Liu, and Pengfei Wang. 
+\textit{A Comprehensive Survey on Vector Database: Storage and Retrieval Technique, Challenge}. 
+arXiv preprint arXiv:2310.11703, 2023. 
+Available online: \url{https://arxiv.org/abs/2310.11703}.
+
+\bibitem{wu2024retrievalaugmentedgenerationnaturallanguage}
+Shangyu Wu, Ying Xiong, Yufei Cui, Haolun Wu, Can Chen, Ye Yuan, Lianming Huang, Xue Liu, Tei-Wei Kuo, Nan Guan, and Chun Jason Xue. 
+\textit{Retrieval-Augmented Generation for Natural Language Processing: A Survey}. 
+arXiv preprint arXiv:2407.13193, 2024. 
+Available online: \url{https://arxiv.org/abs/2407.13193}.
+
+\end{thebibliography}
+\end{document}

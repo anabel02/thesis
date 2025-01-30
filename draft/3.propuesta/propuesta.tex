@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+\usetikzlibrary{3d, shapes.geometric}
+
+\input{word-comments.tex}
+
+\title{Descripción de la aplicación propuesta}
+\author{Anabel Benítez González}
+\date{}
+
+\begin{document}
+
+\tableofcontents
+\maketitle
+
+En este capítulo se presenta una propuesta de aplicación diseñada para apoyar el estudio independiente de Programación. La herramienta está estructurada como un flujo de trabajo que guía al estudiante a través de diferentes etapas, desde la consolidación de conocimientos hasta la resolución de ejercicios. Su enfoque en la personalización y la retroalimentación inmediata busca fomentar la autonomía, el pensamiento crítico y el progreso continuo, adaptándose a las necesidades individuales de cada estudiante.
+
+\section{Estudiantes}
+
+A continuación, se describe el flujo de uso de la aplicación, detallando las etapas por las que pasa el estudiante y cómo cada funcionalidad contribuye a su proceso de aprendizaje.
+
+\subsection{Bienvenida}
+El flujo comienza con la etapa de inicio, donde el estudiante accede a la aplicación por primera vez. En este punto, la herramienta muestra un mensaje de bienvenida y una guía básica que explica las funcionalidades disponibles. Esta introducción permite que el usuario comprenda cómo puede aprovechar la aplicación para su estudio.
+
+Una vez que el estudiante se ha familiarizado con la aplicación, puede comenzar a explorar los temas disponibles, lo que le permitirá alinear su estudio independiente con las clases.
+
+\subsection{Listado de temas}
+
+Una vez que el estudiante ha completado la etapa de inicio, pasa a la exploración de temas. En esta fase, la aplicación presenta un listado organizado de contenidos disponibles para su estudio. Los temas están categorizados por áreas de conocimiento, lo que permite al estudiante identificar rápidamente aquellos que se ajustan mejor al contenido que está viendo en conferencias y clases prácticas. Por ejemplo, algunos de los temas disponibles incluyen condicionales, arrays, \textit{backtracking}.
+
+La aplicación muestra los temas en el orden de estudio definido basado en el diseño del curso de Programación en Ciencia de la Computación descrito en~\ref{chapter:background} ayudando al estudiante a construir una base sólida antes de abordar contenidos más avanzados.
+
+\subsection{Descripción de temas}
+
+Si al usuario no le queda claro de qué va el tema solamente por el nombre, también puede pedir una descripción del mismo. La aplicación mostrará una explicación más detallada, incluyendo por qué necesitamos estudiar el tema, definiciones básicas y ejemplos. Esta funcionalidad es útil para estudiantes que están comenzando y necesitan una comprensión más profunda de los conceptos básicos.
+
+\subsection{Resolución de dudas}
+A medida que el estudiante explora los temas en el aula, tanto en conferencia como en clase práctica, es común que surjan dudas o preguntas. El estudiante puede formular preguntas en lenguaje natural a la aplicación, y el sistema responde con explicaciones claras y referencias a la bibliografía oficial.
+
+\subsection{Práctica con ejercicios sugeridos}
+Una vez que el estudiante ha explorado los temas y resuelto sus dudas iniciales, pasa a la etapa de práctica. El usuario solicita a la aplicación un ejercicio de un tema específico y la aplicación sugiere ejercicios adaptados al nivel de conocimiento y progreso del usuario. Estos ejercicios están diseñados para consolidar los conceptos aprendidos y preparar al estudiante para problemas más avanzados.
+
+Los ejercicios se van recomendando en orden con una complejidad progresiva.
+
+\subsection{Retroalimentación inmediata}
+Después de que el estudiante envía la solución a un ejercicio, la aplicación proporciona retroalimentación inmediata. El sistema evalúa la solución y le informa al estudiante si es correcta o incorrecta. En caso de ser correcta, la aplicación puede sugerir al usuario que intente mejorar la eficiencia de la solución, lo que ayuda al estudiante a desarrollar habilidades de programación más avanzadas.
+
+Si la solución es incorrecta, la aplicación indica el error y registra la cantidad de intentos que lleva el estudiante para un ejercicio.
+
+\subsection{Uso de pistas escalonadas}
+Durante la resolución de ejercicios, es posible que el estudiante enfrente dificultades y se estanque. En este punto, la aplicación ofrece la funcionalidad de recomendación de pistas. Estas pistas están estructuradas en niveles, comenzando con sugerencias generales y avanzando hacia indicaciones más específicas.
+
+El estudiante puede solicitar pistas adicionales si lo necesita, pero la aplicación no proporciona la solución directamente. Este enfoque fomenta la autonomía y el pensamiento crítico, ya que el estudiante debe reflexionar y aplicar los conceptos aprendidos para avanzar en la resolución del problema. Las pistas están diseñadas para guiar al estudiante paso a paso, permitiéndole descubrir la solución por sí mismo mientras refuerza su comprensión del tema.
+
+Por ejemplo, si el ejercicio consiste en implementar un algoritmo de ordenamiento, la primera pista podría ser una descripción general del algoritmo, mientras que las pistas posteriores podrían incluir detalles sobre cómo implementar cada paso. Este sistema de pistas escalonadas busca que el estudiante no se sienta abrumado y pueda avanzar a su propio ritmo.
+
+\subsection{Solicitud de la solución del ejercicio}
+En casos en los que el estudiante, a pesar de utilizar las pistas escalonadas, no logra resolver el ejercicio, la aplicación ofrece la opción de solicitar la solución completa. Esta funcionalidad está diseñada como último recurso, para evitar que el estudiante se frustre o pierda demasiado tiempo en un solo problema.
+
+Al solicitar la solución, la aplicación no solo muestra el código o la respuesta final, sino que también incluye una explicación detallada de cada paso. Por ejemplo, si el ejercicio involucra la implementación de una función recursiva, la explicación podría desglosar cómo se construye la recursividad, cuál es el caso base y cómo se llega a la solución final. Esto permite al estudiante comprender el razonamiento detrás de la solución y aprender de sus errores.
+
+Además, incluso si el estudiante logra resolver el ejercicio por sí mismo, la aplicación le ofrece la opción de consultar la solución para comparar su enfoque con el propuesto. Ver una solución alternativa puede aportar nuevas perspectivas, mostrar métodos más eficientes o simplemente reforzar los conceptos aprendidos. Por ejemplo, un estudiante que resolvió un problema usando iteración podría descubrir una solución recursiva que no había considerado, lo que amplía su comprensión del tema.
+
+Esta funcionalidad tiene como objetivo mantener un equilibrio entre el aprendizaje autónomo y el apoyo necesario, adaptándose a las necesidades individuales de cada estudiante.
+
+\section{Profesores}
+La aplicación no solo está diseñada para apoyar a los estudiantes, sino también para ser una herramienta útil para los profesores. A través de un flujo de trabajo específico, los profesores pueden utilizar la aplicación para crear contenido, monitorear el progreso de los estudiantes y ajustar las estrategias de enseñanza según las necesidades detectadas. A continuación, se describe el flujo de uso de la aplicación para los profesores.
+
+\subsection{Creación del contenido del curso}
+El profesor puede crear y organizar contenido. Esto incluye:
+\begin{itemize}
+    \item \textbf{Temas}: Agregar los temas del curso y descripciones detalladas de estos.
+    \item \textbf{Ejercicios}: Añadir ejercicios prácticos que pertenecen a un tema, cada ejercicio cuenta con un nivel de dificultad, una solución y pistas escalonadas en el orden en que deberían ofrecerse.
+\end{itemize}
+
+El profesor puede ajustar el contenido del curso en tiempo real, añadiendo nuevos ejercicios o modificando los existentes para abordar las necesidades detectadas en cualquier momento del curso.
+
+\subsection{Generación de Reportes}
+La aplicación permite a los profesores generar reportes detallados sobre el progreso de los estudiantes. Estos reportes pueden incluir:
+\begin{itemize}
+    \item \textbf{Actividad de los estudiantes}: Cuántos ejercicios han completado, cuántas pistas han solicitado y cuántas veces han pedido la solución.
+    \item \textbf{Estadísticas de desempeño}: Porcentajes de ejercicios completados correctamente, tiempo promedio dedicado a cada tema, etc.
+    \item \textbf{Evaluaciones globales}: Análisis del desempeño del grupo en su conjunto, útil para identificar áreas que requieren mayor atención en clase.
+\end{itemize}
+
+
+El flujo de trabajo propuesto por la aplicación está diseñado para guiar al estudiante a través de un proceso de aprendizaje estructurado y efectivo. Desde la exploración inicial de temas hasta la resolución de ejercicios y la consolidación de conocimientos, cada etapa está cuidadosamente planificada para fomentar la autonomía, el pensamiento crítico y el progreso continuo. La retroalimentación inmediata y personalizada, junto con la posibilidad de optimizar soluciones, asegura que el estudiante no solo aprenda, sino que también mejore sus habilidades de manera constante. Para los profesores, la aplicación se convierte en un aliado invaluable, permitiéndoles monitorear el progreso de los estudiantes, ajustar las estrategias de enseñanza y garantizar que todos alcancen los objetivos del curso. Esta propuesta tiene el potencial de transformar la manera en que los estudiantes y profesores abordan el estudio de la programación, ofreciendo un apoyo personalizado y accesible en cualquier momento.
+
+\end{document}

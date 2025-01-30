@@ -13,21 +13,19 @@
 
 \begin{document}
 
-\tableofcontents 
+% \tableofcontents 
 
 \maketitle
 
 El objetivo de este trabajo es diseñar e implementar una herramienta que apoye el estudio independiente de los estudiantes de Programación. Para ello, en este capítulo se presentan los elementos fundamentales que sustentan la investigación.
 
-En la sección~\ref{sec:ensenanza_programacion} se presentan algunos de los fundamentos de la enseñanza de programación. Se analiza cómo la complejidad progresiva de los contenidos permite a los estudiantes construir una base sólida, mientras que la práctica regular facilita el fortalecimiento de habilidades y la construcción de confianza en su capacidad para resolver problemas de programación.
+En la sección~\ref{sec:ensenanza_programacion} se presentan algunos de los fundamentos de la enseñanza de programación. En la sección~\ref{sec:contents}, se enumeran los contenidos que suelen incluir los cursos básicos de programación a nivel global. En la sección~\ref{sec:resources} se analizan los materiales y recursos empleados en la enseñanza de programación, desde los tradicionales libros de texto hasta aplicaciones interactivas.
 
-En la sección~\ref{sec:contents}, se enumeran los contenidos que suelen incluir los cursos básicos de programación a nivel global. En la sección~\ref{sec:resources} se analizan los materiales y recursos empleados en la enseñanza de programación, desde los tradicionales libros de texto hasta aplicaciones interactivas.
+En la sección~\ref{sec:study} se analiza el estudio independiente y su importancia en el aprendizaje de la programación. En la sección~\ref{sec:matcom} se describe el curso de Programación que se imparte en primer año de Ciencia de la Computación en la Facultad de Matemática y Computación de la Universidad de La Habana (\mbox{MATCOM}).
 
 \section{Elementos sobre la enseñanza de Programación}\label{sec:ensenanza_programacion}
 
-El objetivo de los cursos introductorios de programación en Ciencia de la Computación es que los estudiantes no solo aprendan a escribir código, sino que también adquieran una mentalidad analítica que les permita abordar problemas de manera estructurada y lógica~\cite{JOHNLEMAY2021100056}. 
-
-% Estos cursos combinan teoría y práctica \agregaesto{[REF]}, o sea, los estudiantes aprenden los conceptos aplicándolos directamente en ejercicios y proyectos.
+El objetivo de los cursos introductorios de programación en Ciencia de la Computación es que los estudiantes no solo aprendan a escribir código, sino que también adquieran una mentalidad analítica que les permita abordar problemas de manera estructurada y lógica~\cite{JOHNLEMAY2021100056}. Estos cursos combinan teoría y práctica~\cite{Sarsa_2022}, o sea, los estudiantes aprenden los conceptos aplicándolos directamente en ejercicios y proyectos.
 
 Estos cursos y sus tareas suelen diseñarse introduciendo conceptos y actividades de forma gradual, aumentando su nivel de dificultad de manera escalonada para evitar que los estudiantes se sientan abrumados, es decir, previniendo la sobrecarga cognitiva~\cite{duran2021clt}.
 
@@ -41,27 +39,15 @@ Para evitar que los estudiantes enfrenten tareas demasiado complejas de forma pr
 
 El diseño de los cursos de programación usualmente se basa en la práctica deliberada~\cite{ericsson1993deliberate}, un enfoque que atribuye el desarrollo de la experticia a la práctica sistemática, prolongada en el tiempo y enfocada en mejorar habilidades específicas. La práctica deliberada enfatiza que el desempeño sobresaliente depende menos del talento innato y más del esfuerzo y perseverancia~\cite{duckworth2013true}.
 
-\comment{En la sección siguiente, se explorarán los temas centrales que se enseñan en un curso introductorio de programación.}{ponle algo delante que conecte con lo que se acaba de leer.}
+Para comprender mejor cómo se estructuran estos cursos, en la siguiente sección se analizan los contenidos que se imparten en los cursos introductorios de programación.
 
 \section{¿Qué se enseña en un curso de Programación?}\label{sec:contents}
 
-Los planes de estudio \agregaesto{[REF, probablemente a dos o tres planes de estudio.]} suelen cubrir una serie de temas que forman los pilares del aprendizaje en programación; estos incluyen:
+Los cursos introductorios de programación están diseñados para estudiantes sin experiencia previa en la materia. Generalmente, cubren los fundamentos de la programación, el desarrollo de habilidades para la resolución de problemas y el uso de un lenguaje de programación para implementar soluciones~\cite{Medeiros2019}.
 
-\begin{itemize} 
-    \item Conceptos básicos como variables, tipos de datos, operadores y entrada/salida. Estos conceptos son la base sobre la cual se construye todo el conocimiento posterior en programación.
-    \item Control de Flujo: 
-    Se introduce el uso de estructuras condicionales y bucles, que permiten a los estudiantes tomar decisiones y repetir acciones, controlando así el flujo de ejecución de los programas.
-    \item Funciones: 
-    Este tema incluye cómo dividir programas en bloques funcionales reutilizables mediante funciones.
-    \item Estructuras de datos: 
-    Se exploran colecciones básicas como arreglos y listas. Esto les permite a los estudiantes organizar y manipular datos de manera eficiente.
-    \item Programación orientada a objetos (POO): 
-    Se enseñan conceptos como clases, objetos, herencia y polimorfismo. La POO permite a los estudiantes trabajar con conceptos más abstractos y en la construcción de software escalable.
-\end{itemize}
+Algunos cursos también incorporan conceptos más avanzados, como la recursión, que permite resolver problemas complejos mediante su descomposición en subproblemas más simples. Además, en algunos cursos se introducen principios de Programación Orientada a Objetos, incluyendo clases, objetos, herencia y polimorfismo, lo que facilita la construcción de software modular y escalable.
 
-En algunos cursos, se pueden introducir temas más avanzados como la recursión, que permite resolver problemas complejos mediante la subdivisión repetida, y el manejo de archivos para entrada y salida de datos.
-
-La enseñanza de estos contenidos se apoya en materiales y recursos didácticos seleccionados para enriquecer el aprendizaje. En la próxima sección, se explorarán los diferentes recursos que se emplean para enseñar programación.
+Los instructores de cursos introductorios de programación a nivel universitario trabajan constantemente en mejorar sus planes de enseñanza y en seleccionar recursos de alta calidad para ayudar a los estudiantes a alcanzar los objetivos de aprendizaje previstos~\cite{NAS2018}. En la próxima sección, se mencionan los diferentes recursos que se emplean para enseñar programación.
 
 \section{Materiales utilizados para aprender a programar}\label{sec:resources}
 
@@ -88,42 +74,43 @@ Los recursos anteriores forman parte de los materiales oficiales de los cursos, 
     \item Documentación oficial:
     La documentación oficial de los lenguajes, como \textit{Python.org}~\cite{python}, \textit{Java API}~\cite{java-api} y \textit{Microsoft Docs}~\cite{microsoft-docs}, proporciona una referencia confiable y mantenida por los propios desarrolladores del lenguaje. Estos recursos incluyen ejemplos y buenas prácticas.
     
-    \item Chatbots \todo{mejorar}: Entre los recursos que complementan el proceso de aprendizaje, los chatbots basados en modelos de lenguaje de gran tamaño (LLMs), como \textit{ChatGPT}~\cite{chatgpt} y \textit{Microsoft Copilot}~\cite{copilot}, destacan por su capacidad de ofrecer soporte personalizado y en tiempo real. Estos asistentes permiten a los estudiantes formular preguntas específicas, obtener explicaciones detalladas, depurar código y explorar diferentes enfoques para resolver problemas.
+    \item Chatbots: 
+    Entre los recursos que complementan el proceso de aprendizaje, los chatbots basados en modelos de lenguaje de gran tamaño (LLMs), como \textit{ChatGPT}~\cite{chatgpt} y \textit{Microsoft Copilot}~\cite{copilot}, destacan por su capacidad de ofrecer soporte personalizado y en tiempo real.
 \end{itemize}
 
-El uso combinado de estos materiales tiene el potencial de ofrecer a los estudiantes las herramientas necesarias para aprender y practicar programación, adaptándose a diferentes estilos de aprendizaje y niveles de experiencia. Sin embargo, en la siguiente sección se examinan las razones por las cuales este objetivo no siempre se cumple, destacando la importancia y los desafíos que implica el estudio independiente para los estudiantes de primer año en los cursos introductorios de programación.
+A pesar de la disponibilidad de múltiples recursos internos y externos, la programación sigue enfrentando un alto índice de abandono de los cursos. Según~\cite{wong2022}, esto se debe en gran medida a que los estudiantes priorizan la búsqueda de soluciones inmediatas sobre la comprensión de los conceptos fundamentales. Muchos recurren a un ciclo de prueba y error, modificando el código repetidamente hasta que funciona, sin entender el razonamiento detrás de los cambios. Este enfoque, apoyado en foros de preguntas y respuestas, no solo consume tiempo, sino que también impide un aprendizaje profundo y significativo.
 
-\section{Estudio independiente}
+Otro factor que contribuye a este problema es la percepción de un ``alto costo social'' al pedir ayuda~\cite{wong2022}. Los estudiantes suelen evitar consultar a instructores o compañeros por temor a parecer poco competentes o dependientes. Esta ansiedad, generada por la presión de demostrar autonomía o por experiencias previas negativas, los lleva a depender excesivamente de recursos en línea. Sin embargo, esta dependencia rara vez resuelve sus dudas de fondo, perpetuando la frustración y el estancamiento en su progreso.
+
+En la siguiente sección, se analizan algunos aspectos del estudio independiente en programación, con el objetivo de identificar estrategias que permitan superar estos obstáculos y fomentar un aprendizaje más efectivo.
+
+\section{Estudio independiente}\label{sec:study}
 
 El estudio independiente es el proceso en el que los estudiantes gestionan su propio aprendizaje, generalmente siguiendo las instrucciones de un docente, pero sin su supervisión constante, aprovechando los recursos disponibles para desarrollar conocimientos y habilidades fuera del aula~\cite{proskuraLytvynova2020}.
 
 Según~\cite{proskuraLytvynova2020}, el estudio independiente es clave en la formación de estudiantes en Ciencia de la Computación, quienes deben asumir el aprendizaje autónomo como base para su desarrollo académico y profesional. Esta práctica cobra importancia ante la evolución tecnológica, que exige a los profesionales en programación mantener un aprendizaje constante~\cite{proskuraLytvynova2020}.
 
-En la sección~\ref{sec:resources} se mencionan múltiples recursos disponibles para que los estudiantes los empleen en su estudio independiente; sin embargo, el éxito en este tipo de estudio depende en gran medida de la capacidad de los estudiantes para gestionar su tiempo y organizar sus actividades de estudio~\cite{overklift2019}.
+El éxito en el estudio independiente depende en gran medida de la capacidad de los estudiantes para gestionar su tiempo y organizar sus actividades de estudio~\cite{overklift2019}. La falta de orientación directa por parte del personal docente puede llevar a confusión sobre cómo priorizar contenidos y equilibrar la programación con otras asignaturas o responsabilidades~\cite{proskuraLytvynova2020}. 
 
-La falta de orientación directa por parte del personal docente puede llevar a confusión sobre cómo priorizar contenidos y equilibrar la programación con otras asignaturas o responsabilidades~\cite{proskuraLytvynova2020}. 
-
-Algunos estudiantes enfrentan dificultades para mantenerse motivados o evitar la procrastinación, lo que puede resultar en un aprendizaje poco efectivo y en la sensación de no avanzar lo suficiente.\cite{coto02012022}. 
-
-Sin un instructor disponible, los estudiantes pueden encontrarse con conceptos o problemas complejos que no logran resolver por sí mismos, lo que puede generar frustración y afectar su confianza~\cite{overklift2019}.
+Sin un instructor disponible, los estudiantes pueden encontrarse con conceptos o problemas complejos que no logran resolver por sí mismos, lo que puede generar frustración y afectar su confianza~\cite{overklift2019}. Algunos estudiantes enfrentan dificultades para mantenerse motivados o evitar la procrastinación, lo que puede resultar en un aprendizaje poco efectivo y en la sensación de no avanzar lo suficiente\cite{coto02012022}. 
 
 Un mal estudio independiente puede tener consecuencias significativas en el rendimiento académico de los estudiantes. Según~\cite{overklift2019}, aquellos que enfrentan dificultades para organizar y estructurar su tiempo de estudio suelen experimentar problemas para cumplir con los requisitos de sus cursos.
 
 De acuerdo con~\cite{overklift2019} cuando los estudiantes reconocen problemas en su proceso de aprendizaje autónomo, suelen buscar apoyo en el personal docente; sin embargo, los estudiantes a menudo tardan en identificar que necesitan ayuda, y la disponibilidad del docente puede ser insuficiente para brindar un apoyo personalizado a todos los alumnos.
 
-En este sentido puede resultar importante la retroalimentación proporcionada durante el proceso de aprendizaje, puede fomentar habilidades como el \comment{aprendizaje autorregulado}{¿que es esto?} y la \comment{metacognición}{¿que es esto?}, lo que permite a los estudiantes reflexionar sobre sus propios métodos, identificar áreas de mejora y ajustar sus estrategias en tiempo real.
+En este sentido, la retroalimentación proporcionada durante el proceso de aprendizaje puede resultar fundamental~\cite{Sarsa_2022}. La retroalimentación fomenta habilidades como el aprendizaje autorregulado~\cite{Sarsa_2022}, que se refiere a la capacidad de los estudiantes para planificar, supervisar y evaluar su propio proceso de aprendizaje, estableciendo metas, seleccionando estrategias y ajustando su comportamiento según los resultados obtenidos
 
-La retroalimentación ayuda a los estudiantes no solo a resolver problemas específicos, sino también a desarrollar la capacidad de aprender de manera autónoma, convirtiéndose en aprendices más efectivos y adaptables~\cite{shute2008focus}.
+La retroalimentación también promueve la metacognición~\cite{Sarsa_2022}, es decir, la conciencia y comprensión que tienen los estudiantes de sus propios procesos de pensamiento. Estas habilidades permiten a los estudiantes reflexionar sobre sus métodos, identificar áreas de mejora y ajustar sus estrategias en tiempo real. La retroalimentación ayuda a los estudiantes no solo a resolver problemas específicos, sino también a desarrollar la capacidad de aprender de manera autónoma, convirtiéndose en aprendices más efectivos y adaptables~\cite{shute2008focus}.
 
-\agregaesto{TRANSICION A LO QUE SIGUE}
+El estudio independiente, como se ha mencionado, representa una herramienta esencial para el crecimiento académico y profesional, particularmente en disciplinas como la Ciencia de la Computación. Sin embargo, su éxito depende en gran medida de un marco educativo bien definido que proporcione dirección y recursos adecuados. En la siguiente sección, se detalla el curso de programación en Ciencia de la Computación ofrecido en \mbox{MATCOM}.
 
-\section{MATCOM}
+\section{Curso de Programación en \mbox{MATCOM}}\label{sec:matcom}
 
 El curso de Programación forma parte del primer año de la carrera de Ciencia de la Computación de la Universidad de La Habana. Programación ocupa un lugar central en el plan de estudios debido a su importancia en la formación de las capacidades y habilidades básicas en el perfil profesional de Computación~\cite{plan_estudio_e_2017}.
 
 La programación es una habilidad fundamental en la formación de los estudiantes de Ciencia de la Computación, ya que les permite transformar ideas abstractas en soluciones prácticas. Además, fomenta el desarrollo de habilidades críticas como la resolución de problemas, la creatividad y la capacidad de trabajar en equipo~\cite{plan_estudio_e_2017}.
 
-Las siguientes secciones presentan en detalle la estructura del curso de Programación, los recursos empleados y los contenidos impartidos a lo largo del mismo.
+Las siguientes secciones presentan la estructura del curso de Programación, los recursos empleados y los contenidos impartidos a lo largo del mismo.
 
 \subsection{Estructura del curso}
 
@@ -154,7 +141,7 @@ Las conferencias constituyen el espacio destinado a la introducción de contenid
 Durante las conferencias, se utiliza un proyector para facilitar la presentación visual de conceptos, fragmentos de código y su ejecución en tiempo real. Este enfoque permite que los estudiantes observen cómo los conceptos se traducen en implementaciones prácticas y cómo interactúan las diferentes partes de un programa. Asimismo, estas sesiones fomentan la participación activa mediante preguntas y discusiones que consolidan el entendimiento de los contenidos.
 
 \subsubsection{Clases Prácticas}
-Las clases prácticas tienen como objetivo consolidar los conceptos vistos en las conferencias mediante la resolución de problemas y la implementación de programas \agregaesto{[REF al reglamento docente con la de nocion de las clases practicas]}.
+Las clases prácticas tienen como objetivo consolidar los conceptos vistos en las conferencias mediante la resolución de problemas y la implementación de programas~\cite{plan_estudio_e_2017}.
 
 Cada semana, la primera clase práctica se realiza en el aula y está enfocada en vincular los conceptos teóricos y algoritmos presentados en la conferencia con su aplicación práctica. Esto se logra mediante ejercicios guiados, discusiones de problemas y la exploración de diversas estrategias de solución. Los estudiantes analizan problemas, debaten algoritmos y comparten enfoques para resolverlos, mientras el profesor supervisa y evalúa los intentos de solución, ofreciendo retroalimentación para consolidar el aprendizaje.
 
@@ -162,21 +149,71 @@ La segunda clase práctica, realizada en el laboratorio, está orientada a la im
 
 A través de esta clase, se busca que los estudiantes desarrollen confianza en sus habilidades de programación y aprendan a aplicar conceptos de forma práctica, en un entorno de trabajo supervisado.\\
 
-\agregaesto{TRANSICION A LO QUE SIGUE}
+Las conferencias y clases prácticas, aunque fundamentales para el aprendizaje, no son los únicos recursos disponibles para los estudiantes. Además de estas actividades guiadas, el curso cuenta con una serie de recursos de enseñanza diseñados para enriquecer el proceso de aprendizaje. En la siguiente sección se mencionan estos recursos.
 
 \subsection{Recursos de enseñanza}
 
-El curso utiliza el lenguaje de programación C\# como vehículo para la enseñanza de los conceptos fundamentales de programación. Este lenguaje destaca por su versatilidad, enfoque en la programación orientada a objetos y su relevancia en la industria del desarrollo de software \agregaesto{[REF, REF, REF]}.
+El curso utiliza el lenguaje de programación C\# como vehículo para la enseñanza de los conceptos fundamentales de programación. Este lenguaje destaca por su versatilidad, enfoque en la programación orientada a objetos y su relevancia en la industria del desarrollo de software~\cite{microsoft-docs, Albahari2017, Troelsen2021}.
 
-El IDE empleado es Visual Studio Code \agregaesto{[REF]}, una herramienta reconocida por su accesibilidad y flexibilidad. El uso combinado de C\# y Visual Studio Code busca que los estudiantes se familiaricen con herramientas y prácticas estándar de la industria \agregaesto{[REF]}, preparándolos para proyectos futuros, tanto académicos como profesionales.
+El IDE empleado es Visual Studio Code~\cite{vscode}, una herramienta reconocida por su accesibilidad y flexibilidad. El uso combinado de C\# y Visual Studio Code busca que los estudiantes se familiaricen con herramientas y prácticas estándar de la industria~\cite{microsoft-docs}, preparándolos para proyectos futuros, tanto académicos como profesionales.
 
-El texto principal de la asignatura es el libro ``Empezar a programar. Un enfoque multiparadigma con C\#''~\cite{katrib_programar}. Este libro fue escrito por el profesor Miguel Katrib, quien ha dirigido la disciplina de Programación en la carrera de Ciencia de la Computación de la Universidad de La Habana durante más de cuatro décadas.  
+El texto principal de la asignatura es el libro ``Empezar a programar. Un enfoque multiparadigma con C\#''~\cite{katrib_programar}. Este libro fue escrito por el profesor Miguel Katrib, quien ha dirigido la disciplina de Programación en la carrera de Ciencia de la Computación en \mbox{MATCOM} durante más de cuatro décadas.
 
-\notaparaelautor{aquí falta una conclusión del capítulo que incluye de qué se habló aquí, qué tiene que ver con tu tesis y qué tiene que ver con el capítulo que le sigue :-).}
+En la siguiente sección se detalla el contenido del curso.
 
-\notaparaelautor{Perfecto. Aqui solo falta una conclusion del tema y transicion lo que sigue. la transicion del final de los preliminares (que terminara con esta seccion) a los RAGs es que queremos hacer esto, esto y esto... y entonces, los rags resultan muy convenientes, y por eso se presentan a continuacion... (o algo asi).}
+\subsection{Contenidos impartidos en el curso}  
 
-En este escenario, en este trabajo se propone el uso de un bot de Telegram como complemento al trabajo del personal docente de Programación. Esta herramienta recopilaría información sobre el comportamiento de los estudiantes mediante el monitoreo continuo de su actividad y ofrecería ayuda en cualquier momento, tanto en dudas de contenido como ayuda en problemas en los que se traben. Este enfoque no solo superaría las restricciones de tiempo de los profesores, sino que también permitiría identificar patrones y problemas específicos en el proceso de aprendizaje de cada estudiante.
+A lo largo del curso se imparten los siguientes contenidos:
+
+\begin{enumerate}  
+    \item Introducción a la programación y al entorno de desarrollo.  
+    Se presentan las nociones básicas sobre cómo funcionan las computadoras, qué son los algoritmos y programas, y cómo los lenguajes de programación facilitan la comunicación con los sistemas. También se explorará el entorno de desarrollo que se utilizará durante el curso.  
+
+    \item Estructuras básicas: variables, tipos de datos y operaciones.
+    Este tema abarca los fundamentos de la programación, como el uso de variables para almacenar información, los diferentes tipos de datos que se manejan en un programa y las operaciones disponibles para manipularlos.  
+
+    \item Control de flujo: estructuras de control condicionales e iterativas. 
+    Tiene como objetivo aprender a dirigir la ejecución del programa utilizando estructuras de decisión (\texttt{if}, \texttt{switch}) y ciclos (\texttt{while}, \texttt{for}).
+
+    \item Métodos y modularización del código.
+    Este tema introduce el concepto de dividir un programa en componentes más pequeños y reutilizables, lo que permite un desarrollo más organizado y eficiente.  
+
+    \item Arrays: el concepto primario de colección.
+    Se estudia cómo los arrays permiten almacenar y manipular múltiples elementos del mismo tipo. También se abordan las estructuras de control asociadas y el uso de arrays multidimensionales.
+
+    \item Introducción a la complejidad algorítmica.
+    Se analizan métodos de búsqueda y ordenación, ilustrando cómo el volumen de datos afecta el desempeño de los programas.  
+
+    \item Recursividad.
+    Se estudia la recursividad como técnica de resolución de problemas basada en dividirlos en subproblemas más pequeños.
+
+    \item Estrategias de solución de problemas.
+    Se abordan enfoques comunes como fuerza bruta, divide y vencerás, y \textit{backtracking}, con aplicaciones prácticas para resolver problemas complejos.  
+
+    \item Combinatoria.
+    Se introduce la combinatoria para resolver problemas relacionados con el conteo y las permutaciones. 
+
+    \item Jerarquías de tipos: herencia y polimorfismo.
+    Este tema introduce conceptos avanzados de la programación orientada a objetos, como la reutilización del código mediante herencia, el uso de polimorfismo para trabajar con tipos genéricos y las conversiones entre tipos (casting).  
+
+    \item Clases abstractas. Interfaces. Genericidad.
+    Los estudiantes aprenden a diseñar tipos y algoritmos genéricos utilizando interfaces y clases abstracta, además de manejar iteradores para recorrer colecciones de datos.
+
+    \item Elementos de programación funcional.
+    Se exploran conceptos básicos de programación funcional, como delegados y funciones como ciudadanos de primera clase, que permiten trabajar con un enfoque más declarativo y modular.
+
+    \item Estructuras de datos.
+    Se estudian estructuras clásicas implementadas con arrays y listas enlazadas, analizando el concepto de nodo y enlace como base para estructuras avanzadas.  
+
+    \item Pilas, colas, diccionarios y árboles.
+    Este tema profundiza en estructuras de datos y su uso en problemas prácticos.
+\end{enumerate}
+
+En este capítulo se ha explorado los fundamentos de los cursos introductorios de programación, los materiales disponibles para estudiar programación, la importancia del estudio independiente en programación, los desafíos que enfrentan los estudiantes y cómo la falta de retroalimentación oportuna y personalizada puede afectar su rendimiento. En particular, en \mbox{MATCOM} se ha observado que la efectividad del estudio independiente de los estudiantes deja mucho que desear, lo que resalta la necesidad de implementar estrategias que complementen el proceso de aprendizaje.
+
+Para abordar los desafíos descritos en este capítulo, se propone la implementación de un bot de Telegram que sirva como asistente virtual para los estudiantes. Este bot, proporcionará respuestas a preguntas sobre el contenido, sugerencias de ejercicios y retroalimentación sobre estos ejercicios. La integración de esta herramienta tiene como objetivo mejorar la experiencia de estudio independiente de Programación para estudiantes de Ciencia de la Computación en \mbox{MATCOM}.
+
+En el siguiente capítulo, se aborda la Generación Aumentada con Recuperación, una técnica que combina la recuperación de información precisa con la generación de respuestas contextualizadas, esta técnica resulta conveniente para implementar el componente del bot destinado a resolver dudas.
 
 \begin{thebibliography}{99}
 
@@ -267,7 +304,7 @@ Valerie J. Shute.
 \textit{Focus on formative feedback}.
 Review of Educational Research, 78(1):153--189, 2008.
 
-\bibitem{Sarsa_2022} Sarsa, Sami, Denny, Paul, Hellas, Arto, and Leinonen, Juho. "Automatic Generation of Programming Exercises and Code Explanations Using Large Language Models". \textit{Proceedings of the 2022 ACM Conference on International Computing Education Research - Volume 1 (ICER 2022)}, ACM, August 2022, pp. 27–43. DOI: \url{http://dx.doi.org/10.1145/3501385.3543957}.
+\bibitem{Sarsa_2022} Sarsa, Sami, Denny, Paul, Hellas, Arto, and Leinonen, Juho. ``Automatic Generation of Programming Exercises and Code Explanations Using Large Language Models''. \textit{Proceedings of the 2022 ACM Conference on International Computing Education Research - Volume 1 (ICER 2022)}, ACM, August 2022, pp. 27–43. DOI: \url{http://dx.doi.org/10.1145/3501385.3543957}.
 
 \bibitem{JOHNLEMAY2021100056}
 David John Lemay, Ram B. Basnet, Tenzin Doleck, Paul Bazelais, y Anoop Saxena, 
@@ -304,16 +341,39 @@ YouTube. ``YouTube – Video Sharing Platform.'' Available at: \url{https://www.
 GeeksforGeeks. ``A Computer Science Portal for Geeks.'' Available at: \url{https://www.geeksforgeeks.org/}. Accessed: January 19, 2025.
 
 \bibitem{chatgpt}
-OpenAI. "ChatGPT." Available at: \url{https://openai.com/chatgpt} Accessed: January 19, 2025.
+OpenAI. ``ChatGPT.'' Available at: \url{https://openai.com/chatgpt} Accessed: January 19, 2025.
 
 \bibitem{copilot}
-Microsoft. "GitHub Copilot." Available at: \url{https://github.com/features/copilot} Accessed: January 19, 2025.
+Microsoft. ``GitHub Copilot.'' Available at: \url{https://github.com/features/copilot} Accessed: January 19, 2025.
 
 \bibitem{plan_estudio_e_2017}
 Plan de Estudio ``E'' de la carrera de Ciencia de la Computación, Centro Rector, Universidad de La Habana, 2017, pp. 172--176.
 
 \bibitem{katrib_programar}
 Miguel Katrib, \textit{Empezar a programar: Un enfoque multiparadigma con C\#}, con la colaboración de Ludwig Leonard, Leonardo Paneque, Alejandro Piad, Lester Sánchez y Alejandro Tamayo. Universidad de La Habana, 2020.
+
+\bibitem{Medeiros2019} 
+R. P. Medeiros, G. L. Ramalho, y T. P. Falcão,  
+``A Systematic Literature Review on Teaching and Learning Introductory Programming in Higher Education'',
+\textit{IEEE Transactions on Education}, vol. 62, no. 2, pp. 77–-90, May 2019.  
+doi: \href{https://doi.org/10.1109/TE.2018.2864133}{10.1109/TE.2018.2864133}.
+
+\bibitem{NAS2018} National Academies of Sciences, Engineering, and Medicine. \textit{Assessing and Responding to the Growth of Computer Science Undergraduate Enrollments}. National Academies Press, 2018. Disponible en: \url{https://doi.org/10.17226/24926}.
+
+\bibitem{wong2022}
+Wong-Aitken, David, Cukierman, Diana, and Chilana, Parmit K. (2022). 
+``It Depends on Whether or Not I'm Lucky'' How Students in an Introductory Programming Course Discover, Select, and Assess the Utility of Web-Based Resources. 
+In \textit{Proceedings of the 27th ACM Conference on on Innovation and Technology in Computer Science Education Vol. 1}, 512–518. 
+Association for Computing Machinery. 
+\url{https://doi.org/10.1145/3502718.3524751}
+
+\bibitem{Albahari2017} 
+Albahari, J., \& Albahari, B. (2017). \textit{C\# 7.0 in a Nutshell: The Definitive Reference}. O'Reilly Media.
+
+\bibitem{Troelsen2021} 
+Troelsen, A., \& Japikse, P. (2021). \textit{Pro C\# 9 with .NET 5: Foundational Principles and Practices in Programming}. Apress. \\
+
+\bibitem{vscode} Visual Studio Code. \textit{Documentación oficial de Visual Studio Code}. Disponible en: \url{https://code.visualstudio.com/}. Consultado el 29/1/2025.
 
 \end{thebibliography}
 \end{document}

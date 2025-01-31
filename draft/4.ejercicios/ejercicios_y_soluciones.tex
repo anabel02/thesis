@@ -84,11 +84,11 @@ inputencoding=utf8,
 
 \maketitle
 
-Los ejercicios son una herramienta fundamental en el proceso de aprendizaje de la Programación, ya que permiten a los estudiantes aplicar y consolidar los conocimientos adquiridos, tal como se analizó en el capítulo Preliminares. 
+Los ejercicios son una herramienta fundamental en el proceso de aprendizaje de la Programación, ya que permiten a los estudiantes aplicar y consolidar los conocimientos adquiridos, tal como se analizó en el capítulo~\ref{chapter:background}.
 
-En este capítulo, se detalla el proceso de recopilación y redacción de ejercicios destinados a las clases prácticas de la asignatura de Programación descritas en el capítulo anterior. Además, se explica el enfoque utilizado para presentar soluciones a estos ejercicios, proporcionando a los estudiantes una guía para verificar y mejorar sus propias soluciones.
+En este capítulo, se describe el proceso de recopilación de los ejercicios, así como el enfoque utilizado para presentar sus soluciones. Estas soluciones sirven como guía para que los estudiantes verifiquen sus respuestas. Además, se ha desarrollado un conjunto de pistas para cada ejercicio, diseñadas para orientar a los estudiantes en la resolución de problemas.
 
-Todos los ejercicios y sus respectivas soluciones están disponibles en el repositorio público: \href{https://github.com/anabel02/programming-exercise-lab}{github.com/anabel02/programming-exercise-lab}.
+Todos los ejercicios y sus respectivas soluciones y pistas están disponibles en el repositorio público: \href{https://github.com/anabel02/programming-exercise-lab}{github.com/anabel02/programming-exercise-lab}.
 
 \section{Recopilación y redacción de ejercicios}
 El diseño de los ejercicios se realiza con el objetivo de asegurar que cada problema aporte al desarrollo de habilidades clave. Cada ejercicio se alinea con los objetivos educativos del curso, asegurando así que se aborden todos los temas de la asignatura. Esta alineación permite a los estudiantes entender cómo cada concepto se relaciona con los demás a lo largo de su formación.
@@ -294,8 +294,6 @@ El ejemplo anterior refleja la estructura utilizada para diseñar los ejercicios
      Algunos ejercicios incluyen sugerencias o notas adicionales que orientan a los estudiantes en el proceso de solución, sin proporcionar la respuesta directamente.
 \end{itemize}
 
-Como parte de este trabajo se ha recopilado una colección de 113 ejercicios, organizados en los temas mencionados en la sección~\ref{sec:organizacion_temas}, destinados a las clases prácticas de las primeras 8 semanas del curso de Programación de Ciencia de la Computación en la Universidad de La Habana.
-
 Algunos de estos ejercicios se acompañan de soluciones que proporcionan explicaciones paso a paso para ayudar a los estudiantes a comprender los conceptos involucrados. En la siguiente sección, se describe el enfoque adoptado para la elaboración de estas soluciones.
 
 \section{Solución de ejercicios}
@@ -347,9 +345,28 @@ bool IsPrime(int n)
 
 Las soluciones propuestas no son respuestas definitivas, sino ejemplos de las decisiones tomadas durante el proceso de resolución de cada ejercicio. El objetivo de presentar las soluciones es que el estudiante pueda identificar los pasos necesarios para resolver un problema, aprender a estructurar el código y conocer buenas prácticas para abordar problemas de programación. Además, se busca facilitar la identificación de errores comunes en el desarrollo de soluciones y fomentar la capacidad de analizar diferentes formas de abordar un mismo problema.
 
+Antes de revisar a la solución, es fundamental que los estudiantes desarrollen la capacidad de resolver problemas de manera independiente. A continuación, se describe cómo las pistas guían a los estudiantes paso a paso, ayudándoles a avanzar en la resolución de los ejercicios.
+
+\section{Pistas para la resolución de ejercicios}
+
+Las pistas son una herramienta complementaria diseñada para guiar a los estudiantes en la resolución de los ejercicios propuestos. Estas pistas no proporcionan el código de la solución, sino que ofrecen orientación para que los estudiantes puedan avanzar en la resolución de problemas por sí mismos. 
+
+El objetivo principal de las pistas es: Brindar apoyo gradual a los estudiantes cuando enfrentan dificultades durante la resolución de ejercicios. Fomentar el pensamiento crítico y la resolución de problemas sin revelar la solución completa.Motivar a los estudiantes a descubrir la solución por sí mismos, reforzando su comprensión del tema.
+
+Cada pista dentro de un ejercicio está numerada según el orden en que debe ser consultada. Por ejemplo, si el ejercicio consiste en implementar un algoritmo de ordenamiento:
+\begin{enumerate}
+    \item  Descripción general del algoritmo y su propósito.
+    \item Explicación de los pasos clave del algoritmo.
+    \item Indicaciones sobre cómo implementar cada paso o cómo manejar casos específicos.
+\end{enumerate}
+
+Las pistas escalonadas ofrece beneficios que apoyan el proceso de aprendizaje. Al proporcionar ayuda gradual, el estudiante se siente menos abrumado por la complejidad del problema, lo que facilita su avance. Este sistema permite que el estudiante avance a su propio ritmo, lo que contribuye a desarrollar confianza en sus habilidades. Además, al descubrir la solución por sí mismo, el estudiante interioriza los conceptos y técnicas aplicadas, lo que refuerza su comprensión.
+
 En este capítulo, se mostró la estrategia seguida para seleccionar los ejercicios, su clasificación de acuerdo a la complejidad de los mismos y las ideas en las que se basó la confección de las soluciones propuestas. Un aporte de este trabajo ha sido la organización de los ejercicios de acuerdo a su complejidad, algo que no ocurría antes.
 
-Las soluciones proporcionadas no solo orientan a los estudiantes en la verificación de sus respuestas, sino que también sirven como ejemplos de pensamiento crítico y creatividad en la resolución de problemas.
+Las pistas y soluciones proporcionadas no solo orientan a los estudiantes en la obtención y verificación respuestas, sino que también sirven como ejemplos de pensamiento crítico y creatividad en la resolución de problemas.
+
+Como parte de este trabajo se ha recopilado una colección de 113 ejercicios, organizados en los temas mencionados en la sección~\ref{sec:organizacion_temas}, destinados a las clases prácticas de las primeras 8 semanas del curso de Programación de Ciencia de la Computación en la Universidad de La Habana. De los cuales se añadió pistas a 18 ejercicios correspondientes al tema arrays. Además se redactó la solución de 40 ejercicios.
 
 En el siguiente capítulo se presenta un bot de Telegram que proporciona recomendaciones de ejercicios según el tema y nivel de dificultad en que se encuentre el estudiante. Este recurso es propuesto para apoyar aún más el proceso de estudio, permitiendo un aprendizaje adaptativo y centrado en las necesidades individuales.
 
@@ -358,9 +375,9 @@ En el siguiente capítulo se presenta un bot de Telegram que proporciona recomen
 Miguel Katrib, \textit{Empezar a programar: Un enfoque multiparadigma con C\#}, con la colaboración de Ludwig Leonard, Leonardo Paneque, Alejandro Piad, Lester Sánchez y Alejandro Tamayo. Universidad de La Habana, 2020.
 
 \bibitem{leetcode}
-LeetCode. ``Level Up Your Coding Skills and Prepare for Interviews.'' Available at: \url{https://leetcode.com/}. Accessed: January 19, 2025.
+LeetCode. ``Level Up Your Coding Skills and Prepare for Interviews''. Available at: \url{https://leetcode.com/}. Accessed: January 19, 2025.
 
 \bibitem{geeksforgeeks}
-GeeksforGeeks. ``A Computer Science Portal for Geeks.'' Available at: \url{https://www.geeksforgeeks.org/}. Accessed: January 19, 2025.
+GeeksforGeeks. ``A Computer Science Portal for Geeks''. Available at: \url{https://www.geeksforgeeks.org/}. Accessed: January 19, 2025.
 \end{thebibliography}
 \end{document}

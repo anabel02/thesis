@@ -10,16 +10,16 @@
 
 \input{word-comments.tex}
 
-\title{Bot}
+\title{Detalles de implementación}
 \author{Anabel Benítez González}
 \date{}
 
 \begin{document}
 
-\tableofcontents
+% \tableofcontents
 \maketitle
 
-En este capítulo se describe una herramienta diseñada para apoyar el estudio independiente de Programación. La propuesta consiste en un bot de Telegram que funciona como asistente educativo interactivo, proporcionando respuestas a dudas sobre el contenido y ejercicios ajustados a las necesidades de los estudiantes. Este capítulo describe los componentes de la arquitectura del bot y sus funcionalidades principales.
+En este capítulo se describe una herramienta diseñada para apoyar el estudio independiente de  la asignatura Programación en \mbox{MATCOM}. La propuesta consiste en un bot de Telegram que funciona como asistente educativo interactivo, proporcionando respuestas a dudas sobre el contenido y ejercicios ajustados a las necesidades de los estudiantes. Este capítulo describe los componentes de la arquitectura del bot y sus funcionalidades principales.
 
 \section{Selección de la plataforma: ¿Por qué Telegram?}
 
@@ -27,41 +27,41 @@ Telegram fue seleccionado como la plataforma para el desarrollo de la aplicació
 
 Otra razón importante para esta elección es que los estudiantes de la facultad ya están familiarizados con Telegram desde el primer año de la carrera, ya que la aplicación se utiliza ampliamente como herramienta de comunicación en MATCOM. Esto elimina la necesidad de aprender a manejar una nueva herramienta o de incorporar otra aplicación a su rutina, evitando distracciones adicionales. El bot propuesto simplemente se integra como un nuevo chat en una plataforma que los estudiantes ya utilizan con regularidad.
 
-\section{Descripción de la aplicación propuesta}
+% \section{Descripción de la aplicación propuesta}
 
-El objetivo del bot es mejorar la experiencia de estudio independiente de los estudiantes de Programación. Para ello, combina un conjunto de funcionalidades diseñadas para facilitar el aprendizaje y fomentar la autonomía:
+% El objetivo del bot es mejorar la experiencia de estudio independiente de los estudiantes de Programación. Para ello, combina un conjunto de funcionalidades diseñadas para facilitar el aprendizaje y fomentar la autonomía:
 
-\subsection{Resolución de dudas}
+% \subsection{Resolución de dudas}
 
-Resolución de dudas: Los estudiantes pueden formular preguntas relacionadas con conceptos de programación utilizando lenguaje natural. El bot responde con explicaciones claras y referencias a la bibliografía oficial de la asignatura.
+% Resolución de dudas: Los estudiantes pueden formular preguntas relacionadas con conceptos de programación utilizando lenguaje natural. El bot responde con explicaciones claras y referencias a la bibliografía oficial de la asignatura.
 
-\textit{/ask [tema o duda específica]}:  
-    Permite a los estudiantes realizar preguntas relacionadas con conceptos de programación.
+% \textit{/ask [tema o duda específica]}:  
+%     Permite a los estudiantes realizar preguntas relacionadas con conceptos de programación.
     
-\subsection{Listado de temas}
+% \subsection{Listado de temas}
 
-\textit{/topics}:  
-    Lista los temas disponibles para explorar nuevos contenidos de estudio.
+% \textit{/topics}:  
+%     Lista los temas disponibles para explorar nuevos contenidos de estudio.
 
-\subsection{Sugerencia de ejercicios}
-Sugerencia de ejercicios: Se analiza el historial de ejercicios realizados por el estudiante y se proponen ejercicios acordes al nivel del estudiante, intentando garantizar un aprendizaje progresivo.
+% \subsection{Sugerencia de ejercicios}
+% Sugerencia de ejercicios: Se analiza el historial de ejercicios realizados por el estudiante y se proponen ejercicios acordes al nivel del estudiante, intentando garantizar un aprendizaje progresivo.
 
-\textit{/exercise [tema]}:  
-    Sugiere ejercicios en función del progreso del estudiante.
+% \textit{/exercise [tema]}:  
+%     Sugiere ejercicios en función del progreso del estudiante.
 
-\subsection{Recomendación de pistas}
+% \subsection{Recomendación de pistas}
 
-Recomendación de pistas: Cada ejercicio incluye un sistema de pistas escalonadas que fomenta la autonomía del estudiante. Estas pistas aportan ayuda para resolver el ejercicio sin ofrecer directamente la solución.
+% Recomendación de pistas: Cada ejercicio incluye un sistema de pistas escalonadas que fomenta la autonomía del estudiante. Estas pistas aportan ayuda para resolver el ejercicio sin ofrecer directamente la solución.
 
-\textit{/hint [número de ejercicio]}:  
-    Proporciona pistas escalonadas para un ejercicio específico.
+% \textit{/hint [número de ejercicio]}:  
+%     Proporciona pistas escalonadas para un ejercicio específico.
 
-\subsection{Otros comandos}
-\textit{/start}:  
-    Inicia la interacción con el bot. Guarda al estudiante en el sistema y muestra un mensaje de bienvenida y una guía básica sobre cómo usar las funcionalidades disponibles.
+% \subsection{Otros comandos}
+% \textit{/start}:  
+%     Inicia la interacción con el bot. Guarda al estudiante en el sistema y muestra un mensaje de bienvenida y una guía básica sobre cómo usar las funcionalidades disponibles.
     
-\textit{/help}:  
-    Muestra una lista de todos los comandos disponibles junto con una breve descripción de cada uno. Es útil para estudiantes que necesitan orientación rápida sobre cómo interactuar con el bot.  
+% \textit{/help}:  
+%     Muestra una lista de todos los comandos disponibles junto con una breve descripción de cada uno. Es útil para estudiantes que necesitan orientación rápida sobre cómo interactuar con el bot.  
 
 \section{Arquitectura y componentes principales}
 
@@ -69,13 +69,15 @@ En las siguientes secciones, se profundiza en el funcionamiento interno de los p
 
 \subsection{Resolución de dudas}
 
-El diagrama de la Figura \ref{fig:q-a-diagram} ilustra cómo se utiliza un sistema basado en Generación Aumentada por Recuperación (RAG) para resolver las dudas de los estudiantes.
+El diagrama de la Figura~\ref{fig:q-a-diagram} ilustra cómo se utiliza el sistema basado en Generación Aumentada por Recuperación (RAG) para resolver las dudas de los estudiantes.
 
-Como se explica en el Capítulo \ref{chapter:rag} el proceso de construcción del recuperador consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
+Como se explica en el Capítulo~\ref{chapter:rag} el proceso de construcción del recuperador consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
 
-El corpus del sistema está compuesto por los capítulos del libro ``Empezar a programar: Un enfoque multiparadigma con C\#'' en formato PDF. Este contenido es convertido a texto utilizando herramientas de extracción que preservan su estructura original. Para manejar el contenido, se divide en fragmentos de longitud fija de 2000 caracteres con un solapamiento de 200 caracteres, lo que garantiza que no se pierda el contexto entre fragmentos consecutivos. Cada fragmento se transforma en una representación numérica mediante el modelo de embeddings \textit{models/text-embedding-004} de Google. Durante este proceso, a cada fragmento se le asocian metadatos, como el nombre del documento y el número de página correspondiente. Estos metadatos se almacenan junto con los vectores en la base de datos vectorial, lo que permite, durante la fase de generación, incorporar referencias en las respuestas proporcionadas al usuario.
+El corpus del sistema está compuesto por los capítulos del libro ``Empezar a programar: Un enfoque multiparadigma con C\#'' en formato PDF. Este contenido se convierte a texto utilizando herramientas de extracción que preservan su estructura original. Para manejar el contenido, se divide en fragmentos de longitud fija de 2000 caracteres con un solapamiento de 200 caracteres, lo que garantiza que no se pierda el contexto entre fragmentos consecutivos. Cada fragmento se transforma en una representación numérica mediante el modelo de embeddings \textit{models/text-embedding-004} de Google.
 
-Cuando un estudiante formula una pregunta, esta se procesa mediante el mismo modelo \textit{models/text-embedding-004}, que convierte la pregunta en una representación vectorial. Esta representación es comparada con la base de datos vectorial, que contiene los fragmentos del libro de Katrib. Para medir la relevancia entre una consulta y los fragmentos almacenados en la base de datos vectorial, se emplea la similitud coseno. El sistema utiliza los 5 fragmentos más similare para generar el \textit{prompt} extendido, que combina la pregunta con el contenido relevante del libro.
+Durante este proceso, a cada fragmento se le asocian metadatos, como el nombre del documento y el número de página correspondiente. Estos metadatos se almacenan junto con los vectores en la base de datos vectorial, lo que permite, durante la fase de generación, incorporar referencias en las respuestas proporcionadas al usuario.
+
+Cuando un estudiante formula una pregunta, esta se procesa mediante el mismo modelo \textit{models/text-embedding-004}, que convierte la pregunta en una representación vectorial. Para medir la relevancia entre una consulta y los fragmentos almacenados en la base de datos vectorial, se emplea la similitud coseno. El sistema utiliza los 5 fragmentos más similares para generar el \textit{prompt} extendido, que combina la pregunta con el contenido relevante del libro.
 
 El \textit{prompt} extendido se envía al LLM \textit{gemini-1.5-flash}, que genera una respuesta detallada. Además, las respuestas están enriquecidas con referencias específicas al libro, permitiendo al estudiante verificar la información en una fuente confiable.
 
@@ -126,8 +128,7 @@ Este flujo de trabajo muestra cómo el sistema RAG integra la búsqueda de infor
     \draw[arrow] (reply) -- ++(0,1) -| (user);
     
     \end{tikzpicture}
-    \caption{Diagrama de flujo del sistema de preguntas y respuestas basado en Generación Aumentada por Recuperación (RAG)}
-    \label{fig:q-a-diagram}
+    \caption{Diagrama de flujo del sistema de preguntas y respuestas basado en Generación Aumentada por Recuperación (RAG)}\label{fig:q-a-diagram}
 \end{figure}
 
 

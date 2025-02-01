@@ -90,11 +90,11 @@ Los ejercicios son una herramienta fundamental en el proceso de aprendizaje de l
 
 En este capítulo, se describe el proceso de recopilación y diseño de los ejercicios, así como el enfoque adoptado para presentar sus soluciones. Estas soluciones están redactadas de manera detallada, con el objetivo de servir como guía para que los estudiantes verifiquen sus respuestas y comprendan los pasos necesarios para resolver cada problema. Además, cada ejercicio tiene un conjunto de pistas, diseñadas para orientar a los estudiantes en la resolución de problemas sin revelar la solución completa.
 
-Todos los ejercicios y sus respectivas soluciones y pistas están disponibles en el repositorio público: \href{https://github.com/anabel02/programming-exercise-lab}{github.com/anabel02/programming-exercise-lab}.
+Todos los ejercicios con sus respectivas soluciones y pistas están disponibles en el repositorio público: \href{https://github.com/anabel02/programming-exercise-lab}{github.com/anabel02/programming-exercise-lab}.
 
 \section{Recopilación y organización de los ejercicios}
 
-Los ejercicios han sido diseñados con el objetivo de asegurar que cada problema aporte al desarrollo de habilidades clave en los estudiantes. Cada ejercicio se alinea con los objetivos del curso. Esta alineación permite a los estudiantes entender cómo cada concepto se relaciona con los demás a lo largo de su formación.
+Los ejercicios que se presentan como parte de este trabajo han sido diseñados con el objetivo de asegurar que cada problema aporte al desarrollo de habilidades clave en los estudiantes. Cada ejercicio se alinea con los objetivos del curso. Esta alineación permite a los estudiantes entender cómo cada concepto se relaciona con los demás a lo largo de su formación.
 
 Los problemas están enfocados a que los estudiantes no solo mejoren su fluidez en el lenguaje de programación, sino que también aprendan a aplicar sus conocimientos de manera práctica.
 
@@ -145,7 +145,28 @@ Los ejercicios intermedios exigen una mayor integración de conceptos aprendidos
 
 Los ejercicios avanzados requieren resolver problemas que combinan varios conceptos y exigen análisis detallado. Los estudiantes deben explorar diferentes enfoques y estrategias para encontrar soluciones.
 
-\begin{figure}[H]
+Los ejemplos presentados en las figuras~\ref{fig:basic},~\ref{fig:intermediate},~\ref{fig:advanced}, de las páginas~\pageref{fig:basic},~\pageref{fig:intermediate}, y~\pageref{fig:advanced} respectivamente, ilustran distintos niveles de dificultad dentro del tema Ciclos y reflejan la estructura utilizada para diseñar los ejercicios. Esta estructura tiene como objetivo garantizar claridad y consistencia e incluye un título, una descripción, definiciones necesarias, formato de entradas y salidas y ejemplos de ejecuciones. A continuación se describen estos elementos.
+
+\begin{itemize}
+    \item Título del ejercicio: un título para identificar a los ejercicios.
+    
+    \item Descripción del problema:  
+    Se indica la orden del ejercicio y el problema que se debe resolver. Por ejemplo: ``Escribe un programa que determine si un entero es primo o no''
+
+    \item Definiciones: 
+    Se incluye explicaciones breves de conceptos relacionados con el ejercicio que los estudiantes puedan no conocer o necesitar recordar.
+
+    \item Definición formal:
+    Siempre que es posible, se incluye una formulación matemática del problema para facilitar su comprensión teórica, reforzar el razonamiento lógico y abstracto, y evidenciar la conexión de Programación con otras asignaturas de primer año.
+    
+    \item Entradas y salidas:
+    Se especifican los datos que el programa debe recibir como entrada y los resultados que debe generar como salida.
+
+    \item Ejemplos:
+    Se incluyen casos prácticos con sus respectivas entradas y salidas, acompañados de explicaciones cuando es necesario, para facilitar la comprensión del comportamiento esperado del programa.
+\end{itemize}
+
+\begin{figure}[h!]
     \centering
     \begin{minipage}{12cm}
     \begin{framed}
@@ -178,7 +199,7 @@ Los ejercicios avanzados requieren resolver problemas que combinan varios concep
 \caption{Ejemplo de ejercicio básico.}\label{fig:basic}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[h!]
     \centering
     \begin{minipage}{12cm}
     \begin{framed}
@@ -209,7 +230,8 @@ Los ejercicios avanzados requieren resolver problemas que combinan varios concep
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}[h!]
+    \centering
     \begin{minipage}{12cm}
     \begin{framed}
         \textbf{Representación binaria}
@@ -245,27 +267,6 @@ Los ejercicios avanzados requieren resolver problemas que combinan varios concep
 \caption{Ejemplo de ejercicio avanzado.}\label{fig:advanced}
 \end{figure}
 
-Los ejemplos presentados en las figuras~\ref{fig:basic},~\ref{fig:intermediate},~\ref{fig:advanced}, de las páginas~\pageref{fig:basic},~\pageref{fig:intermediate}, y~\pageref{fig:advanced} respectivamente, ilustran distintos niveles de dificultad dentro del tema Ciclos y reflejan la estructura utilizada para diseñar los ejercicios. Esta estructura tiene como objetivo garantizar claridad y consistencia e incluye los siguientes elementos:
-
-\begin{itemize}
-    \item Título del ejercicio
-    
-    \item Descripción del problema:  
-    Se indica la orden del ejercicio y el problema que se debe resolver. Por ejemplo: ``Escribe un programa que determine si un entero es primo o no''
-
-    \item Definiciones: 
-    Se incluye explicaciones breves de conceptos relacionados con el ejercicio que los estudiantes puedan no conocer o necesitar recordar.
-
-    \item Definición formal:
-    Siempre que es posible, se incluye una formulación matemática del problema para facilitar su comprensión teórica, reforzar el razonamiento lógico y abstracto, y evidenciar la conexión de Programación con otras asignaturas de primer año.
-    
-    \item Entradas y salidas:
-    Se especifican los datos que el programa debe recibir como entrada y los resultados que debe generar como salida.
-
-    \item Ejemplos:
-    Se incluyen casos prácticos con sus respectivas entradas y salidas, acompañados de explicaciones cuando es necesario, para facilitar la comprensión del comportamiento esperado del programa.
-\end{itemize}
-
 Estos ejercicios se acompañan de soluciones que proporcionan explicaciones paso a paso para ayudar a los estudiantes a comprender los conceptos involucrados. En la siguiente sección, se describe el enfoque adoptado para la elaboración de estas soluciones.
 
 \section{Solución de ejercicios}
@@ -281,6 +282,7 @@ Las soluciones están redactadas de manera que los pasos sean comprensibles y si
 En la figura~\ref{fig:solution} de la página~\pageref{fig:solution} se presenta un ejemplo de solución para ilustrar cómo aplicar los conceptos discutidos en la clase de ciclos a un ejercicio práctico. Este ejemplo proporciona una solución al problema de determinar si un número es primo, mostrando tanto una implementación inicial como una versión optimizada.
 
 \begin{figure}[h!]
+    \centering
     \begin{minipage}{12cm}
     \begin{framed}
         \textbf{Solución: ¿Es primo?}
@@ -324,7 +326,7 @@ En la figura~\ref{fig:solution} de la página~\pageref{fig:solution} se presenta
 
 Las soluciones propuestas no son respuestas definitivas, sino ejemplos de las decisiones tomadas durante el proceso de resolución de cada ejercicio. El objetivo de presentar las soluciones es que el estudiante pueda identificar los pasos necesarios para resolver un problema, aprender a estructurar el código y conocer buenas prácticas para abordar problemas de programación. Además, se busca facilitar la identificación de errores comunes en el desarrollo de soluciones y fomentar la capacidad de analizar diferentes formas de abordar un mismo problema.
 
-Antes de consultar las soluciones, es fundamental que los estudiantes desarrollen la capacidad de resolver problemas de manera independiente, para apoyar al estudiante en caso de que se estanque resolviendo un ejercicio se han diseñado pistas que guían a los estudiantes paso a paso en la resolución.
+Antes de consultar las soluciones, es fundamental que los estudiantes desarrollen la capacidad de resolver problemas de manera independiente. Para apoyar al estudiante en caso de que encuentre dificultades al resolver un ejercicio, se han diseñado pistas que guían a los estudiantes paso a paso en la resolución.
 
 \section{Pistas para la resolución de ejercicios}
 
@@ -337,9 +339,7 @@ Cada pista dentro de un ejercicio está numerada según el orden en que debe ser
     \item Si el número es 2, es primo. Si es menor que 2 no es primo. Para números \(n\) mayores que 2, solo necesitas hacer un bucle desde \(d = 2\) hasta \(d = n -1\) verificando si n es divisible entre d, o sea comprobar que \(n \% d == 0\).
 \end{enumerate}
 
-Al proporcionar ayuda gradual, el estudiante se siente menos abrumado por la complejidad del problema, lo que facilita su avance. Este sistema de pistas escalonadas fomenta que el estudiante avance a su propio ritmo, lo que contribuye a desarrollar confianza en sus habilidades. Además, al descubrir la solución por sí mismo, el estudiante interioriza los conceptos y técnicas aplicadas, lo que refuerza su comprensión.
-
-En este capítulo, se mostró la estrategia seguida para seleccionar los ejercicios, su clasificación de acuerdo a la complejidad de los mismos y las ideas en las que se basó la confección de las soluciones propuestas. Un aporte de este trabajo ha sido la organización de los ejercicios de acuerdo a su complejidad, algo que no ocurría antes.
+Al proporcionar ayuda gradual, el estudiante debería sentirse menos abrumado por la complejidad del problema, lo que facilita su avance. Este sistema de pistas escalonadas fomenta que el estudiante avance a su propio ritmo, lo que contribuye a desarrollar confianza en sus habilidades. Además, al descubrir la solución por sí mismo, puede interiorizar los conceptos y técnicas aplicadas, lo que refuerza su comprensión.
 
 Como parte de este trabajo, se ha desarrollado y recopilado una colección de 113 ejercicios, organizados según los temas mencionados en la sección~\ref{sec:organizacion_temas}. Estos ejercicios están diseñados específicamente para las clases prácticas de las primeras 8 semanas del curso de Programación de Ciencia de la Computación en \mbox{MATCOM}.
 

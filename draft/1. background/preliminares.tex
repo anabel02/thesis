@@ -27,7 +27,7 @@ En la sección~\ref{sec:study} se analiza el estudio independiente y su importan
 
 El objetivo de los cursos introductorios de programación en Ciencia de la Computación es que los estudiantes no solo aprendan a escribir código, sino que también adquieran una mentalidad analítica que les permita abordar problemas de manera estructurada y lógica~\cite{JOHNLEMAY2021100056}. Estos cursos combinan teoría y práctica~\cite{Sarsa_2022}, o sea, los estudiantes aprenden los conceptos aplicándolos directamente en ejercicios y proyectos.
 
-Estos cursos y sus tareas suelen diseñarse introduciendo conceptos y actividades de forma gradual, aumentando su nivel de dificultad de manera escalonada para evitar que los estudiantes se sientan abrumados, es decir, previniendo la sobrecarga cognitiva~\cite{duran2021clt}.
+Estos cursos y sus tareas suelen diseñarse introduciendo conceptos y actividades de forma gradual, aumentando su nivel de dificultad de manera escalonada para evitar que los estudiantes se sientan abrumados al recibir más contenido del que pueden procesar, previniendo así la sobrecarga cognitiva~\cite{duran2021clt}.
 
 La carga cognitiva se refiere a la intensidad de la actividad mental necesaria para alcanzar un objetivo de aprendizaje en un tiempo limitado~\cite{duran2021clt}. La sobrecarga cognitiva ocurre cuando esta carga supera la capacidad del estudiante para procesar y asimilar la información, dificultando el aprendizaje y comprometiendo los resultados~\cite{duran2021clt}. 
 
@@ -45,17 +45,17 @@ Para comprender mejor cómo se estructuran estos cursos, en la siguiente secció
 
 Los cursos introductorios de programación están diseñados para estudiantes sin experiencia previa en la materia. Generalmente, cubren los fundamentos de la programación, el desarrollo de habilidades para la resolución de problemas y el uso de un lenguaje de programación para implementar soluciones~\cite{Medeiros2019}.
 
-Algunos cursos también incorporan conceptos más avanzados, como la recursión, que permite resolver problemas complejos mediante su descomposición en subproblemas más simples. Además, en algunos cursos se introducen principios de Programación Orientada a Objetos, incluyendo clases, objetos, herencia y polimorfismo, lo que facilita la construcción de software modular y escalable.
+Algunos cursos también incorporan conceptos más avanzados, como la recursividad, que permite resolver problemas complejos mediante su descomposición en subproblemas más simples~\cite{cs50_harvard,mit_60001}. Además, en algunos cursos se introducen principios de Programación Orientada a Objetos, incluyendo clases, objetos, herencia y polimorfismo, lo que facilita la construcción de software modular y escalable~\cite{cs50_harvard, mit_60001}.
 
 Los instructores de cursos introductorios de programación a nivel universitario trabajan constantemente en mejorar sus planes de enseñanza y en seleccionar recursos de alta calidad para ayudar a los estudiantes a alcanzar los objetivos de aprendizaje previstos~\cite{NAS2018}. En la próxima sección, se mencionan los diferentes recursos que se emplean para enseñar programación.
 
 \section{Materiales utilizados para aprender a programar}\label{sec:resources}
 
-El aprendizaje de la programación se apoya en una variedad de materiales diseñados para complementar las clases, fomentar el estudio independiente y facilitar la comprensión de conceptos complejos. Algunos de estos materiales son los libros de texto, presentaciones y conjuntos de ejercicios que desarrollan los docentes para los estudiantes.
+El aprendizaje de la programación se apoya en una variedad de materiales diseñados para complementar las clases, fomentar el estudio independiente y facilitar la comprensión de conceptos complejos. Algunos de estos materiales son los libros de texto, presentaciones y conjuntos de ejercicios que desarrollan los docentes para los estudiantes. Además, existen recursos como plataformas en línea, videos en \textit{Youtube} y herramientas como \textit{ChatGPT}.
 
-Los libros de texto constituyen la bibliografía básica en los cursos de programación. Estos libros sirven como referencia para estudiantes y docentes, ofreciendo teoría y ejemplos prácticos.
+Los libros de texto constituyen la bibliografía básica en los cursos de programación~\cite{wong2022}. Estos libros sirven como referencia para estudiantes y docentes, ofreciendo teoría y ejemplos prácticos.
 
-Para apoyar las clases, los docentes desarrollan presentaciones como herramientas visuales que facilitan la enseñanza de conceptos. Estas permiten ilustrar ideas, presentarlas de manera estructurada e interactuar con los estudiantes durante las explicaciones. Su uso es útil tanto para introducir un tema como para que el estudiante lo revise posteriormente.  
+Para apoyar las clases, los docentes desarrollan presentaciones como herramientas visuales que facilitan la enseñanza de conceptos. Estas permiten ilustrar ideas, presentarlas de manera estructurada e interactuar con los estudiantes durante las explicaciones.
 
 Como se menciona en la sección~\ref{sec:ensenanza_programacion}, la práctica es un elemento clave en los cursos de programación. Los conjuntos de ejercicios, como parte de los materiales utilizados en estos cursos, constituyen una de las principales formas de practicar. Diseñados para las sesiones de laboratorio, estos ejercicios permiten a los estudiantes aplicar los conceptos aprendidos y desarrollar habilidades en resolución de problemas.
 
@@ -212,9 +212,9 @@ A lo largo del curso se imparten los siguientes contenidos:
 
 En este capítulo se ha explorado los fundamentos de los cursos introductorios de programación, los materiales disponibles para estudiar programación, la importancia del estudio independiente en programación, los desafíos que enfrentan los estudiantes y cómo la falta de retroalimentación oportuna y personalizada puede afectar su rendimiento. En particular, en \mbox{MATCOM} se ha observado que la efectividad del estudio independiente de los estudiantes deja mucho que desear, lo que resalta la necesidad de implementar estrategias que complementen el proceso de aprendizaje.
 
-Para abordar los desafíos descritos en este capítulo, se propone la implementación de un bot de Telegram que sirva como asistente virtual para los estudiantes. Este bot, proporcionará respuestas a preguntas sobre el contenido, sugerencias de ejercicios y retroalimentación sobre estos ejercicios. La integración de esta herramienta tiene como objetivo mejorar la experiencia de estudio independiente de Programación para estudiantes de Ciencia de la Computación en \mbox{MATCOM}.
+Para abordar los desafíos descritos en este capítulo, se propone un sistema que se integre al curso de Programación de la carrera Ciencia de la Computación en \mbox{MATCOM}, con el objetivo de  mejorar la experiencia de estudio independiente. Este sistema proporcionará  a los estudiantes respuestas a preguntas sobre el contenido, sugerencias de ejercicios, pistas para resolverlos, y retroalimentación.
 
-En el siguiente capítulo, se aborda la Generación Aumentada con Recuperación, una técnica que combina la recuperación de información precisa con la generación de respuestas contextualizadas, esta técnica resulta conveniente para implementar el componente del bot destinado a resolver dudas.
+En el siguiente capítulo, se aborda la Generación Aumentada con Recuperación, una técnica que combina la recuperación de información precisa con la generación de respuestas contextualizadas, esta técnica resulta conveniente para implementar el componente del sistema destinado a resolver dudas.
 
 \begin{thebibliography}{99}
 
@@ -375,6 +375,18 @@ Albahari, J., \& Albahari, B. (2017). \textit{C\# 7.0 in a Nutshell: The Definit
 Troelsen, A., \& Japikse, P. (2021). \textit{Pro C\# 9 with .NET 5: Foundational Principles and Practices in Programming}. Apress. \\
 
 \bibitem{vscode} Visual Studio Code. \textit{Documentación oficial de Visual Studio Code}. Disponible en: \url{https://code.visualstudio.com/}. Consultado el 29/1/2025.
+
+\bibitem{cs50_harvard}
+Harvard University.
+\textit{CS50: Introduction to Computer Science}.
+Plataforma: edX, 2023.
+Disponible en: \url{https://cs50.harvard.edu/x/}.
+
+\bibitem{mit_60001}
+Massachusetts Institute of Technology (MIT).
+\textit{Introduction to Computer Science and Programming in Python}.
+Plataforma: edX (MIT OpenCourseWare), 2016.
+Disponible en: \url{https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/}.
 
 \end{thebibliography}
 \end{document}

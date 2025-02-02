@@ -7,6 +7,12 @@
 \usetikzlibrary{arrows.meta, positioning}
 \usetikzlibrary{3d, shapes.geometric}
 
+\tikzset{
+    startstop/.style = {rectangle, rounded corners, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=yellow!10, align=center, font=\footnotesize},
+    process/.style = {rectangle, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=yellow!10, align=center, font=\footnotesize},
+    decision/.style = {diamond, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=yellow!10, align=center, font=\footnotesize},
+    arrow2/.style = {thick,->,>=stealth}
+}
 
 \input{word-comments.tex}
 
@@ -19,15 +25,70 @@
 % \tableofcontents
 \maketitle
 
-En este capítulo se describe una herramienta diseñada para apoyar el estudio independiente de  la asignatura Programación en \mbox{MATCOM}. La propuesta consiste en un bot de Telegram que funciona como asistente educativo interactivo, proporcionando respuestas a dudas sobre el contenido y ejercicios ajustados a las necesidades de los estudiantes. Este capítulo describe los componentes de la arquitectura del bot y sus funcionalidades principales.
+En este capítulo se analizan los detalles de implementación de un bot de Telegram con las funcionalidades mostradas en el Capítulo~\ref{chapter:proposal}.
 
 \section{Selección de la plataforma: ¿Por qué Telegram?}
 
-Telegram fue seleccionado como la plataforma para el desarrollo de la aplicación debido a varias ventajas. Su API es gratuita y está documentada, lo que facilita la implementación de funcionalidades y el desarrollo de características específicas. Asimismo, Telegram es accesible desde múltiples dispositivos, como teléfonos móviles y laptops, e incluso permite sesiones simultáneas en ambos, garantizando así una experiencia fluida, disponibilidad constante y comodidad para los estudiantes.
+Telegram fue seleccionado como la plataforma para el desarrollo de la aplicación debido a que los estudiantes de la facultad ya están familiarizados con esta herramienta desde el primer año de la carrera. En \mbox{MATCOM}, Telegram se utiliza ampliamente como medio de comunicación, donde cada asignatura cuenta con al menos un grupo de Telegram para facilitar la interacción entre estudiantes y profesores, algunas asignaturas también disponen de canales. 
 
-Otra razón importante para esta elección es que los estudiantes de la facultad ya están familiarizados con Telegram desde el primer año de la carrera, ya que la aplicación se utiliza ampliamente como herramienta de comunicación en \mbox{MATCOM}. Esto elimina la necesidad de aprender a manejar una nueva herramienta o de incorporar otra aplicación a su rutina, evitando distracciones adicionales. El bot propuesto simplemente se integra como un nuevo chat en una plataforma que los estudiantes ya utilizan con regularidad.
+Esta adopción generalizada de Telegram elimina la necesidad de que los estudiantes aprendan a manejar una nueva herramienta o incorporen otra aplicación a su rutina, evitando distracciones adicionales. El bot propuesto simplemente se integra como un nuevo chat en una plataforma que los estudiantes ya utilizan con regularidad.
 
-\section{Resolución de dudas}
+Otra razón importante para esta elección son las ventajas técnicas que ofrece Telegram. Su API es gratuita y está bien documentada, lo que facilita la implementación de funcionalidades. Asimismo, Telegram es accesible desde múltiples dispositivos, como teléfonos móviles y laptops, e incluso permite sesiones simultáneas en ambos, garantizando una disponibilidad constante y comodidad para los estudiantes.
+
+\section{Diseño de la base de datos}
+
+\section{Diseño del sistema}
+
+\begin{figure}
+  \centering
+      \begin{tikzpicture}[node distance=0.5cm and 1cm]
+      \node (startstop) [startstop] {Inicio/Fin};
+      \node (startstopLabel) [right=of startstop, font=\footnotesize] {Nodo de inicio/fin (startstop)};
+  
+      \node (process) [process, below=of startstop] {Proceso};
+      \node (processLabel) [right=of process, font=\footnotesize] {Nodo de proceso (process)};
+  
+      \node (decision) [decision, below=of process] {Decisión};
+      \node (decisionLabel) [right=of decision, font=\footnotesize] {Nodo de decisión (decision)};
+      \end{tikzpicture}
+      \caption{Leyenda de los componentes de los diagramas}\label{fig:legend}
+  \end{figure}
+
+\subsection{Registro}
+
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[node distance=1cm and 1cm]
+  \node (registro) [startstop] {Estudiante inicia proceso de registro};
+  \node (sDatos) [process, below=of registro]{Solicitud de información personal};
+  \node (datos) [startstop, below=of sDatos] {Estudiante proporciona nombre y apellidos};
+
+  \draw [arrow2] (registro) -- (sDatos);
+  \draw [arrow2] (sDatos) -- (datos);
+  \end{tikzpicture}
+  \caption{Diagrama del flujo de registro}
+\end{figure}
+
+\subsection{Listado de temas}
+
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[node distance=1cm and 1cm]
+    \node (solicitud) [startstop] {Solicitud del listado \\ de temas};
+    \node (listado) [process, below=of solicitud] {Listado de temas organizados};
+    \node (explorar) [decision, below=of listado] {¿El estudiante \\ quiere explorar \\ un tema?};
+    \node (descripcionSolicitud) [startstop, right=of explorar]{Solicitud \\ de descripción \\ de un tema};
+    \node (descripcion) [process, below=of descripcionSolicitud] {Descripción del tema};
+    
+    \draw [arrow2] (solicitud) -- (listado);
+    \draw [arrow2] (listado) -- (explorar);
+    \draw [arrow2] (explorar) -- node[above] {Sí} (descripcionSolicitud);
+    \draw [arrow2] (descripcionSolicitud) -- (descripcion);
+  \end{tikzpicture}
+\caption{Diagrama del flujo de temas}
+\end{figure}
+
+\subsection{Resolución de dudas}
 
 El diagrama de la Figura~\ref{fig:q-a-diagram} ilustra cómo se utiliza el sistema basado en Generación Aumentada por Recuperación (RAG) para resolver las dudas de los estudiantes.
 
@@ -44,7 +105,7 @@ El \textit{prompt} extendido se envía al LLM \textit{gemini-1.5-flash}, que gen
 Este flujo de trabajo muestra cómo el sistema RAG integra la búsqueda de información con la generación de texto, reduciendo el tiempo que el estudiante dedicaría a buscar respuestas por otros medios, como el libro o la consulta directa al profesor. Al incluir referencias al libro de Katrib, el sistema permite al estudiante verificar la información directamente en una fuente confiable, evitando la dependencia exclusiva LLMs o fuentes en línea que podrían no ser fiables, especialmente para estudiantes inexpertos. Este enfoque busca no solo fomentar la autonomía del estudiante, sino también reforzar su capacidad para validar la información de manera independiente.
 
 \begin{figure}[h!]
-    \centering
+  \centering
     \begin{tikzpicture}[
       font=\sffamily,
       every node/.style={align=center},
@@ -59,12 +120,10 @@ Este flujo de trabajo muestra cómo el sistema RAG integra la búsqueda de infor
     \node[db, right=2cm of embedding] (database) {Base de Datos \\Vectorial};
     \node[box, below=2.5cm of database] (prompt) {Prompt Extendido = \\Pregunta +\\Contenido del libro};
     \node[box, below=1.5cm of prompt] (llm) {LLM};
-    % \node[box, left=2.5cm of llm] (professor) {Profesor};
     \node[box, left=2.5cm of llm] (reply) {Respuesta \\con referencias al libro};
     \node[below=1.5cm of question] (user) {
-      \begin{tikzpicture}[scale=0.8] % Escala más grande
-        % Cabeza
-        \draw (0,0.7) circle [radius=0.3]; % Cabeza más grande y sin relleno
+      \begin{tikzpicture}[scale=0.8]
+        \draw (0,0.7) circle [radius=0.3]; % Cabeza
         % Cuerpo
         \draw (0,0.4) -- (0,-0.5); % Línea del cuerpo
         \draw (-0.4,-1) -- (0,-0.5) -- (0.4,-1); % Piernas
@@ -73,12 +132,9 @@ Este flujo de trabajo muestra cómo el sistema RAG integra la búsqueda de infor
       \\ Estudiante
     };
     
-    % Arrows
     \draw[arrow] (materials) -- (embedding);
     \draw[arrow] (user) -- (question);
     \draw[arrow] (question) -- (embedding);
-    % \draw[arrow] (embedding) -- node[above] {Guardar} (database);
-    % Two distinct arrows between nodes
     \draw[arrow, bend left=15] (embedding) to node[above] {Guardar} (database);
     \draw[arrow, bend right=15] (embedding) to node[below] {Búsqueda \\por \\similitud} (database);
     
@@ -91,7 +147,42 @@ Este flujo de trabajo muestra cómo el sistema RAG integra la búsqueda de infor
     \caption{Diagrama de flujo del sistema de preguntas y respuestas basado en Generación Aumentada por Recuperación (RAG)}\label{fig:q-a-diagram}
 \end{figure}
 
-% \begin{thebibliography}{99}
-% \end{thebibliography}
+\subsection{Práctica con ejercicios sugeridos. Pistas y soluciones.}
+
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[node distance=1cm and 1cm]
+
+    \node (start) [startstop] {Solicitud de ejercicio};
+    \node (disponibles) [decision, below=of start] {¿Quedan \\ ejercicios \\ disponibles?};
+    \node (sugerencia) [process, below=of disponibles] {Sugerencia de ejercicio};
+    \node (completado) [process, right=of disponibles] {Felicidades, Completaste \\ todos los ejercicios \\ de este tema};
+    \node (conversion) [decision, below=of sugerencia] {¿El estudiante \\ sabe resolverlo?};
+    \node (submit) [startstop, right=of conversion] {Enviar solución};
+    \node (pista) [startstop, below=of conversion] {Solicitud de pista};
+    \node (pistasDisponibles) [decision, left=of pista] {¿Quedan \\ pistas \\ disponibles?};
+    \node (noPistas) [process, below=of pistasDisponibles] {Lo siento, no quedan \\ pistas para este \\ ejercicio};
+    \node (sugerenciaPista) [process, above=of pistasDisponibles] {Sugerencia de pista};
+    
+    \draw [arrow2] (start) -- (disponibles);
+    \draw [arrow2] (disponibles) -- node[above] {No} (completado);
+    \draw [arrow2] (disponibles) -- node[left] {Sí} (sugerencia);
+    \draw [arrow2] (sugerencia) -- (conversion);
+    \draw [arrow2] (conversion) -- node[above] {Sí} (submit);
+    \draw [arrow2] (conversion) -- node[left] {No} (pista);
+    \draw [arrow2] (pista) -- (pistasDisponibles);
+    \draw [arrow2] (pistasDisponibles) -- node[left] {No} (noPistas);
+    \draw [arrow2] (pistasDisponibles) -- node[left] {Sí} (sugerenciaPista);
+    \draw [arrow2] (sugerenciaPista) --  (conversion);
+    
+  \end{tikzpicture}
+\caption{Diagrama del flujo del sistema de ejercicios}
+\end{figure}
+  
+
+\section{Profesores}
+\subsection{Creación de contenido}
+
+\subsection{Monitoreo y análisis del progreso}
 
 \end{document}

@@ -21,7 +21,7 @@ El sistema determina el nivel de cada estudiante y, en función de este, propone
 
 Por otro lado, los profesores pueden monitorear el avance de los estudiantes, identificar dificultades comunes y ajustar el contenido o las estrategias de enseñanza según sea necesario. Esta información les ayuda a brindar retroalimentación oportuna y a personalizar el apoyo ofrecido.
 
-La implementación de estas funcionalidades se realizó mediante un bot de Telegram. Sin embargo, es importante destacar que estas tareas también podrían realizarse con herramientas más simples, como hojas de cálculo o archivos de texto. De hecho, durante varios años, algunos profesores han gestionado procesos similares utilizando estas herramientas básicas, lo que demuestra que la innovación no siempre depende de la tecnología más avanzada. En este sentido, la aplicación no es solo una solución tecnológica, sino una propuesta para mejorar la experiencia de aprendizaje.
+La implementación de estas funcionalidades se realizó mediante un bot de Telegram. Sin embargo, es importante destacar que estas tareas también podrían realizarse con herramientas más simples, como hojas de cálculo o archivos de texto. De hecho, durante varios años, algunos profesores han gestionado procesos similares utilizando estas herramientas básicas~\cite{rodriguez}. En este sentido, la aplicación no es solo una solución tecnológica, sino una propuesta para mejorar la experiencia de aprendizaje.
 
 En la sección~\ref{sec:students} se describe el flujo propuesto para los estudiantes. En la sección~\ref{sec:teachers} se explican las acciones disponibles para los profesores.
 
@@ -47,7 +47,9 @@ A medida que el estudiante explora los temas, ya sea en conferencias, clases pr�
 
 Tradicionalmente, el estudiante podría recurrir a buscar respuestas en el libro de texto, pero este proceso puede ser lento y no siempre resuelve la duda. Otra opción sería utilizar herramientas como \textit{ChatGPT}, pero estas no siempre están alineadas con el contenido específico del curso.
 
-Para simplificar este proceso, el sistema incluye una sección dedicada a la resolución de dudas. El estudiante puede formular preguntas en lenguaje natural, y el sistema responde con explicaciones, acompañadas de referencias a la bibliografía oficial del curso. Esta funcionalidad garantiza que las respuestas estén alineadas con el material de estudio, de esta manera el estudiante puede ir a ampliar en el libro si lo necesita.
+Para simplificar este proceso, el sistema incluye una sección dedicada a la resolución de dudas. El estudiante puede formular preguntas en lenguaje natural, y el sistema responde con explicaciones, acompañadas de referencias a la bibliografía oficial del curso. Esta funcionalidad garantiza que las respuestas estén alineadas con el material de estudio, de esta manera el estudiante puede ir a ampliar en el libro si lo necesita. 
+
+Para implementar esta funcionalidad, se puede utilizar un sistema de Generación Aumentada por Recuperación (RAG, por sus siglas en inglés), como se describe en el Capítulo~\ref{chapter:rag }. 
 
 Además de resolver dudas, el sistema también ofrece herramientas para que los estudiantes practiquen y refuercen sus conocimientos a través de ejercicios adaptados a su nivel.
 
@@ -112,5 +114,15 @@ En este capítulo se ha presentado una propuesta diseñada para apoyar el estudi
 El flujo propuesto está diseñado para guiar al estudiante a través de su proceso de aprendizaje. Cada etapa está planificada para fomentar la autonomía, el pensamiento crítico y el progreso continuo. Esta propuesta tiene el potencial de transformar la manera en que los estudiantes y profesores abordan el estudio de la programación, ofreciendo un apoyo personalizado y accesible en cualquier momento.
 
 Para construir esta herramienta, fue necesario recopilar ejercicios agrupados por los temas del curso de Programación de la carrera de Ciencia de la Computación en \mbox{MATCOM}, diseñar soluciones y desarrollar un conjunto de pistas progresivas para cada ejercicio. En el siguiente capítulo, se aborda esta parte del trabajo.
+
+\begin{thebibliography}{99}
+
+    \bibitem{rodriguez}
+    Fernando Rodríguez Flores.
+    \textit{Comunicación personal}. 
+    2025. 
+    (Conversación sobre el curso de Matemática Numérica).
+  
+\end{thebibliography}
 
 \end{document}

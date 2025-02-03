@@ -25,9 +25,9 @@
 % \tableofcontents
 \maketitle
 
-En este capítulo se analizan los detalles de implementación de un bot de Telegram con las funcionalidades mostradas en el Capítulo~\ref{chapter:proposal}. Se abordan aspectos técnicos, la selección de la plataforma, el diseño de la base de datos y las funcionalidades principales.
+En este capítulo se analizan los detalles de implementación de un bot de Telegram con las funcionalidades mostradas en el Capítulo~\ref{chapter:proposal}. En la sección~\ref{sec:technical-details} se mencionan las tecnologías y herramientas utilizadas en la implementación del bot. En la sección~\ref{sec:database} se explica el diseño de la base de datos. En la sección~\ref{sec:features} se analiza la implementación de cada una de las funcionalidades.
 
-\section{Detalles técnicos}
+\section{Detalles técnicos}\label{sec:technical-details}
 
 La aplicación se desarrolla utilizando Python como lenguaje de programación. Para la gestión de la base de datos, se utiliza PostgreSQL~\cite{postgresql}, un sistema de gestión de bases de datos relacional que es escalable y de código abierto.
 
@@ -39,13 +39,13 @@ Esta adopción generalizada de Telegram elimina la necesidad de que los estudian
 
 Otra razón importante para esta elección son las ventajas técnicas que ofrece Telegram. Su API es gratuita y está bien documentada, lo que facilita la implementación de funcionalidades. Asimismo, Telegram es accesible desde múltiples dispositivos (dispositivos móviles, web y desktop) e incluso permite sesiones simultáneas, garantizando una disponibilidad constante y comodidad para los estudiantes.
 
-\section{Diseño de la base de datos}
+\section{Diseño de la base de datos}\label{sec:database}
 
 El esquema de la base de datos está estructurado en varias tablas interrelacionadas que gestionan la información de usuarios, estudiantes, temas, ejercicios y pistas. Las tablas son: \texttt{users}, \texttt{students}, \texttt{topics}, \texttt{exercises}, \texttt{exercise\_hints}, \texttt{student\_hints} y \texttt{student\_exercise}.
 
-\section{Arquitectura y funcionalidades del sistema}
+\section{Arquitectura y funcionalidades del sistema}\label{sec:features}
 
-En esta sección se describe el diseño del sistema mediante diagramas que representan las funcionalidades principales. La Figura~\ref{fig:legend } muestra una leyenda que explica los componentes utilizados en los diagramas.
+En esta sección se describe el diseño del sistema mediante diagramas que representan las funcionalidades principales. La Figura~\ref{fig:legend} muestra una leyenda que explica los componentes utilizados en los diagramas. Las flechas indican el flujo de la interacción.
 
 \begin{figure}[h!]
   \centering
@@ -83,7 +83,7 @@ Al acceder por primera vez, la herramienta solicita al estudiante ingresar su no
 
 \subsection{Listado de temas}
 
-Cuando el usuario lo solicita, la aplicación muestra un listado organizado de los temas disponibles para su estudio. Los temas se presentan en el orden de estudio definido en el diseño del curso de Programación, como se describe en la Sección~\ref{sec:matcom }.
+Cuando el usuario lo solicita, la aplicación muestra un listado organizado de los temas disponibles para su estudio. Los temas se presentan en el orden de estudio definido en el diseño del curso de Programación, como se describe en la Sección~\ref{sec:matcom}.
 
 Si el nombre del tema no resulta suficientemente claro, el estudiante puede solicitar una descripción detallada del mismo. Este flujo se ilustra en la Figura~\ref{fig:topics}.
 
@@ -106,19 +106,7 @@ Si el nombre del tema no resulta suficientemente claro, el estudiante puede soli
 
 \subsection{Resolución de dudas}
 
-La aplicación incluye una sección de resolución de dudas que, mediante preguntas en lenguaje natural, proporciona respuestas alineadas con la bibliografía del curso, agilizando el estudio y fomentando el aprendizaje autónomo. La Figura~\ref{fig:q-a-diagram} ilustra el uso de un sistema basado en Generación Aumentada por Recuperación (RAG) para resolver dudas de los estudiantes.
-
-Como se explica en el Capítulo~\ref{chapter:rag} el proceso de construcción del recuperador consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
-
-El corpus del sistema está compuesto por los capítulos del libro ``Empezar a programar: Un enfoque multiparadigma con C\#'' en formato PDF. Este contenido se convierte a texto utilizando herramientas de extracción que preservan su estructura original. Para manejar el contenido, se divide en fragmentos de longitud fija de 2000 caracteres con un solapamiento de 200 caracteres, lo que garantiza que no se pierda el contexto entre fragmentos consecutivos. Cada fragmento se transforma en una representación numérica mediante el modelo de embeddings \textit{models/text-embedding-004} de Google.
-
-Durante este proceso, a cada fragmento se le asocian metadatos, como el nombre del documento y el número de página correspondiente. Estos metadatos se almacenan junto con los vectores en la base de datos vectorial, lo que permite, durante la fase de generación, incorporar referencias en las respuestas proporcionadas al usuario.
-
-Cuando un estudiante formula una pregunta, esta se procesa mediante el mismo modelo \textit{models/text-embedding-004}, que convierte la pregunta en una representación vectorial. Para medir la relevancia entre una consulta y los fragmentos almacenados en la base de datos vectorial, se emplea la similitud coseno. El sistema utiliza los 5 fragmentos más similares para generar el \textit{prompt} extendido, que combina la pregunta con el contenido relevante del libro.
-
-El \textit{prompt} extendido se envía al LLM \textit{gemini-1.5-flash}, que genera una respuesta detallada. Además, las respuestas están enriquecidas con referencias específicas al libro, permitiendo al estudiante verificar la información en una fuente confiable.
-
-Este flujo de trabajo muestra cómo el sistema RAG integra la búsqueda de información con la generación de texto, reduciendo el tiempo que el estudiante dedicaría a buscar respuestas por otros medios, como el libro o la consulta directa al profesor. Al incluir referencias al libro de Katrib, el sistema permite al estudiante verificar la información directamente en una fuente confiable, evitando la dependencia exclusiva LLMs o fuentes en línea que podrían no ser fiables, especialmente para estudiantes inexpertos. Este enfoque busca no solo fomentar la autonomía del estudiante, sino también reforzar su capacidad para validar la información de manera independiente.
+La aplicación incluye un sistema de resolución de dudas que permite a los estudiantes formular preguntas en lenguaje natural. Utilizando un enfoque de Generación Aumentada por Recuperación (RAG), el sistema proporciona respuestas basadas en la bibliografía del curso. La Figura~\ref{fig:q-a-diagram} muestra el funcionamiento de este sistema.
 
 \begin{figure}[h!]
   \centering
@@ -163,6 +151,18 @@ Este flujo de trabajo muestra cómo el sistema RAG integra la búsqueda de infor
     \caption{Sistema de preguntas y respuestas basado en Generación Aumentada por Recuperación (RAG)}\label{fig:q-a-diagram}
 \end{figure}
 
+Como se explica en el Capítulo~\ref{chapter:rag} el proceso de construcción del recuperador consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
+
+El corpus del sistema está compuesto por los capítulos del libro ``Empezar a programar: Un enfoque multiparadigma con C\#'' en formato PDF. Este contenido se convierte a texto utilizando herramientas de extracción que preservan su estructura original. Para manejar el contenido, se divide en fragmentos de longitud fija de 2000 caracteres con un solapamiento de 200 caracteres, con el objetivo de que no se pierda el contexto entre fragmentos consecutivos. Cada fragmento se transforma en una representación numérica mediante el modelo de embeddings \textit{models/text-embedding-004} de Google.
+
+Durante este proceso, a cada fragmento se le asocian metadatos, como el nombre del documento y el número de página correspondiente. Estos metadatos se almacenan junto con los vectores en la base de datos vectorial, lo que permite, durante la fase de generación, incorporar referencias en las respuestas proporcionadas al usuario.
+
+Cuando un estudiante formula una pregunta, esta se procesa mediante el mismo modelo \textit{models/text-embedding-004}, que convierte la pregunta en una representación vectorial. Para medir la relevancia entre una consulta y los fragmentos almacenados en la base de datos vectorial, se emplea la similitud coseno. El sistema utiliza los 5 fragmentos más similares para generar el \textit{prompt} extendido, que combina la pregunta con el contenido relevante del libro.
+
+El \textit{prompt} extendido se envía al LLM \textit{gemini-1.5-flash}, que genera una respuesta detallada. Además, las respuestas están enriquecidas con referencias específicas al libro, permitiendo al estudiante verificar la información en una fuente confiable.
+
+Este flujo de trabajo muestra cómo el sistema RAG combina la búsqueda de información con la generación de texto, con el objetivo de reducir el tiempo que los estudiantes invertirían en buscar respuestas a través de medios tradicionales, como la revisión manual del libro o la consulta directa al profesor. Al incorporar referencias específicas al libro de Katrib, el sistema no solo proporciona respuestas más confiables, sino que también fomenta la capacidad crítica de los estudiantes, permitiéndoles contrastar la información generada con fuentes autorizadas. De esta manera, se busca minimizar la dependencia exclusiva de LLMs o fuentes en línea que podrían no ser del todo fiables, especialmente para usuarios con poca experiencia.
+
 \subsection{Práctica con ejercicios sugeridos. Pistas y soluciones.}
 
 La aplicación ofrece una experiencia de aprendizaje personalizada al sugerir ejercicios adaptados al nivel del estudiante. Durante la resolución, el estudiante puede solicitar pistas que se dan en orden. En cualquier momento, el estudiante puede acceder a la solución completa. Una vez que el estudiante completa su implementación la manda al bot. Este flujo está descrito en la Figura~\ref{fig:exercises}.
@@ -178,7 +178,7 @@ El nivel del estudiante se calcula en función de su desempeño previo en la apl
     \node (sugerencia) [process, below=of disponibles] {Sugerencia de ejercicio};
     \node (completado) [process, right=of disponibles] {Felicidades, Completaste \\ todos los ejercicios \\ de este tema};
     \node (conversion) [decision, below=of sugerencia] {¿El estudiante \\ sabe resolverlo?};
-    \node (submit) [startstop, right=of conversion] {/submit [code]};
+    \node (submit) [startstop, right=of conversion] {/submit [código]};
     \node (pista) [startstop, below=of conversion] {/hint [número del ejercicio]};
     \node (pistasDisponibles) [decision, left=of pista] {¿Quedan \\ pistas \\ disponibles?};
     \node (noPistas) [process, below=of pistasDisponibles] {Lo siento, no quedan \\ pistas para este \\ ejercicio};
@@ -199,7 +199,9 @@ El nivel del estudiante se calcula en función de su desempeño previo en la apl
 \caption{Diagrama del flujo del sistema de ejercicios}\label{fig:exercises}
 \end{figure}
 
-Para mejorar esta funcionalidad y ofrecer retroalimentación inmediata al estudiante, se propone implementar un sistema de evaluación automática de la correctitud de la solución. Actualmente, cuando el estudiante envía su código, este se almacena en la base de datos y se marca el ejercicio como resuelto. Sin embargo, con la propuesta, el sistema no solo almacenará el código del estudiante, sino que también lo ejecutará en un entorno controlado para verificar su correctitud. Este proceso incluirá la comparación de la salida generada por el código del estudiante con casos de prueba predefinidos, lo que permitirá identificar errores y proporcionar retroalimentación.
+Para mejorar esta funcionalidad, se propone implementar un sistema de evaluación automática de la correctitud de la solución. Actualmente, cuando un estudiante envía su código, este se almacena en la base de datos y el ejercicio se marca como resuelto sin verificar su correctitud. Si bien este enfoque es funcional, no proporciona retroalimentación al estudiante acerca de la calidad o precisión de su solución.
+
+Con la nueva propuesta, el sistema de evaluación automática ejecutará el código del estudiante y comparará la salida generada con los casos de prueba predefinidos. Si la salida coincide con los resultados esperados, el ejercicio se marcará como resuelto. En caso contrario, el sistema proporcionará retroalimentación al estudiante  sobre los errores encontrados.
 
 \subsection{Personalización del Curso}
 
@@ -215,7 +217,7 @@ Si se desea personalizar los temas y ejercicios del curso, es necesario crear un
         \item \texttt{pistas} (tipo \texttt{array}): Lista de pistas asociadas al ejercicio, donde cada pista tiene:
         \begin{itemize}
             \item \texttt{contenido} (tipo \texttt{string}): Texto de la pista.
-            \item \texttt{nivel} (tipo \texttt{number}): Nivel de detalle de la pista, que define el orden en que se entregarán al usuario. Las pistas se muestran de menor a mayor nivel (0, 1, 2, ...), se recomienda comenzar con sugerencias generales e ir avanzando hacia indicaciones más específicas.
+            \item \texttt{nivel} (tipo \texttt{number}): Nivel de detalle de la pista, que define el orden en que se entregarán al usuario. Las pistas se muestran de menor a mayor nivel (0, 1, 2, \ldots), se recomienda comenzar con sugerencias generales e ir avanzando hacia indicaciones más específicas.
         \end{itemize}
     \end{itemize}
 \end{itemize}
@@ -226,10 +228,10 @@ Para añadir más documentos al sistema de preguntas y respuestas, es necesario 
 
   \bibitem{postgresql} 
   The PostgreSQL Global Development Group. 
-  \textit{PostgreSQL: The World's Most Advanced Open Source Relational Database}. 
+  \textit{PostgreSQL:\@ The World's Most Advanced Open Source Relational Database}. 
   2023. 
-  URL: \url{https://www.postgresql.org/}. 
-  Consultado el 10 de octubre de 2023.
+  URL:\@ \url{https://www.postgresql.org/}. 
+  Consultado el 1/2/2025.
 
 \end{thebibliography}
 

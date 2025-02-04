@@ -22,6 +22,7 @@
 \RequirePackage{footmisc}
 \RequirePackage{csquotes}
 \RequirePackage[
+  backend=biber,
 	style=numeric,
 	citestyle=authoryear,
   hyperref=true,

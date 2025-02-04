@@ -97,7 +97,8 @@ Los ejemplos presentados en las figuras~\ref{fig:basic},~\ref{fig:intermediate},
         \textbf{Salida:} Un valor booleano que indica si \( n \) es primo.\\
         
         \textbf{Ejemplos:}
-        
+
+        \centering
         \begin{tabular}{|c|c|}
         \hline
         Entrada & Salida \\
@@ -127,6 +128,7 @@ Los ejemplos presentados en las figuras~\ref{fig:basic},~\ref{fig:intermediate},
         
         \textbf{Ejemplos:}
         
+        \centering
         \begin{tabular}{|c|c|}
         \hline
         Entrada & Salida \\
@@ -163,8 +165,9 @@ Los ejemplos presentados en las figuras~\ref{fig:basic},~\ref{fig:intermediate},
 
         \textbf{Salida}: El entero no negativo correspondiente al número decimal.\\
         
-        \textbf{Ejemplos:}
+        \textbf{Ejemplos:}\\
         
+        \centering
         \begin{tabular}{|p{1.5cm}|p{1.5cm}|p{7cm}|}
             \hline
             \textbf{Entrada} & \textbf{Salida} & \textbf{Explicación} \\
@@ -204,7 +207,7 @@ En la figura~\ref{fig:solution} de la página~\pageref{fig:solution} se presenta
         Dado que un número \(n\) es primo si solo es divisible por 1 y por sí mismo, y además se conoce que si \(d\) es divisor de \(n\) entonces para determinar si un número \(n\) es primo, basta con verificar si es divisible por algún número \(d\) tal que \(2 \leq d < n\). Si encontramos algún divisor en ese rango, podemos concluir que \(n\) no es primo.
 
         Una primera implementación podría iterar desde \(2\) hasta \(n - 1\), verificando si \(n\) es divisible por algún número:
-        
+      
     \begin{lstlisting}
     bool IsPrime(int n)
     {

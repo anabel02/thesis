@@ -14,9 +14,21 @@
 \usepackage{xcolor}
 \usepackage{multicol}
 \usepackage{graphicx}
+\usepackage{framed}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+\usetikzlibrary{3d, shapes.geometric}
+
+\tikzset{
+    startstop/.style = {rectangle, rounded corners, minimum width=2cm, minimum height=0.8cm, text centered, draw=black, fill=yellow!10, align=center, font=\footnotesize},
+    process/.style = {rectangle, minimum width=2cm, minimum height=0.8cm, text centered, draw=black, fill=yellow!10, align=center, font=\footnotesize},
+    decision/.style = {diamond, minimum width=2cm, minimum height=0.8cm, text centered, draw=black, fill=yellow!10, align=center, font=\footnotesize},
+    arrow2/.style = {thick,->,>=stealth}
+}
 \floatstyle{plaintop}
 \restylefloat{table}
-\addbibresource{Bibliography.bib}
+% \usepackage[backend=biber, style=apa]{biblatex} % Opciones correctas
+\addbibresource{Bibliography.bib} % Archivo .bib
 % \setlength{\parskip}{\baselineskip}%
 \renewcommand{\tablename}{Tabla}
 \renewcommand{\listalgorithmcfname}{Índice de Algoritmos}
@@ -50,9 +62,9 @@
 \lstset{style=mystyle}
 
 \title{Título de la tesis}
-\author{\\\vspace{0.25cm}Nombre del autor}
-\advisor{\\\vspace{0.25cm}Nombre del primer tutor\\\vspace{0.2cm}Nombre del segundo tutor}
-\degree{Licenciado en (Matemática o Ciencia de la Computación)}
+\author{\\\vspace{0.25cm}Anabel Benítez González}
+\advisor{\\\vspace{0.25cm}MSc. Fernando Raúl Rodríguez Flores}
+\degree{Licenciado en Ciencia de la Computación}
 \faculty{Facultad de Matemática y Computación}
 \date{Fecha\\\vspace{0.25cm}\href{https://github.com/username/repo}{github.com/username/repo}}
 \logo{Graphics/uhlogo}
@@ -90,6 +102,8 @@
 
 \include{MainMatter/Introduction}
 \include{MainMatter/Background}
+\include{MainMatter/RAG}
+\include{MainMatter/Exercises}
 \include{MainMatter/Proposal}
 \include{MainMatter/Implementation}
 

@@ -1,0 +1,262 @@
+\chapter{Ejercicios}\label{chapter:exercises}
+
+Los ejercicios son una herramienta fundamental en el proceso de aprendizaje de la Programación, ya que permiten a los estudiantes aplicar y consolidar los conocimientos adquiridos, tal como se analizó en el capítulo~\ref{chapter:background}.
+
+En este capítulo, se describe el proceso de recopilación y diseño de los ejercicios, así como el enfoque adoptado para presentar sus soluciones. Estas soluciones están redactadas de manera detallada, con el objetivo de servir como guía para que los estudiantes verifiquen sus respuestas y comprendan los pasos necesarios para resolver cada problema. Además, cada ejercicio tiene un conjunto de pistas, diseñadas para orientar a los estudiantes en la resolución de problemas sin revelar la solución completa.
+
+Todos los ejercicios con sus respectivas soluciones y pistas están disponibles en el repositorio público: \href{https://github.com/anabel02/programming-exercise-lab}{github.com/anabel02/programming-exercise-lab}.
+
+\section{Recopilación y organización de los ejercicios}
+
+Los ejercicios que se presentan como parte de este trabajo han sido diseñados con el objetivo de asegurar que cada problema aporte al desarrollo de habilidades clave en los estudiantes. Cada ejercicio se alinea con los objetivos del curso. Esta alineación permite a los estudiantes entender cómo cada concepto se relaciona con los demás a lo largo de su formación.
+
+Los problemas están enfocados a que los estudiantes no solo mejoren su fluidez en el lenguaje de programación, sino que también aprendan a aplicar sus conocimientos de manera práctica.
+
+Los ejercicios se han recopilado de diversas fuentes, incluyendo:
+\begin{itemize}
+    \item Materiales de clases prácticas de Programación de años anteriores.
+    \item Plataformas en línea de ejercicios como GeeksForGeeks~\cite{geeksforgeeks} y Leetcode~\cite{leetcode}.
+    \item Libro de texto de la asignatura~\cite{katrib_programar}, que contiene problemas clásicos adaptados al currículo.
+    \item Problemas creados específicamente para este trabajo, basados en experiencias docentes y necesidades de los estudiantes.
+\end{itemize}
+
+Los ejercicios recopilados se han organizado por temas para facilitar su integración en las clases prácticas. Los temas principales son los siguientes: 
+
+\begin{itemize}  
+    \item Operaciones Básicas:  
+    Ejercicios centrados en el uso de tipos de datos, operaciones aritméticas y manipulación de variables. Estos ejercicios introducen la secuencialidad de los programas.  
+
+    \item Condicionales:  
+    Problemas relacionados con el uso de estructuras de control condicionales (\texttt{if}, \texttt{else}, \texttt{else if}, \texttt{switch case}). Se enfoca en las operaciones booleanas y la aplicación de lógica para seleccionar y ejecutar bloques de código según diferentes condiciones.
+
+    \item Métodos:
+    Ejercicios dedicados al diseño y uso de métodos, destacando su aplicación para estructurar soluciones mediante la modularidad del código.  
+
+    \item Ciclos:  
+    Problemas enfocados en estructuras iterativas (\texttt{for}, \texttt{while}, \texttt{do-while}), con énfasis en el control de iteraciones para resolver tareas repetitivas.
+
+    \item Lectura de \textit{arrays}:  
+    Ejercicios sobre el manejo de \textit{arrays}, incluyendo iteraciones, búsquedas y acceso a datos.  
+
+    \item Modificación de \textit{arrays}:  
+    Problemas que involucran operaciones como agregar, eliminar, ordenar o modificar elementos en arreglos.  
+
+    \item Resolución de Problemas:  
+    Ejercicios diseñados para desarrollar habilidades en la descomposición y análisis de problemas mediante algoritmos.
+
+    \item \textit{Arrays} bidimensionales:  
+    Problemas relacionados con la manipulación de estructuras matriciales.  
+
+    \item Tableros:  
+    Ejercicios basados en la representación de tableros utilizados en juegos o simulaciones, con tareas que implican evaluación de estados en estructuras matriciales.
+\end{itemize}  
+
+Dentro de cada tema, los ejercicios se clasifican según su nivel de dificultad, buscando garantizar una progresión adecuada en el aprendizaje del estudiante. Los ejercicios se clasifican en tres niveles de dificultad: básico, intermedio y avanzado.
+
+Los ejercicios básicos se enfocan en evaluar los conocimientos fundamentales adquiridos por los estudiantes sobre el tema. Son problemas claramente definidos en los que los estudiantes deben centrarse en la implementación. Se enfocan principalmente en la comprensión y aplicación de la sintaxis del lenguaje de programación.
+
+Los ejercicios intermedios exigen una mayor integración de conceptos aprendidos previamente, fomentando el razonamiento lógico y la resolución de problemas.
+
+Los ejercicios avanzados requieren resolver problemas que combinan varios conceptos y exigen análisis detallado. Los estudiantes deben explorar diferentes enfoques y estrategias para encontrar soluciones.
+
+Los ejemplos presentados en las figuras~\ref{fig:basic},~\ref{fig:intermediate},~\ref{fig:advanced}, de las páginas~\pageref{fig:basic},~\pageref{fig:intermediate}, y~\pageref{fig:advanced} respectivamente, ilustran distintos niveles de dificultad dentro del tema Ciclos y reflejan la estructura utilizada para diseñar los ejercicios. Esta estructura tiene como objetivo garantizar claridad y consistencia e incluye un título, una descripción, definiciones necesarias, formato de entradas y salidas y ejemplos de ejecuciones. A continuación se describen estos elementos.
+
+\begin{itemize}
+    \item Título del ejercicio: un título para identificar a los ejercicios.
+    
+    \item Descripción del problema:  
+    Se indica la orden del ejercicio y el problema que se debe resolver. Por ejemplo: ``Escribe un programa que determine si un entero es primo o no''
+
+    \item Definiciones: 
+    Se incluye explicaciones breves de conceptos relacionados con el ejercicio que los estudiantes puedan no conocer o necesitar recordar.
+
+    \item Definición formal:
+    Siempre que es posible, se incluye una formulación matemática del problema para facilitar su comprensión teórica, reforzar el razonamiento lógico y abstracto, y evidenciar la conexión de Programación con otras asignaturas de primer año.
+    
+    \item Entradas y salidas:
+    Se especifican los datos que el programa debe recibir como entrada y los resultados que debe generar como salida.
+
+    \item Ejemplos:
+    Se incluyen casos prácticos con sus respectivas entradas y salidas, acompañados de explicaciones cuando es necesario, para facilitar la comprensión del comportamiento esperado del programa.
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{12cm}
+    \begin{framed}
+        \textbf{¿Es primo?}
+
+        Escribe un programa que determine si un entero es primo o no. Un número entero positivo \( n \) se dice que es \textit{primo} si tiene exactamente dos divisores distintos: \( 1 \) y el propio número \( n \). Es decir, \( n \) es primo si y solo si no existen otros divisores \( d \) tal que \( 1 < d < n \) y \( d \) divide a \( n \). Formalmente, podemos escribir:
+        \[
+        n \text{ es primo} \iff  \forall \, d \in \mathbb{Z}^+ \, \text{se cumple que} \, d \mid n \, \implies \, d = 1 \text{ o } d = n,
+        \]
+        donde \( \mathbb{Z}^+ \) representa el conjunto de los números enteros positivos, y \( d \mid n \) denota que \( d \) divide a \( n \), es decir, \( n \) es divisible por \( d \).\\
+        
+        \textbf{Entrada:} Un número entero positivo \( n \). 
+        
+        \textbf{Salida:} Un valor booleano que indica si \( n \) es primo.\\
+        
+        \textbf{Ejemplos:}
+        
+        \begin{tabular}{|c|c|}
+        \hline
+        Entrada & Salida \\
+        \hline
+        10      & false  \\
+        29      & true   \\
+        15      & false  \\
+        31      & true   \\
+        \hline
+        \end{tabular}
+    \end{framed}
+    \end{minipage}
+\caption{Ejemplo de ejercicio básico.}\label{fig:basic}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{12cm}
+    \begin{framed}
+        \textbf{N-ésimo número primo}
+    
+        Implemente un método que devuelva el $n$-ésimo primo de la sucesión de números primos.\\
+
+        \textbf{Entrada}: Un número entero positivo \(n\) que representa el índice del primo a encontrar.
+        
+        \textbf{Salida}: Un número entero positivo, el \(n\)-ésimo número primo.\\
+        
+        \textbf{Ejemplos:}
+        
+        \begin{tabular}{|c|c|}
+        \hline
+        Entrada & Salida \\
+        \hline
+        1    & 2  \\
+        3    & 5  \\
+        5    & 11  \\
+        10   & 29  \\
+        15   & 47  \\
+        \hline
+        \end{tabular}
+    \end{framed}
+    \end{minipage}
+\caption{Ejemplo de ejercicio intermedio.}\label{fig:intermediate}
+\end{figure}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{12cm}
+    \begin{framed}
+        \textbf{Representación binaria}
+    
+        Implemente un método que convierta un número de binario a decimal.\\
+        Un número binario es una representación en base 2 de un número entero. El número binario está compuesto solo por los dígitos \(0\) y \(1\), donde cada posición en el número tiene un valor que es una potencia de 2, comenzando desde la derecha (posición 0).
+
+        Para convertir un número binario a decimal, se puede utilizar la siguiente fórmula:
+        \[
+        n = \sum_{i=0}^{k} b_i \cdot 2^i,
+        \]
+        donde \(b_i\) es el \(i\)-ésimo dígito del número binario, comenzando desde la derecha, y \(k\) es el índice de la posición más significativa (la izquierda).\\
+
+        \textbf{Entrada}: Un número binario representado como un string.
+
+        \textbf{Salida}: El entero no negativo correspondiente al número decimal.\\
+        
+        \textbf{Ejemplos:}
+        
+        \begin{tabular}{|p{1.5cm}|p{1.5cm}|p{7cm}|}
+            \hline
+            \textbf{Entrada} & \textbf{Salida} & \textbf{Explicación} \\
+            \hline
+            ``\(1101\)''  & \(13\)     & \(1101_2 = 1 \cdot 2^3 + 1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0 = 13\). \\ 
+                         &            & El número binario \(1101_2\) equivale a \(13\) en decimal. \\
+            \hline
+            ``\(10101\)'' & \(21\)     & \(10101_2 = 1 \cdot 2^4 + 0 \cdot 2^3 + 1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0  = 21\). \\ 
+                         &            & El número binario \(10101_2\) equivale a \(21\) en decimal. \\
+            \hline
+            \end{tabular}
+    \end{framed}
+    \end{minipage}
+\caption{Ejemplo de ejercicio avanzado.}\label{fig:advanced}
+\end{figure}
+
+Estos ejercicios se acompañan de soluciones que proporcionan explicaciones paso a paso para ayudar a los estudiantes a comprender los conceptos involucrados. En la siguiente sección, se describe el enfoque adoptado para la elaboración de estas soluciones.
+
+\section{Solución de ejercicios}
+
+El objetivo de estas soluciones es proporcionar una guía adicional para los estudiantes, ayudándoles a comprender no solo los resultados finales, sino también los enfoques seguidos para alcanzarlos. A través del análisis de cada solución, los estudiantes podrán observar cómo se aplican los conceptos teóricos en ejercicios prácticos.
+
+Se recomienda que los estudiantes intenten resolver cada ejercicio por sí mismos antes de consultar las soluciones propuestas. Este enfoque fomenta la práctica activa y el aprendizaje autónomo, permitiendo que los estudiantes refuercen sus habilidades al enfrentarse directamente con el problema. Una vez que hayan intentado resolverlo, podrán utilizar las soluciones como una herramienta para comparar su solución y analizar posibles áreas de mejora.
+
+Al revisar las soluciones proporcionadas, es recomendable que los estudiantes analicen no solo el código final, sino también las decisiones tomadas durante su desarrollo. Así, las soluciones actúan no solo como un medio de validación, sino también como una oportunidad para mejorar la comprensión teórica.
+
+Las soluciones están redactadas de manera que los pasos sean comprensibles y sigan una secuencia lógica. Cada solución incluye comentarios o notas que explican el razonamiento detrás de las decisiones tomadas.
+
+En la figura~\ref{fig:solution} de la página~\pageref{fig:solution} se presenta un ejemplo de solución para ilustrar cómo aplicar los conceptos discutidos en la clase de ciclos a un ejercicio práctico. Este ejemplo proporciona una solución al problema de determinar si un número es primo, mostrando tanto una implementación inicial como una versión optimizada.
+
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{12cm}
+    \begin{framed}
+        \textbf{Solución: ¿Es primo?}
+
+        Dado que un número \(n\) es primo si solo es divisible por 1 y por sí mismo, y además se conoce que si \(d\) es divisor de \(n\) entonces para determinar si un número \(n\) es primo, basta con verificar si es divisible por algún número \(d\) tal que \(2 \leq d < n\). Si encontramos algún divisor en ese rango, podemos concluir que \(n\) no es primo.
+
+        Una primera implementación podría iterar desde \(2\) hasta \(n - 1\), verificando si \(n\) es divisible por algún número:
+        
+    \begin{lstlisting}
+    bool IsPrime(int n)
+    {
+        int d = 2;
+        while (d < n)
+        {
+            if (n % d == 0) return false;
+            else d++;
+        }
+        return true;
+    }
+    \end{lstlisting}
+        
+        La solución anterior realiza iteraciones innecesarias, ya que basta con comprobar divisores hasta la raíz cuadrada de \(n\). Esto se debe a que si \(n\) tiene un divisor mayor que \(\sqrt{n}\), necesariamente debe tener otro menor que \(\sqrt{n}\). Reduciendo el rango de búsqueda, podemos mejorar la eficiencia del algoritmo:
+        
+    \begin{lstlisting}
+    bool IsPrime(int n)
+    {
+        int d = 2;
+        int sqr = (int)Math.Sqrt(n);
+        while (d <= sqr)
+        {
+            if (n % d == 0) return false;
+            d++;
+        }
+        return true;
+    }
+    \end{lstlisting}
+    \end{framed}
+    \end{minipage}
+\caption{Ejemplo de solución.}\label{fig:solution}
+\end{figure}
+
+Las soluciones propuestas no son respuestas definitivas, sino ejemplos de las decisiones tomadas durante el proceso de resolución de cada ejercicio. El objetivo de presentar las soluciones es que el estudiante pueda identificar los pasos necesarios para resolver un problema, aprender a estructurar el código y conocer buenas prácticas para abordar problemas de programación. Además, se busca facilitar la identificación de errores comunes en el desarrollo de soluciones y fomentar la capacidad de analizar diferentes formas de abordar un mismo problema.
+
+Antes de consultar las soluciones, es fundamental que los estudiantes desarrollen la capacidad de resolver problemas de manera independiente. Para apoyar al estudiante en caso de que encuentre dificultades al resolver un ejercicio, se han diseñado pistas que guían a los estudiantes paso a paso en la resolución.
+
+\section{Pistas para la resolución de ejercicios}
+
+Las pistas son una herramienta complementaria diseñada para guiar a los estudiantes en la resolución de los ejercicios propuestos. A diferencia de las soluciones completas, las pistas no proporcionan el código directamente, sino que ofrecen orientación paso a paso para que los estudiantes puedan avanzar en la resolución de problemas por sí mismos. 
+
+Cada pista dentro de un ejercicio está numerada según el orden en que debe ser consultada. Por ejemplo, para el ejercicio presentado en la figura~\ref{fig:basic}, que consiste en identificar si un número es primo o no, se brindan las siguientes pistas:
+\begin{enumerate}
+    \item Conocemos que un número primo es un número entero mayor que 1 que solo es divisible por 1 y por sí mismo. ¿Cómo puedes verificar si un número es divisible por otro?
+    \item Sea \(n\) un número entero, todos sus divisores son menores o iguales que \(n\). ¿Cómo puedes verificar la divisibilidad desde 2 hasta la \(n - 1\)?
+    \item Si el número es 2, es primo. Si es menor que 2 no es primo. Para números \(n\) mayores que 2, solo necesitas hacer un bucle desde \(d = 2\) hasta \(d = n -1\) verificando si n es divisible entre d, o sea comprobar que \(n \% d == 0\).
+\end{enumerate}
+
+Al proporcionar ayuda gradual, el estudiante debería sentirse menos abrumado por la complejidad del problema, lo que facilita su avance. Este sistema de pistas escalonadas fomenta que el estudiante avance a su propio ritmo, lo que contribuye a desarrollar confianza en sus habilidades. Además, al descubrir la solución por sí mismo, puede interiorizar los conceptos y técnicas aplicadas, lo que refuerza su comprensión.
+
+Como parte de este trabajo, se ha desarrollado y recopilado una colección de 113 ejercicios, organizados según los temas mencionados en la sección~\ref{sec:organizacion_temas}. Estos ejercicios están diseñados específicamente para las clases prácticas de las primeras 8 semanas del curso de Programación de Ciencia de la Computación en \mbox{MATCOM}.
+
+Con el objetivo de facilitar el aprendizaje y la resolución de problemas, se han incorporado pistas a 18 ejercicios correspondientes al tema de arrays. Asimismo, se ha redactado la solución de 40 ejercicios, proporcionando un recurso adicional para el estudio y la autoevaluación de los estudiantes.
+
+En el siguiente capítulo se presenta un bot de Telegram que proporciona recomendaciones de ejercicios según el tema y nivel de dificultad en que se encuentre el estudiante. Este recurso se propone para apoyar aún más el proceso de estudio, permitiendo un aprendizaje adaptativo y centrado en las necesidades individuales.

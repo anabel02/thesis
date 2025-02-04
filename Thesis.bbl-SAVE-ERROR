@@ -1,0 +1,3137 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{Albahari2017}{book}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=4d458ac7ef22f277eb5c034e366d8197}{%
+           family={Albahari},
+           familyi={A\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=7749a0c2e59beb5ed788a47b6b1c2e6e}{%
+           family={Albahari},
+           familyi={A\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \strng{fullhash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \strng{bibnamehash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \strng{authorbibnamehash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \strng{authornamehash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \strng{authorfullhash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{C\# 7.0 in a Nutshell: The Definitive Reference}
+      \field{year}{2017}
+    \endentry
+    \entry{allen2018msp}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=88a696d256fb9b10af2db180e51de21a}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={Joe\bibnamedelima Michael},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=82180a3ff6a4ba73ce79d0a842e78a03}{%
+           family={Vahid},
+           familyi={V\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbbf773a76f22a872dc7c27c3cae2754}{%
+           family={Downey},
+           familyi={D\bibinitperiod},
+           given={Kelly},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab6545caf997a2b957581671a5a9ebb5}{%
+           family={Edgcomb},
+           familyi={E\bibinitperiod},
+           given={Alex\bibnamedelima Daniel},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a1faca542823780f9304cbbd3e9c352}
+      \strng{fullhash}{9c40b3d77ae5e3d2c0f5689d9e309e1e}
+      \strng{bibnamehash}{9c40b3d77ae5e3d2c0f5689d9e309e1e}
+      \strng{authorbibnamehash}{9c40b3d77ae5e3d2c0f5689d9e309e1e}
+      \strng{authornamehash}{4a1faca542823780f9304cbbd3e9c352}
+      \strng{authorfullhash}{9c40b3d77ae5e3d2c0f5689d9e309e1e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2018 ASEE Annual Conference \& Exposition}
+      \field{title}{Weekly Programs in a CS1 Class: Experiences with Auto-Graded Many-Small Programs (MSP)}
+      \field{year}{2018}
+    \endentry
+    \entry{bandura1977self}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3dda0f93a5c43e1392668692b92f8231}{%
+           family={Bandura},
+           familyi={B\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3dda0f93a5c43e1392668692b92f8231}
+      \strng{fullhash}{3dda0f93a5c43e1392668692b92f8231}
+      \strng{bibnamehash}{3dda0f93a5c43e1392668692b92f8231}
+      \strng{authorbibnamehash}{3dda0f93a5c43e1392668692b92f8231}
+      \strng{authornamehash}{3dda0f93a5c43e1392668692b92f8231}
+      \strng{authorfullhash}{3dda0f93a5c43e1392668692b92f8231}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Review}
+      \field{number}{2}
+      \field{title}{Self-Efficacy: Toward a Unifying Theory of Behavioral Change}
+      \field{volume}{84}
+      \field{year}{1977}
+      \field{pages}{191\bibrangedash 215}
+      \range{pages}{25}
+    \endentry
+    \entry{coto02012022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=72e5573260159d0a7ece0287ee909b85}{%
+           family={Coto},
+           familyi={C\bibinitperiod},
+           given={Mayela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b61c5685bf473ba3a8623097c8e74480}{%
+           family={Mora},
+           familyi={M\bibinitperiod},
+           given={Sonia},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d18a60c34f1aef01c125751a683245e3}{%
+           family={Grass},
+           familyi={G\bibinitperiod},
+           given={Beatriz},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98ede64f2e1959fc78c81af18658c1c3}{%
+           family={Murillo-Morera},
+           familyi={M\bibinithyphendelim M\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{bfabc79235e2608e09b8efeef296cf7e}
+      \strng{fullhash}{7421e305bec0b2c5dd324f830b7df9f3}
+      \strng{bibnamehash}{7421e305bec0b2c5dd324f830b7df9f3}
+      \strng{authorbibnamehash}{7421e305bec0b2c5dd324f830b7df9f3}
+      \strng{authornamehash}{bfabc79235e2608e09b8efeef296cf7e}
+      \strng{authorfullhash}{7421e305bec0b2c5dd324f830b7df9f3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Science Education}
+      \field{number}{1}
+      \field{title}{Emotions and Programming Learning: Systematic Mapping}
+      \field{volume}{32}
+      \field{year}{2022}
+      \field{pages}{30\bibrangedash 65}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1080/08993408.2021.1920816
+      \endverb
+    \endentry
+    \entry{dong2025buildaitutoradapt}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=f9694a218d9d255e7e93626b9f6f25a9}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Chenxi},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c8c895ed1c502e9939dd40a288fb07b}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Yimin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a4cd7f10afb22227518b745dd4c3fd1}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Kan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0fb41c383fc02b1ca8d7bd2f65caaaee}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Shupei},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ff5de183173ada710390914cd82560b8}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Chujie},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{accf7a911265b9ed4a2adf49b8d2c176}
+      \strng{fullhash}{207882eeac62751c23ca118bce25d2bd}
+      \strng{bibnamehash}{207882eeac62751c23ca118bce25d2bd}
+      \strng{authorbibnamehash}{207882eeac62751c23ca118bce25d2bd}
+      \strng{authornamehash}{accf7a911265b9ed4a2adf49b8d2c176}
+      \strng{authorfullhash}{207882eeac62751c23ca118bce25d2bd}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2311.17696}
+      \field{title}{How to Build an {AI} Tutor That Can Adapt to Any Course Using Knowledge Graph-Enhanced Retrieval-Augmented Generation ({KG-RAG})}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2311.17696
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2311.17696
+      \endverb
+    \endentry
+    \entry{duckworth2013true}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=06006d4edd801ea3ee3fa7a1e97e52a5}{%
+           family={Duckworth},
+           familyi={D\bibinitperiod},
+           given={Angela\bibnamedelima Lee},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b23748c3a01643b03f79d07e802e8359}{%
+           family={Eskreis-Winkler},
+           familyi={E\bibinithyphendelim W\bibinitperiod},
+           given={Lauren},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \strng{fullhash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \strng{bibnamehash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \strng{authorbibnamehash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \strng{authornamehash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \strng{authorfullhash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{APS Observer}
+      \field{title}{True Grit}
+      \field{volume}{26}
+      \field{year}{2013}
+    \endentry
+    \entry{duran2021clt}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ba4359aa828382687dcb14813f5c80c3}{%
+           family={Duran},
+           familyi={D\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5fbfb1f306ce1d0f6a0153a557c8f7ee}{%
+           family={Zavgorodniaia},
+           familyi={Z\bibinitperiod},
+           given={Albina},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4cfe72a0e57692da14fe2e73f3a78b4}{%
+           family={Sorva},
+           familyi={S\bibinitperiod},
+           given={Juha},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a94266a018781ae225cb77e0349375fb}
+      \strng{fullhash}{5b94b58242ca2fefd17b8971f366d92b}
+      \strng{bibnamehash}{5b94b58242ca2fefd17b8971f366d92b}
+      \strng{authorbibnamehash}{5b94b58242ca2fefd17b8971f366d92b}
+      \strng{authornamehash}{a94266a018781ae225cb77e0349375fb}
+      \strng{authorfullhash}{5b94b58242ca2fefd17b8971f366d92b}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Preprint}
+      \field{title}{Cognitive Load Theory in Computing Education Research: A Review}
+      \field{year}{2021}
+    \endentry
+    \entry{ericsson1993deliberate}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5c76c30e3322723234ede94dec1b1269}{%
+           family={Ericsson},
+           familyi={E\bibinitperiod},
+           given={K.\bibnamedelimi Anders},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9576d6af62f6de5836495ca23c4127ec}{%
+           family={Krampe},
+           familyi={K\bibinitperiod},
+           given={Ralf\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34058acee077ca76382963ca3f50987e}{%
+           family={Tesch-Römer},
+           familyi={T\bibinithyphendelim R\bibinitperiod},
+           given={Clemens},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a13f91bff35ef57cd8d36a5086d87118}
+      \strng{fullhash}{0fa3c10413be239f4fc93d6f2a6ec00a}
+      \strng{bibnamehash}{0fa3c10413be239f4fc93d6f2a6ec00a}
+      \strng{authorbibnamehash}{0fa3c10413be239f4fc93d6f2a6ec00a}
+      \strng{authornamehash}{a13f91bff35ef57cd8d36a5086d87118}
+      \strng{authorfullhash}{0fa3c10413be239f4fc93d6f2a6ec00a}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Review}
+      \field{number}{3}
+      \field{title}{The Role of Deliberate Practice in the Acquisition of Expert Performance}
+      \field{volume}{100}
+      \field{year}{1993}
+      \field{pages}{363\bibrangedash 406}
+      \range{pages}{44}
+    \endentry
+    \entry{Gabbay2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ae3abac182624becdb2f702ea3ec38a3}{%
+           family={Gabbay},
+           familyi={G\bibinitperiod},
+           given={Hagit},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fea1ab8493d31b45e2c0143d835952f2}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Anat},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{822a4ef9c742b88f84442a05295a1a0b}
+      \strng{fullhash}{822a4ef9c742b88f84442a05295a1a0b}
+      \strng{bibnamehash}{822a4ef9c742b88f84442a05295a1a0b}
+      \strng{authorbibnamehash}{822a4ef9c742b88f84442a05295a1a0b}
+      \strng{authornamehash}{822a4ef9c742b88f84442a05295a1a0b}
+      \strng{authorfullhash}{822a4ef9c742b88f84442a05295a1a0b}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 2022 International Conference on Educational Technology}
+      \field{title}{Investigating the Effect of Automated Feedback on Learning Behavior in {MOOCs} for Programming}
+      \field{year}{2022}
+      \verb{doi}
+      \verb https://doi.org/10.5281/zenodo.6853125
+      \endverb
+    \endentry
+    \entry{geeksforgeeks}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{A Computer Science Portal for Geeks}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/
+      \endverb
+    \endentry
+    \entry{hackerrank}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a21651d1fb38b83c7470345536ae7132}{%
+           family={{HackerRank}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a21651d1fb38b83c7470345536ae7132}
+      \strng{fullhash}{a21651d1fb38b83c7470345536ae7132}
+      \strng{bibnamehash}{a21651d1fb38b83c7470345536ae7132}
+      \strng{authorbibnamehash}{a21651d1fb38b83c7470345536ae7132}
+      \strng{authornamehash}{a21651d1fb38b83c7470345536ae7132}
+      \strng{authorfullhash}{a21651d1fb38b83c7470345536ae7132}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Practice Coding. Compete. Get Hired}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.hackerrank.com/
+      \endverb
+      \verb{url}
+      \verb https://www.hackerrank.com/
+      \endverb
+    \endentry
+    \entry{Hanafi2023}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=69b508a8292cda19cc6ae3b3c512c5ea}{%
+           family={Hanafi},
+           familyi={H\bibinitperiod},
+           given={Hafizul},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=948645a2a422ebea22a68279a3320521}{%
+           family={Selamat},
+           familyi={S\bibinitperiod},
+           given={Abu},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce83b18ba5b7137ac14fd7d9a3121cd9}{%
+           family={Ghani},
+           familyi={G\bibinitperiod},
+           given={Miharaini},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8617bf53184f4ad3bb868f4bca34f8d7}{%
+           family={Mustafa},
+           familyi={M\bibinitperiod},
+           given={Wan},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56dc9cbdbbc399483de077477a5bbc30}{%
+           family={Harun},
+           familyi={H\bibinitperiod},
+           given={Mohd},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e5c4f0a4f9a8f37641554b48c5e3feb}{%
+           family={Naning},
+           familyi={N\bibinitperiod},
+           given={Fatin},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8676e7fc16a1eb5b15a3439414f1a25}{%
+           family={Huda},
+           familyi={H\bibinitperiod},
+           given={Miftachul},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84bb49822cb72784052373c105f1635b}{%
+           family={Alkhayyat},
+           familyi={A\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6613807ac51e8057a177c99acde0048b}
+      \strng{fullhash}{776995521502f48e623c269d53a429e4}
+      \strng{bibnamehash}{776995521502f48e623c269d53a429e4}
+      \strng{authorbibnamehash}{776995521502f48e623c269d53a429e4}
+      \strng{authornamehash}{6613807ac51e8057a177c99acde0048b}
+      \strng{authorfullhash}{776995521502f48e623c269d53a429e4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Advanced Research in Applied Sciences and Engineering Technology}
+      \field{number}{3}
+      \field{title}{A Review of Learner’s Model for Programming in Teaching and Learning}
+      \field{volume}{33}
+      \field{year}{2023}
+      \field{pages}{169\bibrangedash 184}
+      \range{pages}{16}
+      \verb{doi}
+      \verb https://doi.org/10.37934/araset.33.3.169184
+      \endverb
+    \endentry
+    \entry{cs50_harvard}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2018dc9017ff4522da542d27f6638522}{%
+           family={{Harvard University}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{2018dc9017ff4522da542d27f6638522}
+      \strng{fullhash}{2018dc9017ff4522da542d27f6638522}
+      \strng{bibnamehash}{2018dc9017ff4522da542d27f6638522}
+      \strng{authorbibnamehash}{2018dc9017ff4522da542d27f6638522}
+      \strng{authornamehash}{2018dc9017ff4522da542d27f6638522}
+      \strng{authorfullhash}{2018dc9017ff4522da542d27f6638522}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Plataforma: edX}
+      \field{title}{CS50: Introduction to Computer Science}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://cs50.harvard.edu/x/
+      \endverb
+      \verb{url}
+      \verb https://cs50.harvard.edu/x/
+      \endverb
+    \endentry
+    \entry{katrib_programar}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f0fbc40816036f11697d872cd20d734}{%
+           family={Katrib},
+           familyi={K\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad de La Habana}%
+      }
+      \strng{namehash}{1f0fbc40816036f11697d872cd20d734}
+      \strng{fullhash}{1f0fbc40816036f11697d872cd20d734}
+      \strng{bibnamehash}{1f0fbc40816036f11697d872cd20d734}
+      \strng{authorbibnamehash}{1f0fbc40816036f11697d872cd20d734}
+      \strng{authornamehash}{1f0fbc40816036f11697d872cd20d734}
+      \strng{authorfullhash}{1f0fbc40816036f11697d872cd20d734}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Con la colaboración de Ludwig Leonard, Leonardo Paneque, Alejandro Piad, Lester Sánchez y Alejandro Tamayo}
+      \field{title}{Empezar a Programar: Un Enfoque Multiparadigma con C\#}
+      \field{year}{2020}
+    \endentry
+    \entry{leetcode}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=071fda8ffed879b16c3308d2133bac46}{%
+           family={{LeetCode}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{071fda8ffed879b16c3308d2133bac46}
+      \strng{fullhash}{071fda8ffed879b16c3308d2133bac46}
+      \strng{bibnamehash}{071fda8ffed879b16c3308d2133bac46}
+      \strng{authorbibnamehash}{071fda8ffed879b16c3308d2133bac46}
+      \strng{authornamehash}{071fda8ffed879b16c3308d2133bac46}
+      \strng{authorfullhash}{071fda8ffed879b16c3308d2133bac46}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Level Up Your Coding Skills and Prepare for Interviews}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://leetcode.com/
+      \endverb
+      \verb{url}
+      \verb https://leetcode.com/
+      \endverb
+    \endentry
+    \entry{leinonen2021exploring}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e05dd3a598dd9694778231dc37efb331}{%
+           family={Leinonen},
+           familyi={L\bibinitperiod},
+           given={Juho},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94639dd5d489d2e9ef5990c03ec52b20}{%
+           family={Denny},
+           familyi={D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=52206bd91bfea7202dbe2584ab6392bc}{%
+           family={Whalley},
+           familyi={W\bibinitperiod},
+           given={Jacqueline},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{b4ee107aabe724e54bf6c3c115e73911}
+      \strng{fullhash}{95eeb2cf46b86d7c5f9a402087884404}
+      \strng{bibnamehash}{95eeb2cf46b86d7c5f9a402087884404}
+      \strng{authorbibnamehash}{95eeb2cf46b86d7c5f9a402087884404}
+      \strng{authornamehash}{b4ee107aabe724e54bf6c3c115e73911}
+      \strng{authorfullhash}{95eeb2cf46b86d7c5f9a402087884404}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Australasian Computing Education Conference (ACE '21)}
+      \field{title}{Exploring the Effects of Contextualized Problem Descriptions on Problem Solving}
+      \field{year}{2021}
+      \field{pages}{30\bibrangedash 39}
+      \range{pages}{10}
+    \endentry
+    \entry{JOHNLEMAY2021100056}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=baa930268deab6546ee407f82f2f247f}{%
+           family={Lemay},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima John},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99feeec68ff23a74afaf27477e7d0a76}{%
+           family={Basnet},
+           familyi={B\bibinitperiod},
+           given={Ram\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e4d73decb6d41d0726dcdcd0e78b56c}{%
+           family={Doleck},
+           familyi={D\bibinitperiod},
+           given={Tenzin},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e2d7785b85c70f19fc91a97a83a7ec3}{%
+           family={Bazelais},
+           familyi={B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84784ce914b56be91f13be765490ab57}{%
+           family={Saxena},
+           familyi={S\bibinitperiod},
+           given={Anoop},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e044e726c30c7157596720ae39ca3dfb}
+      \strng{fullhash}{6c53002ea67d2802768f66191e84fd7f}
+      \strng{bibnamehash}{6c53002ea67d2802768f66191e84fd7f}
+      \strng{authorbibnamehash}{6c53002ea67d2802768f66191e84fd7f}
+      \strng{authornamehash}{e044e726c30c7157596720ae39ca3dfb}
+      \strng{authorfullhash}{6c53002ea67d2802768f66191e84fd7f}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers and Education Open}
+      \field{title}{Instructional Interventions for Computational Thinking: Examining the Link Between Computational Thinking and Academic Performance}
+      \field{volume}{2}
+      \field{year}{2021}
+      \field{pages}{100056}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.caeo.2021.100056
+      \endverb
+    \endentry
+    \entry{lobb2016coderunner}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=372956bf64ff62f7e8923dd7047ecbb2}{%
+           family={Lobb},
+           familyi={L\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0e8679e1088d703ae03ad21ea83a643}{%
+           family={Harlow},
+           familyi={H\bibinitperiod},
+           given={Jenny},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \strng{fullhash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \strng{bibnamehash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \strng{authorbibnamehash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \strng{authornamehash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \strng{authorfullhash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Inroads}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Coderunner: A Tool for Assessing Computer Programming Skills}
+      \field{volume}{7}
+      \field{year}{2016}
+      \field{pages}{47\bibrangedash 51}
+      \range{pages}{5}
+    \endentry
+    \entry{mit_60001}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8e90f046a0b940d27dedd76ee8138e74}{%
+           family={{Massachusetts Institute of Technology (MIT)}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e90f046a0b940d27dedd76ee8138e74}
+      \strng{fullhash}{8e90f046a0b940d27dedd76ee8138e74}
+      \strng{bibnamehash}{8e90f046a0b940d27dedd76ee8138e74}
+      \strng{authorbibnamehash}{8e90f046a0b940d27dedd76ee8138e74}
+      \strng{authornamehash}{8e90f046a0b940d27dedd76ee8138e74}
+      \strng{authorfullhash}{8e90f046a0b940d27dedd76ee8138e74}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Plataforma: edX (MIT OpenCourseWare)}
+      \field{title}{Introduction to Computer Science and Programming in Python}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/
+      \endverb
+      \verb{url}
+      \verb https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/
+      \endverb
+    \endentry
+    \entry{Medeiros2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ce4196fa0079cbee1349cae7295648e1}{%
+           family={Medeiros},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d79624f05f217761bd5bcda573e9966b}{%
+           family={Ramalho},
+           familyi={R\bibinitperiod},
+           given={G.\bibnamedelimi L.},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4169d9af95934f5c670177ba0e3bb75}{%
+           family={Falcão},
+           familyi={F\bibinitperiod},
+           given={T.\bibnamedelimi P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b9ff67135f3f0039a559042d5bee009c}
+      \strng{fullhash}{8028e44128a5bafb60f0b346acc82299}
+      \strng{bibnamehash}{8028e44128a5bafb60f0b346acc82299}
+      \strng{authorbibnamehash}{8028e44128a5bafb60f0b346acc82299}
+      \strng{authornamehash}{b9ff67135f3f0039a559042d5bee009c}
+      \strng{authorfullhash}{8028e44128a5bafb60f0b346acc82299}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Education}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{A Systematic Literature Review on Teaching and Learning Introductory Programming in Higher Education}
+      \field{volume}{62}
+      \field{year}{2019}
+      \field{pages}{77\bibrangedash 90}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TE.2018.2864133
+      \endverb
+    \endentry
+    \entry{Messer2024}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=559dc6da24958a40cbec6010a76e304f}{%
+           family={Messer},
+           familyi={M\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2987dd4f6ef86ef095be77c06797c4d2}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Neil\bibnamedelimb C.\bibnamedelimi C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d3bbf5ef136dbddf873344bc27f03d7}{%
+           family={Kölling},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45839b8c48d6acfefc6d47d17ac493b5}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Miaojing},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{73ea511823f420271b6d68a92260c35c}
+      \strng{fullhash}{f6757956439bcdb5ba9f335600a68014}
+      \strng{bibnamehash}{f6757956439bcdb5ba9f335600a68014}
+      \strng{authorbibnamehash}{f6757956439bcdb5ba9f335600a68014}
+      \strng{authornamehash}{73ea511823f420271b6d68a92260c35c}
+      \strng{authorfullhash}{f6757956439bcdb5ba9f335600a68014}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Computing Education}
+      \field{number}{1}
+      \field{title}{Automated Grading and Feedback Tools for Programming Education: {A} Systematic Review}
+      \field{volume}{24}
+      \field{year}{2024}
+      \field{pages}{10}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1145/3636515
+      \endverb
+    \endentry
+    \entry{copilot}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={{Microsoft}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{GitHub Copilot}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://github.com/features/copilot
+      \endverb
+      \verb{url}
+      \verb https://github.com/features/copilot
+      \endverb
+    \endentry
+    \entry{microsoft-docs}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={{Microsoft}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Microsoft Docs – Developer Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/
+      \endverb
+    \endentry
+    \entry{NAS2018}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7712180ec1b113ea720ee1781bc0dfba}{%
+           family={{National Academies of Sciences, Engineering, and Medicine}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Academies Press}%
+      }
+      \strng{namehash}{7712180ec1b113ea720ee1781bc0dfba}
+      \strng{fullhash}{7712180ec1b113ea720ee1781bc0dfba}
+      \strng{bibnamehash}{7712180ec1b113ea720ee1781bc0dfba}
+      \strng{authorbibnamehash}{7712180ec1b113ea720ee1781bc0dfba}
+      \strng{authornamehash}{7712180ec1b113ea720ee1781bc0dfba}
+      \strng{authorfullhash}{7712180ec1b113ea720ee1781bc0dfba}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Assessing and Responding to the Growth of Computer Science Undergraduate Enrollments}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.17226/24926
+      \endverb
+    \endentry
+    \entry{chatgpt}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={{OpenAI}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{bibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorbibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authornamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{ChatGPT}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://openai.com/chatgpt
+      \endverb
+      \verb{url}
+      \verb https://openai.com/chatgpt
+      \endverb
+    \endentry
+    \entry{java-api}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=30162ed78b6c10f731411f2fc440c24f}{%
+           family={{Oracle}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{fullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{bibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorbibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authornamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorfullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Java Platform, Standard Edition Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://docs.oracle.com/javase/
+      \endverb
+      \verb{url}
+      \verb https://docs.oracle.com/javase/
+      \endverb
+    \endentry
+    \entry{overklift2019}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=22489455581c84e41bfed77b39daa095}{%
+           family={Overklift},
+           familyi={O\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Delft University of Technology}%
+      }
+      \strng{namehash}{22489455581c84e41bfed77b39daa095}
+      \strng{fullhash}{22489455581c84e41bfed77b39daa095}
+      \strng{bibnamehash}{22489455581c84e41bfed77b39daa095}
+      \strng{authorbibnamehash}{22489455581c84e41bfed77b39daa095}
+      \strng{authornamehash}{22489455581c84e41bfed77b39daa095}
+      \strng{authorfullhash}{22489455581c84e41bfed77b39daa095}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{Intelligent Agents That Support Students with Self-Study}
+      \field{type}{mathesis}
+      \field{year}{2019}
+    \endentry
+    \entry{proskuraLytvynova2020}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ea543f7d5d6a15943d08e550fb7fbafe}{%
+           family={Proskura},
+           familyi={P\bibinitperiod},
+           given={Svitlana\bibnamedelima L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2d86db8a5b2e587c335d8a8cf9eada1}{%
+           family={Lytvynova},
+           familyi={L\bibinitperiod},
+           given={Svitlana\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Kyiv, Ukraine}%
+      }
+      \list{publisher}{3}{%
+        {National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic Institute”}%
+        {Institute of Information Technologies}%
+        {Learning Tools}%
+      }
+      \strng{namehash}{7310d60e3bf9b936932893ed78c26bf1}
+      \strng{fullhash}{7310d60e3bf9b936932893ed78c26bf1}
+      \strng{bibnamehash}{7310d60e3bf9b936932893ed78c26bf1}
+      \strng{authorbibnamehash}{7310d60e3bf9b936932893ed78c26bf1}
+      \strng{authornamehash}{7310d60e3bf9b936932893ed78c26bf1}
+      \strng{authorfullhash}{7310d60e3bf9b936932893ed78c26bf1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Organization of Independent Studying of Future Bachelors in Computer Science within Higher Education Institutions of Ukraine}
+      \field{year}{2020}
+    \endentry
+    \entry{python}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c7b5508dc5e59a2846d22617276cc27c}{%
+           family={{Python Software Foundation}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{bibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorbibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authornamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Python Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.python.org/doc/
+      \endverb
+      \verb{url}
+      \verb https://www.python.org/doc/
+      \endverb
+    \endentry
+    \entry{reddit}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b632c55a33530d1433e29ffc09ba1151}{%
+           family={{Reddit}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b632c55a33530d1433e29ffc09ba1151}
+      \strng{fullhash}{b632c55a33530d1433e29ffc09ba1151}
+      \strng{bibnamehash}{b632c55a33530d1433e29ffc09ba1151}
+      \strng{authorbibnamehash}{b632c55a33530d1433e29ffc09ba1151}
+      \strng{authornamehash}{b632c55a33530d1433e29ffc09ba1151}
+      \strng{authorfullhash}{b632c55a33530d1433e29ffc09ba1151}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Dive into Anything}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.reddit.com/
+      \endverb
+      \verb{url}
+      \verb https://www.reddit.com/
+      \endverb
+    \endentry
+    \entry{rosenzweig2019expectancy}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=188eea0389cafe48223834f58c73f37b}{%
+           family={Rosenzweig},
+           familyi={R\bibinitperiod},
+           given={Emily\bibnamedelima Q.},
+           giveni={E\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30b38570f5725d2d242577a2c753c52a}{%
+           family={Wigfield},
+           familyi={W\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f06b8e1a1f35637b65aa68a270278546}{%
+           family={Eccles},
+           familyi={E\bibinitperiod},
+           given={Jacquelyne\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{86d992be6eb42600cd9f6fa9c2437c8b}
+      \strng{fullhash}{4e7f0bda6d956d06875f48b56c5d84b4}
+      \strng{bibnamehash}{4e7f0bda6d956d06875f48b56c5d84b4}
+      \strng{authorbibnamehash}{4e7f0bda6d956d06875f48b56c5d84b4}
+      \strng{authornamehash}{86d992be6eb42600cd9f6fa9c2437c8b}
+      \strng{authorfullhash}{4e7f0bda6d956d06875f48b56c5d84b4}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Expectancy-Value Theory and Its Relevance for Student Motivation and Learning}
+      \field{year}{2019}
+    \endentry
+    \entry{Sarsa_2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b642b4058f3e1e63d62281b993aaa0c8}{%
+           family={Sarsa},
+           familyi={S\bibinitperiod},
+           given={Sami},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94639dd5d489d2e9ef5990c03ec52b20}{%
+           family={Denny},
+           familyi={D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b7a0a0969bb973d5e4e5945774c76c4}{%
+           family={Hellas},
+           familyi={H\bibinitperiod},
+           given={Arto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e05dd3a598dd9694778231dc37efb331}{%
+           family={Leinonen},
+           familyi={L\bibinitperiod},
+           given={Juho},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{aef307ae4ca331e2f3de69ba697166a2}
+      \strng{fullhash}{a5ba6b086781605b69901748a1278b88}
+      \strng{bibnamehash}{a5ba6b086781605b69901748a1278b88}
+      \strng{authorbibnamehash}{a5ba6b086781605b69901748a1278b88}
+      \strng{authornamehash}{aef307ae4ca331e2f3de69ba697166a2}
+      \strng{authorfullhash}{a5ba6b086781605b69901748a1278b88}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 2022 ACM Conference on International Computing Education Research - Volume 1 (ICER 2022)}
+      \field{month}{8}
+      \field{title}{Automatic Generation of Programming Exercises and Code Explanations Using Large Language Models}
+      \field{year}{2022}
+      \field{pages}{27\bibrangedash 43}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1145/3501385.3543957
+      \endverb
+    \endentry
+    \entry{shute2008focus}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=817b19f1186b605320c603ee888c7850}{%
+           family={Shute},
+           familyi={S\bibinitperiod},
+           given={Valerie\bibnamedelima J.},
+           giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{817b19f1186b605320c603ee888c7850}
+      \strng{fullhash}{817b19f1186b605320c603ee888c7850}
+      \strng{bibnamehash}{817b19f1186b605320c603ee888c7850}
+      \strng{authorbibnamehash}{817b19f1186b605320c603ee888c7850}
+      \strng{authornamehash}{817b19f1186b605320c603ee888c7850}
+      \strng{authorfullhash}{817b19f1186b605320c603ee888c7850}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Educational Research}
+      \field{number}{1}
+      \field{title}{Focus on Formative Feedback}
+      \field{volume}{78}
+      \field{year}{2008}
+      \field{pages}{153\bibrangedash 189}
+      \range{pages}{37}
+    \endentry
+    \entry{stackoverflow}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=84d7dc19766c446f5e4084e8fce87f82}{%
+           family={{Stack Overflow}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{fullhash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{bibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorbibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authornamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorfullhash}{84d7dc19766c446f5e4084e8fce87f82}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Where Developers Learn, Share, \& Build Careers}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://stackoverflow.com/
+      \endverb
+      \verb{url}
+      \verb https://stackoverflow.com/
+      \endverb
+    \endentry
+    \entry{Troelsen2021}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=22361bd7f81fe2af5ff9c7f8abb3dbc8}{%
+           family={Troelsen},
+           familyi={T\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9be660109141e022b8c2cd793ec9af5b}{%
+           family={Japikse},
+           familyi={J\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \strng{fullhash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \strng{bibnamehash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \strng{authorbibnamehash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \strng{authornamehash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \strng{authorfullhash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pro C\# 9 with .NET 5: Foundational Principles and Practices in Programming}
+      \field{year}{2021}
+    \endentry
+    \entry{plan_estudio_e_2017}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1614680c564978011009f6165ad28aeb}{%
+           family={{Universidad de La Habana}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{1614680c564978011009f6165ad28aeb}
+      \strng{fullhash}{1614680c564978011009f6165ad28aeb}
+      \strng{bibnamehash}{1614680c564978011009f6165ad28aeb}
+      \strng{authorbibnamehash}{1614680c564978011009f6165ad28aeb}
+      \strng{authornamehash}{1614680c564978011009f6165ad28aeb}
+      \strng{authorfullhash}{1614680c564978011009f6165ad28aeb}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Plan de Estudio ``E'' de la carrera de Ciencia de la Computación}
+      \field{year}{2017}
+      \field{pages}{172\bibrangedash 176}
+      \range{pages}{5}
+    \endentry
+    \entry{vihavainen2011extreme}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5dd3681d700749aa845563d023e73a42}{%
+           family={Vihavainen},
+           familyi={V\bibinitperiod},
+           given={Arto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41ccb12b77076261aa780d36bd07db1a}{%
+           family={Paksula},
+           familyi={P\bibinitperiod},
+           given={Matti},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1f138f6acda7eb341c531bd0c903aa3}{%
+           family={Luukkainen},
+           familyi={L\bibinitperiod},
+           given={Matti},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{85b6351cade80e1d08a52f8165e9367c}
+      \strng{fullhash}{f476ab36b50e434648d7bea7f798bdee}
+      \strng{bibnamehash}{f476ab36b50e434648d7bea7f798bdee}
+      \strng{authorbibnamehash}{f476ab36b50e434648d7bea7f798bdee}
+      \strng{authornamehash}{85b6351cade80e1d08a52f8165e9367c}
+      \strng{authorfullhash}{f476ab36b50e434648d7bea7f798bdee}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 42nd ACM Technical Symposium on Computer Science Education}
+      \field{title}{Extreme Apprenticeship Method in Teaching Programming for Beginners}
+      \field{year}{2011}
+      \field{pages}{93\bibrangedash 98}
+      \range{pages}{6}
+    \endentry
+    \entry{vscode}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d1c9b8165b97419eaa86413d8aa02ce7}{%
+           family={{Visual Studio Code}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \strng{fullhash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \strng{bibnamehash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \strng{authorbibnamehash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \strng{authornamehash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \strng{authorfullhash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 29/1/2025}
+      \field{title}{Documentación oficial de Visual Studio Code}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://code.visualstudio.com/
+      \endverb
+      \verb{url}
+      \verb https://code.visualstudio.com/
+      \endverb
+    \endentry
+    \entry{vygotsky1978mind}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=650d0181b6986d342c4efa569df57cdd}{%
+           family={Vygotsky},
+           familyi={V\bibinitperiod},
+           given={Lev\bibnamedelima Semenovich},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea60a212c22a0d36fa7c259d1b4b52d0}{%
+           family={Cole},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{75c7698cb25f72f2659a1807ce8fd665}
+      \strng{fullhash}{75c7698cb25f72f2659a1807ce8fd665}
+      \strng{bibnamehash}{75c7698cb25f72f2659a1807ce8fd665}
+      \strng{authorbibnamehash}{75c7698cb25f72f2659a1807ce8fd665}
+      \strng{authornamehash}{75c7698cb25f72f2659a1807ce8fd665}
+      \strng{authorfullhash}{75c7698cb25f72f2659a1807ce8fd665}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mind in Society: Development of Higher Psychological Processes}
+      \field{year}{1978}
+    \endentry
+    \entry{wong2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=71b72230ff626ebf4c0a8bc4c805e08c}{%
+           family={Wong-Aitken},
+           familyi={W\bibinithyphendelim A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67acaa2ea8f6c50f2a1a76e495777d8e}{%
+           family={Cukierman},
+           familyi={C\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=060cea460d424cef7181907129b3f8c1}{%
+           family={Chilana},
+           familyi={C\bibinitperiod},
+           given={Parmit\bibnamedelima K.},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{44809271a5b6e60742c4b7089a1850e6}
+      \strng{fullhash}{dfc5dc2cc6cdada1dab520f30917dd8e}
+      \strng{bibnamehash}{dfc5dc2cc6cdada1dab520f30917dd8e}
+      \strng{authorbibnamehash}{dfc5dc2cc6cdada1dab520f30917dd8e}
+      \strng{authornamehash}{44809271a5b6e60742c4b7089a1850e6}
+      \strng{authorfullhash}{dfc5dc2cc6cdada1dab520f30917dd8e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 27th ACM Conference on Innovation and Technology in Computer Science Education Vol. 1}
+      \field{title}{``It Depends on Whether or Not I'm Lucky'' How Students in an Introductory Programming Course Discover, Select, and Assess the Utility of Web-Based Resources}
+      \field{year}{2022}
+      \field{pages}{512\bibrangedash 518}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1145/3502718.3524751
+      \endverb
+    \endentry
+    \entry{wrenn2018whotests}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fb271211c517d3b1a32c82483f5209c7}{%
+           family={Wrenn},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7416298c547d841aa97cdf04c4564f7}{%
+           family={Krishnamurthi},
+           familyi={K\bibinitperiod},
+           given={Shriram},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b4c9b20a2597002b002a6acd0b2c3a8}{%
+           family={Fisler},
+           familyi={F\bibinitperiod},
+           given={Kathi},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{b2ef98300277d053dbd267353d9f9948}
+      \strng{fullhash}{2292c36aa5cab6cdb8e1d52fc4ba6110}
+      \strng{bibnamehash}{2292c36aa5cab6cdb8e1d52fc4ba6110}
+      \strng{authorbibnamehash}{2292c36aa5cab6cdb8e1d52fc4ba6110}
+      \strng{authornamehash}{b2ef98300277d053dbd267353d9f9948}
+      \strng{authorfullhash}{2292c36aa5cab6cdb8e1d52fc4ba6110}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 2018 ACM Conference on International Computing Education Research (ICER '18)}
+      \field{title}{Who Tests the Testers?}
+      \field{year}{2018}
+      \field{pages}{51\bibrangedash 59}
+      \range{pages}{9}
+    \endentry
+    \entry{youtube}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8dd1bae8da2e2408210d0656fbe6b7d1}{%
+           family={{YouTube}},
+           familyi={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \strng{fullhash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \strng{bibnamehash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \strng{authorbibnamehash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \strng{authornamehash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \strng{authorfullhash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{YouTube – Video Sharing Platform}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.youtube.com/
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{Albahari2017}{book}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=4d458ac7ef22f277eb5c034e366d8197}{%
+           family={Albahari},
+           familyi={A\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=7749a0c2e59beb5ed788a47b6b1c2e6e}{%
+           family={Albahari},
+           familyi={A\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \strng{fullhash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \strng{bibnamehash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \strng{authorbibnamehash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \strng{authornamehash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \strng{authorfullhash}{d27bde4ec67b48c3f4415168c8dfbebd}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{C\# 7.0 in a Nutshell: The Definitive Reference}
+      \field{year}{2017}
+    \endentry
+    \entry{allen2018msp}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=88a696d256fb9b10af2db180e51de21a}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={Joe\bibnamedelima Michael},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=82180a3ff6a4ba73ce79d0a842e78a03}{%
+           family={Vahid},
+           familyi={V\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbbf773a76f22a872dc7c27c3cae2754}{%
+           family={Downey},
+           familyi={D\bibinitperiod},
+           given={Kelly},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab6545caf997a2b957581671a5a9ebb5}{%
+           family={Edgcomb},
+           familyi={E\bibinitperiod},
+           given={Alex\bibnamedelima Daniel},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a1faca542823780f9304cbbd3e9c352}
+      \strng{fullhash}{9c40b3d77ae5e3d2c0f5689d9e309e1e}
+      \strng{bibnamehash}{9c40b3d77ae5e3d2c0f5689d9e309e1e}
+      \strng{authorbibnamehash}{9c40b3d77ae5e3d2c0f5689d9e309e1e}
+      \strng{authornamehash}{4a1faca542823780f9304cbbd3e9c352}
+      \strng{authorfullhash}{9c40b3d77ae5e3d2c0f5689d9e309e1e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2018 ASEE Annual Conference \& Exposition}
+      \field{title}{Weekly Programs in a CS1 Class: Experiences with Auto-Graded Many-Small Programs (MSP)}
+      \field{year}{2018}
+    \endentry
+    \entry{bandura1977self}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3dda0f93a5c43e1392668692b92f8231}{%
+           family={Bandura},
+           familyi={B\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3dda0f93a5c43e1392668692b92f8231}
+      \strng{fullhash}{3dda0f93a5c43e1392668692b92f8231}
+      \strng{bibnamehash}{3dda0f93a5c43e1392668692b92f8231}
+      \strng{authorbibnamehash}{3dda0f93a5c43e1392668692b92f8231}
+      \strng{authornamehash}{3dda0f93a5c43e1392668692b92f8231}
+      \strng{authorfullhash}{3dda0f93a5c43e1392668692b92f8231}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Review}
+      \field{number}{2}
+      \field{title}{Self-Efficacy: Toward a Unifying Theory of Behavioral Change}
+      \field{volume}{84}
+      \field{year}{1977}
+      \field{pages}{191\bibrangedash 215}
+      \range{pages}{25}
+    \endentry
+    \entry{coto02012022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=72e5573260159d0a7ece0287ee909b85}{%
+           family={Coto},
+           familyi={C\bibinitperiod},
+           given={Mayela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b61c5685bf473ba3a8623097c8e74480}{%
+           family={Mora},
+           familyi={M\bibinitperiod},
+           given={Sonia},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d18a60c34f1aef01c125751a683245e3}{%
+           family={Grass},
+           familyi={G\bibinitperiod},
+           given={Beatriz},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98ede64f2e1959fc78c81af18658c1c3}{%
+           family={Murillo-Morera},
+           familyi={M\bibinithyphendelim M\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{bfabc79235e2608e09b8efeef296cf7e}
+      \strng{fullhash}{7421e305bec0b2c5dd324f830b7df9f3}
+      \strng{bibnamehash}{7421e305bec0b2c5dd324f830b7df9f3}
+      \strng{authorbibnamehash}{7421e305bec0b2c5dd324f830b7df9f3}
+      \strng{authornamehash}{bfabc79235e2608e09b8efeef296cf7e}
+      \strng{authorfullhash}{7421e305bec0b2c5dd324f830b7df9f3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Science Education}
+      \field{number}{1}
+      \field{title}{Emotions and Programming Learning: Systematic Mapping}
+      \field{volume}{32}
+      \field{year}{2022}
+      \field{pages}{30\bibrangedash 65}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1080/08993408.2021.1920816
+      \endverb
+    \endentry
+    \entry{dong2025buildaitutoradapt}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=f9694a218d9d255e7e93626b9f6f25a9}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Chenxi},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c8c895ed1c502e9939dd40a288fb07b}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Yimin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a4cd7f10afb22227518b745dd4c3fd1}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Kan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0fb41c383fc02b1ca8d7bd2f65caaaee}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Shupei},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ff5de183173ada710390914cd82560b8}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Chujie},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{accf7a911265b9ed4a2adf49b8d2c176}
+      \strng{fullhash}{207882eeac62751c23ca118bce25d2bd}
+      \strng{bibnamehash}{207882eeac62751c23ca118bce25d2bd}
+      \strng{authorbibnamehash}{207882eeac62751c23ca118bce25d2bd}
+      \strng{authornamehash}{accf7a911265b9ed4a2adf49b8d2c176}
+      \strng{authorfullhash}{207882eeac62751c23ca118bce25d2bd}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2311.17696}
+      \field{title}{How to Build an {AI} Tutor That Can Adapt to Any Course Using Knowledge Graph-Enhanced Retrieval-Augmented Generation ({KG-RAG})}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2311.17696
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2311.17696
+      \endverb
+    \endentry
+    \entry{duckworth2013true}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=06006d4edd801ea3ee3fa7a1e97e52a5}{%
+           family={Duckworth},
+           familyi={D\bibinitperiod},
+           given={Angela\bibnamedelima Lee},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b23748c3a01643b03f79d07e802e8359}{%
+           family={Eskreis-Winkler},
+           familyi={E\bibinithyphendelim W\bibinitperiod},
+           given={Lauren},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \strng{fullhash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \strng{bibnamehash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \strng{authorbibnamehash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \strng{authornamehash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \strng{authorfullhash}{fb059d1b0834c8ec9ef711046d2c4013}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{APS Observer}
+      \field{title}{True Grit}
+      \field{volume}{26}
+      \field{year}{2013}
+    \endentry
+    \entry{duran2021clt}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ba4359aa828382687dcb14813f5c80c3}{%
+           family={Duran},
+           familyi={D\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5fbfb1f306ce1d0f6a0153a557c8f7ee}{%
+           family={Zavgorodniaia},
+           familyi={Z\bibinitperiod},
+           given={Albina},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4cfe72a0e57692da14fe2e73f3a78b4}{%
+           family={Sorva},
+           familyi={S\bibinitperiod},
+           given={Juha},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a94266a018781ae225cb77e0349375fb}
+      \strng{fullhash}{5b94b58242ca2fefd17b8971f366d92b}
+      \strng{bibnamehash}{5b94b58242ca2fefd17b8971f366d92b}
+      \strng{authorbibnamehash}{5b94b58242ca2fefd17b8971f366d92b}
+      \strng{authornamehash}{a94266a018781ae225cb77e0349375fb}
+      \strng{authorfullhash}{5b94b58242ca2fefd17b8971f366d92b}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Preprint}
+      \field{title}{Cognitive Load Theory in Computing Education Research: A Review}
+      \field{year}{2021}
+    \endentry
+    \entry{ericsson1993deliberate}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5c76c30e3322723234ede94dec1b1269}{%
+           family={Ericsson},
+           familyi={E\bibinitperiod},
+           given={K.\bibnamedelimi Anders},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9576d6af62f6de5836495ca23c4127ec}{%
+           family={Krampe},
+           familyi={K\bibinitperiod},
+           given={Ralf\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34058acee077ca76382963ca3f50987e}{%
+           family={Tesch-Römer},
+           familyi={T\bibinithyphendelim R\bibinitperiod},
+           given={Clemens},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a13f91bff35ef57cd8d36a5086d87118}
+      \strng{fullhash}{0fa3c10413be239f4fc93d6f2a6ec00a}
+      \strng{bibnamehash}{0fa3c10413be239f4fc93d6f2a6ec00a}
+      \strng{authorbibnamehash}{0fa3c10413be239f4fc93d6f2a6ec00a}
+      \strng{authornamehash}{a13f91bff35ef57cd8d36a5086d87118}
+      \strng{authorfullhash}{0fa3c10413be239f4fc93d6f2a6ec00a}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Review}
+      \field{number}{3}
+      \field{title}{The Role of Deliberate Practice in the Acquisition of Expert Performance}
+      \field{volume}{100}
+      \field{year}{1993}
+      \field{pages}{363\bibrangedash 406}
+      \range{pages}{44}
+    \endentry
+    \entry{Gabbay2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ae3abac182624becdb2f702ea3ec38a3}{%
+           family={Gabbay},
+           familyi={G\bibinitperiod},
+           given={Hagit},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fea1ab8493d31b45e2c0143d835952f2}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Anat},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{822a4ef9c742b88f84442a05295a1a0b}
+      \strng{fullhash}{822a4ef9c742b88f84442a05295a1a0b}
+      \strng{bibnamehash}{822a4ef9c742b88f84442a05295a1a0b}
+      \strng{authorbibnamehash}{822a4ef9c742b88f84442a05295a1a0b}
+      \strng{authornamehash}{822a4ef9c742b88f84442a05295a1a0b}
+      \strng{authorfullhash}{822a4ef9c742b88f84442a05295a1a0b}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 2022 International Conference on Educational Technology}
+      \field{title}{Investigating the Effect of Automated Feedback on Learning Behavior in {MOOCs} for Programming}
+      \field{year}{2022}
+      \verb{doi}
+      \verb https://doi.org/10.5281/zenodo.6853125
+      \endverb
+    \endentry
+    \entry{geeksforgeeks}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{A Computer Science Portal for Geeks}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/
+      \endverb
+    \endentry
+    \entry{hackerrank}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a21651d1fb38b83c7470345536ae7132}{%
+           family={{HackerRank}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a21651d1fb38b83c7470345536ae7132}
+      \strng{fullhash}{a21651d1fb38b83c7470345536ae7132}
+      \strng{bibnamehash}{a21651d1fb38b83c7470345536ae7132}
+      \strng{authorbibnamehash}{a21651d1fb38b83c7470345536ae7132}
+      \strng{authornamehash}{a21651d1fb38b83c7470345536ae7132}
+      \strng{authorfullhash}{a21651d1fb38b83c7470345536ae7132}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Practice Coding. Compete. Get Hired}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.hackerrank.com/
+      \endverb
+      \verb{url}
+      \verb https://www.hackerrank.com/
+      \endverb
+    \endentry
+    \entry{Hanafi2023}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=69b508a8292cda19cc6ae3b3c512c5ea}{%
+           family={Hanafi},
+           familyi={H\bibinitperiod},
+           given={Hafizul},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=948645a2a422ebea22a68279a3320521}{%
+           family={Selamat},
+           familyi={S\bibinitperiod},
+           given={Abu},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce83b18ba5b7137ac14fd7d9a3121cd9}{%
+           family={Ghani},
+           familyi={G\bibinitperiod},
+           given={Miharaini},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8617bf53184f4ad3bb868f4bca34f8d7}{%
+           family={Mustafa},
+           familyi={M\bibinitperiod},
+           given={Wan},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56dc9cbdbbc399483de077477a5bbc30}{%
+           family={Harun},
+           familyi={H\bibinitperiod},
+           given={Mohd},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e5c4f0a4f9a8f37641554b48c5e3feb}{%
+           family={Naning},
+           familyi={N\bibinitperiod},
+           given={Fatin},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8676e7fc16a1eb5b15a3439414f1a25}{%
+           family={Huda},
+           familyi={H\bibinitperiod},
+           given={Miftachul},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84bb49822cb72784052373c105f1635b}{%
+           family={Alkhayyat},
+           familyi={A\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6613807ac51e8057a177c99acde0048b}
+      \strng{fullhash}{776995521502f48e623c269d53a429e4}
+      \strng{bibnamehash}{776995521502f48e623c269d53a429e4}
+      \strng{authorbibnamehash}{776995521502f48e623c269d53a429e4}
+      \strng{authornamehash}{6613807ac51e8057a177c99acde0048b}
+      \strng{authorfullhash}{776995521502f48e623c269d53a429e4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Advanced Research in Applied Sciences and Engineering Technology}
+      \field{number}{3}
+      \field{title}{A Review of Learner’s Model for Programming in Teaching and Learning}
+      \field{volume}{33}
+      \field{year}{2023}
+      \field{pages}{169\bibrangedash 184}
+      \range{pages}{16}
+      \verb{doi}
+      \verb https://doi.org/10.37934/araset.33.3.169184
+      \endverb
+    \endentry
+    \entry{cs50_harvard}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2018dc9017ff4522da542d27f6638522}{%
+           family={{Harvard University}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{2018dc9017ff4522da542d27f6638522}
+      \strng{fullhash}{2018dc9017ff4522da542d27f6638522}
+      \strng{bibnamehash}{2018dc9017ff4522da542d27f6638522}
+      \strng{authorbibnamehash}{2018dc9017ff4522da542d27f6638522}
+      \strng{authornamehash}{2018dc9017ff4522da542d27f6638522}
+      \strng{authorfullhash}{2018dc9017ff4522da542d27f6638522}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Plataforma: edX}
+      \field{title}{CS50: Introduction to Computer Science}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://cs50.harvard.edu/x/
+      \endverb
+      \verb{url}
+      \verb https://cs50.harvard.edu/x/
+      \endverb
+    \endentry
+    \entry{katrib_programar}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f0fbc40816036f11697d872cd20d734}{%
+           family={Katrib},
+           familyi={K\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad de La Habana}%
+      }
+      \strng{namehash}{1f0fbc40816036f11697d872cd20d734}
+      \strng{fullhash}{1f0fbc40816036f11697d872cd20d734}
+      \strng{bibnamehash}{1f0fbc40816036f11697d872cd20d734}
+      \strng{authorbibnamehash}{1f0fbc40816036f11697d872cd20d734}
+      \strng{authornamehash}{1f0fbc40816036f11697d872cd20d734}
+      \strng{authorfullhash}{1f0fbc40816036f11697d872cd20d734}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Con la colaboración de Ludwig Leonard, Leonardo Paneque, Alejandro Piad, Lester Sánchez y Alejandro Tamayo}
+      \field{title}{Empezar a Programar: Un Enfoque Multiparadigma con C\#}
+      \field{year}{2020}
+    \endentry
+    \entry{leetcode}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=071fda8ffed879b16c3308d2133bac46}{%
+           family={{LeetCode}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{071fda8ffed879b16c3308d2133bac46}
+      \strng{fullhash}{071fda8ffed879b16c3308d2133bac46}
+      \strng{bibnamehash}{071fda8ffed879b16c3308d2133bac46}
+      \strng{authorbibnamehash}{071fda8ffed879b16c3308d2133bac46}
+      \strng{authornamehash}{071fda8ffed879b16c3308d2133bac46}
+      \strng{authorfullhash}{071fda8ffed879b16c3308d2133bac46}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Level Up Your Coding Skills and Prepare for Interviews}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://leetcode.com/
+      \endverb
+      \verb{url}
+      \verb https://leetcode.com/
+      \endverb
+    \endentry
+    \entry{leinonen2021exploring}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e05dd3a598dd9694778231dc37efb331}{%
+           family={Leinonen},
+           familyi={L\bibinitperiod},
+           given={Juho},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94639dd5d489d2e9ef5990c03ec52b20}{%
+           family={Denny},
+           familyi={D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=52206bd91bfea7202dbe2584ab6392bc}{%
+           family={Whalley},
+           familyi={W\bibinitperiod},
+           given={Jacqueline},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{b4ee107aabe724e54bf6c3c115e73911}
+      \strng{fullhash}{95eeb2cf46b86d7c5f9a402087884404}
+      \strng{bibnamehash}{95eeb2cf46b86d7c5f9a402087884404}
+      \strng{authorbibnamehash}{95eeb2cf46b86d7c5f9a402087884404}
+      \strng{authornamehash}{b4ee107aabe724e54bf6c3c115e73911}
+      \strng{authorfullhash}{95eeb2cf46b86d7c5f9a402087884404}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Australasian Computing Education Conference (ACE '21)}
+      \field{title}{Exploring the Effects of Contextualized Problem Descriptions on Problem Solving}
+      \field{year}{2021}
+      \field{pages}{30\bibrangedash 39}
+      \range{pages}{10}
+    \endentry
+    \entry{JOHNLEMAY2021100056}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=baa930268deab6546ee407f82f2f247f}{%
+           family={Lemay},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima John},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99feeec68ff23a74afaf27477e7d0a76}{%
+           family={Basnet},
+           familyi={B\bibinitperiod},
+           given={Ram\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e4d73decb6d41d0726dcdcd0e78b56c}{%
+           family={Doleck},
+           familyi={D\bibinitperiod},
+           given={Tenzin},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e2d7785b85c70f19fc91a97a83a7ec3}{%
+           family={Bazelais},
+           familyi={B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84784ce914b56be91f13be765490ab57}{%
+           family={Saxena},
+           familyi={S\bibinitperiod},
+           given={Anoop},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e044e726c30c7157596720ae39ca3dfb}
+      \strng{fullhash}{6c53002ea67d2802768f66191e84fd7f}
+      \strng{bibnamehash}{6c53002ea67d2802768f66191e84fd7f}
+      \strng{authorbibnamehash}{6c53002ea67d2802768f66191e84fd7f}
+      \strng{authornamehash}{e044e726c30c7157596720ae39ca3dfb}
+      \strng{authorfullhash}{6c53002ea67d2802768f66191e84fd7f}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers and Education Open}
+      \field{title}{Instructional Interventions for Computational Thinking: Examining the Link Between Computational Thinking and Academic Performance}
+      \field{volume}{2}
+      \field{year}{2021}
+      \field{pages}{100056}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.caeo.2021.100056
+      \endverb
+    \endentry
+    \entry{lobb2016coderunner}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=372956bf64ff62f7e8923dd7047ecbb2}{%
+           family={Lobb},
+           familyi={L\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0e8679e1088d703ae03ad21ea83a643}{%
+           family={Harlow},
+           familyi={H\bibinitperiod},
+           given={Jenny},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \strng{fullhash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \strng{bibnamehash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \strng{authorbibnamehash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \strng{authornamehash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \strng{authorfullhash}{d262ee336f3d6d13fcf5517f17bbb6a9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Inroads}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Coderunner: A Tool for Assessing Computer Programming Skills}
+      \field{volume}{7}
+      \field{year}{2016}
+      \field{pages}{47\bibrangedash 51}
+      \range{pages}{5}
+    \endentry
+    \entry{mit_60001}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8e90f046a0b940d27dedd76ee8138e74}{%
+           family={{Massachusetts Institute of Technology (MIT)}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e90f046a0b940d27dedd76ee8138e74}
+      \strng{fullhash}{8e90f046a0b940d27dedd76ee8138e74}
+      \strng{bibnamehash}{8e90f046a0b940d27dedd76ee8138e74}
+      \strng{authorbibnamehash}{8e90f046a0b940d27dedd76ee8138e74}
+      \strng{authornamehash}{8e90f046a0b940d27dedd76ee8138e74}
+      \strng{authorfullhash}{8e90f046a0b940d27dedd76ee8138e74}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Plataforma: edX (MIT OpenCourseWare)}
+      \field{title}{Introduction to Computer Science and Programming in Python}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/
+      \endverb
+      \verb{url}
+      \verb https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/
+      \endverb
+    \endentry
+    \entry{Medeiros2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ce4196fa0079cbee1349cae7295648e1}{%
+           family={Medeiros},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d79624f05f217761bd5bcda573e9966b}{%
+           family={Ramalho},
+           familyi={R\bibinitperiod},
+           given={G.\bibnamedelimi L.},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4169d9af95934f5c670177ba0e3bb75}{%
+           family={Falcão},
+           familyi={F\bibinitperiod},
+           given={T.\bibnamedelimi P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b9ff67135f3f0039a559042d5bee009c}
+      \strng{fullhash}{8028e44128a5bafb60f0b346acc82299}
+      \strng{bibnamehash}{8028e44128a5bafb60f0b346acc82299}
+      \strng{authorbibnamehash}{8028e44128a5bafb60f0b346acc82299}
+      \strng{authornamehash}{b9ff67135f3f0039a559042d5bee009c}
+      \strng{authorfullhash}{8028e44128a5bafb60f0b346acc82299}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Education}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{A Systematic Literature Review on Teaching and Learning Introductory Programming in Higher Education}
+      \field{volume}{62}
+      \field{year}{2019}
+      \field{pages}{77\bibrangedash 90}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TE.2018.2864133
+      \endverb
+    \endentry
+    \entry{Messer2024}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=559dc6da24958a40cbec6010a76e304f}{%
+           family={Messer},
+           familyi={M\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2987dd4f6ef86ef095be77c06797c4d2}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Neil\bibnamedelimb C.\bibnamedelimi C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d3bbf5ef136dbddf873344bc27f03d7}{%
+           family={Kölling},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45839b8c48d6acfefc6d47d17ac493b5}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Miaojing},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{73ea511823f420271b6d68a92260c35c}
+      \strng{fullhash}{f6757956439bcdb5ba9f335600a68014}
+      \strng{bibnamehash}{f6757956439bcdb5ba9f335600a68014}
+      \strng{authorbibnamehash}{f6757956439bcdb5ba9f335600a68014}
+      \strng{authornamehash}{73ea511823f420271b6d68a92260c35c}
+      \strng{authorfullhash}{f6757956439bcdb5ba9f335600a68014}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Computing Education}
+      \field{number}{1}
+      \field{title}{Automated Grading and Feedback Tools for Programming Education: {A} Systematic Review}
+      \field{volume}{24}
+      \field{year}{2024}
+      \field{pages}{10}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1145/3636515
+      \endverb
+    \endentry
+    \entry{copilot}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={{Microsoft}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{GitHub Copilot}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://github.com/features/copilot
+      \endverb
+      \verb{url}
+      \verb https://github.com/features/copilot
+      \endverb
+    \endentry
+    \entry{microsoft-docs}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={{Microsoft}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Microsoft Docs – Developer Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/
+      \endverb
+    \endentry
+    \entry{NAS2018}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7712180ec1b113ea720ee1781bc0dfba}{%
+           family={{National Academies of Sciences, Engineering, and Medicine}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Academies Press}%
+      }
+      \strng{namehash}{7712180ec1b113ea720ee1781bc0dfba}
+      \strng{fullhash}{7712180ec1b113ea720ee1781bc0dfba}
+      \strng{bibnamehash}{7712180ec1b113ea720ee1781bc0dfba}
+      \strng{authorbibnamehash}{7712180ec1b113ea720ee1781bc0dfba}
+      \strng{authornamehash}{7712180ec1b113ea720ee1781bc0dfba}
+      \strng{authorfullhash}{7712180ec1b113ea720ee1781bc0dfba}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Assessing and Responding to the Growth of Computer Science Undergraduate Enrollments}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.17226/24926
+      \endverb
+    \endentry
+    \entry{chatgpt}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={{OpenAI}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{bibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorbibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authornamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{ChatGPT}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://openai.com/chatgpt
+      \endverb
+      \verb{url}
+      \verb https://openai.com/chatgpt
+      \endverb
+    \endentry
+    \entry{java-api}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=30162ed78b6c10f731411f2fc440c24f}{%
+           family={{Oracle}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{fullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{bibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorbibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authornamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorfullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Java Platform, Standard Edition Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://docs.oracle.com/javase/
+      \endverb
+      \verb{url}
+      \verb https://docs.oracle.com/javase/
+      \endverb
+    \endentry
+    \entry{overklift2019}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=22489455581c84e41bfed77b39daa095}{%
+           family={Overklift},
+           familyi={O\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Delft University of Technology}%
+      }
+      \strng{namehash}{22489455581c84e41bfed77b39daa095}
+      \strng{fullhash}{22489455581c84e41bfed77b39daa095}
+      \strng{bibnamehash}{22489455581c84e41bfed77b39daa095}
+      \strng{authorbibnamehash}{22489455581c84e41bfed77b39daa095}
+      \strng{authornamehash}{22489455581c84e41bfed77b39daa095}
+      \strng{authorfullhash}{22489455581c84e41bfed77b39daa095}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{Intelligent Agents That Support Students with Self-Study}
+      \field{type}{mathesis}
+      \field{year}{2019}
+    \endentry
+    \entry{proskuraLytvynova2020}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ea543f7d5d6a15943d08e550fb7fbafe}{%
+           family={Proskura},
+           familyi={P\bibinitperiod},
+           given={Svitlana\bibnamedelima L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2d86db8a5b2e587c335d8a8cf9eada1}{%
+           family={Lytvynova},
+           familyi={L\bibinitperiod},
+           given={Svitlana\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Kyiv, Ukraine}%
+      }
+      \list{publisher}{3}{%
+        {National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic Institute”}%
+        {Institute of Information Technologies}%
+        {Learning Tools}%
+      }
+      \strng{namehash}{7310d60e3bf9b936932893ed78c26bf1}
+      \strng{fullhash}{7310d60e3bf9b936932893ed78c26bf1}
+      \strng{bibnamehash}{7310d60e3bf9b936932893ed78c26bf1}
+      \strng{authorbibnamehash}{7310d60e3bf9b936932893ed78c26bf1}
+      \strng{authornamehash}{7310d60e3bf9b936932893ed78c26bf1}
+      \strng{authorfullhash}{7310d60e3bf9b936932893ed78c26bf1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Organization of Independent Studying of Future Bachelors in Computer Science within Higher Education Institutions of Ukraine}
+      \field{year}{2020}
+    \endentry
+    \entry{python}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c7b5508dc5e59a2846d22617276cc27c}{%
+           family={{Python Software Foundation}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{fullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{bibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorbibnamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authornamehash}{c7b5508dc5e59a2846d22617276cc27c}
+      \strng{authorfullhash}{c7b5508dc5e59a2846d22617276cc27c}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Python Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.python.org/doc/
+      \endverb
+      \verb{url}
+      \verb https://www.python.org/doc/
+      \endverb
+    \endentry
+    \entry{reddit}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b632c55a33530d1433e29ffc09ba1151}{%
+           family={{Reddit}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b632c55a33530d1433e29ffc09ba1151}
+      \strng{fullhash}{b632c55a33530d1433e29ffc09ba1151}
+      \strng{bibnamehash}{b632c55a33530d1433e29ffc09ba1151}
+      \strng{authorbibnamehash}{b632c55a33530d1433e29ffc09ba1151}
+      \strng{authornamehash}{b632c55a33530d1433e29ffc09ba1151}
+      \strng{authorfullhash}{b632c55a33530d1433e29ffc09ba1151}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Dive into Anything}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.reddit.com/
+      \endverb
+      \verb{url}
+      \verb https://www.reddit.com/
+      \endverb
+    \endentry
+    \entry{rosenzweig2019expectancy}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=188eea0389cafe48223834f58c73f37b}{%
+           family={Rosenzweig},
+           familyi={R\bibinitperiod},
+           given={Emily\bibnamedelima Q.},
+           giveni={E\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30b38570f5725d2d242577a2c753c52a}{%
+           family={Wigfield},
+           familyi={W\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f06b8e1a1f35637b65aa68a270278546}{%
+           family={Eccles},
+           familyi={E\bibinitperiod},
+           given={Jacquelyne\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{86d992be6eb42600cd9f6fa9c2437c8b}
+      \strng{fullhash}{4e7f0bda6d956d06875f48b56c5d84b4}
+      \strng{bibnamehash}{4e7f0bda6d956d06875f48b56c5d84b4}
+      \strng{authorbibnamehash}{4e7f0bda6d956d06875f48b56c5d84b4}
+      \strng{authornamehash}{86d992be6eb42600cd9f6fa9c2437c8b}
+      \strng{authorfullhash}{4e7f0bda6d956d06875f48b56c5d84b4}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Expectancy-Value Theory and Its Relevance for Student Motivation and Learning}
+      \field{year}{2019}
+    \endentry
+    \entry{Sarsa_2022}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b642b4058f3e1e63d62281b993aaa0c8}{%
+           family={Sarsa},
+           familyi={S\bibinitperiod},
+           given={Sami},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94639dd5d489d2e9ef5990c03ec52b20}{%
+           family={Denny},
+           familyi={D\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b7a0a0969bb973d5e4e5945774c76c4}{%
+           family={Hellas},
+           familyi={H\bibinitperiod},
+           given={Arto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e05dd3a598dd9694778231dc37efb331}{%
+           family={Leinonen},
+           familyi={L\bibinitperiod},
+           given={Juho},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{aef307ae4ca331e2f3de69ba697166a2}
+      \strng{fullhash}{a5ba6b086781605b69901748a1278b88}
+      \strng{bibnamehash}{a5ba6b086781605b69901748a1278b88}
+      \strng{authorbibnamehash}{a5ba6b086781605b69901748a1278b88}
+      \strng{authornamehash}{aef307ae4ca331e2f3de69ba697166a2}
+      \strng{authorfullhash}{a5ba6b086781605b69901748a1278b88}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 2022 ACM Conference on International Computing Education Research - Volume 1 (ICER 2022)}
+      \field{month}{8}
+      \field{title}{Automatic Generation of Programming Exercises and Code Explanations Using Large Language Models}
+      \field{year}{2022}
+      \field{pages}{27\bibrangedash 43}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1145/3501385.3543957
+      \endverb
+    \endentry
+    \entry{shute2008focus}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=817b19f1186b605320c603ee888c7850}{%
+           family={Shute},
+           familyi={S\bibinitperiod},
+           given={Valerie\bibnamedelima J.},
+           giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{817b19f1186b605320c603ee888c7850}
+      \strng{fullhash}{817b19f1186b605320c603ee888c7850}
+      \strng{bibnamehash}{817b19f1186b605320c603ee888c7850}
+      \strng{authorbibnamehash}{817b19f1186b605320c603ee888c7850}
+      \strng{authornamehash}{817b19f1186b605320c603ee888c7850}
+      \strng{authorfullhash}{817b19f1186b605320c603ee888c7850}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Educational Research}
+      \field{number}{1}
+      \field{title}{Focus on Formative Feedback}
+      \field{volume}{78}
+      \field{year}{2008}
+      \field{pages}{153\bibrangedash 189}
+      \range{pages}{37}
+    \endentry
+    \entry{stackoverflow}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=84d7dc19766c446f5e4084e8fce87f82}{%
+           family={{Stack Overflow}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{fullhash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{bibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorbibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authornamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorfullhash}{84d7dc19766c446f5e4084e8fce87f82}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{Where Developers Learn, Share, \& Build Careers}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://stackoverflow.com/
+      \endverb
+      \verb{url}
+      \verb https://stackoverflow.com/
+      \endverb
+    \endentry
+    \entry{Troelsen2021}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=22361bd7f81fe2af5ff9c7f8abb3dbc8}{%
+           family={Troelsen},
+           familyi={T\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9be660109141e022b8c2cd793ec9af5b}{%
+           family={Japikse},
+           familyi={J\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \strng{fullhash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \strng{bibnamehash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \strng{authorbibnamehash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \strng{authornamehash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \strng{authorfullhash}{aa5341c2e79eb2f4cf7cc876bfa3e89f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pro C\# 9 with .NET 5: Foundational Principles and Practices in Programming}
+      \field{year}{2021}
+    \endentry
+    \entry{plan_estudio_e_2017}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1614680c564978011009f6165ad28aeb}{%
+           family={{Universidad de La Habana}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{1614680c564978011009f6165ad28aeb}
+      \strng{fullhash}{1614680c564978011009f6165ad28aeb}
+      \strng{bibnamehash}{1614680c564978011009f6165ad28aeb}
+      \strng{authorbibnamehash}{1614680c564978011009f6165ad28aeb}
+      \strng{authornamehash}{1614680c564978011009f6165ad28aeb}
+      \strng{authorfullhash}{1614680c564978011009f6165ad28aeb}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Plan de Estudio ``E'' de la carrera de Ciencia de la Computación}
+      \field{year}{2017}
+      \field{pages}{172\bibrangedash 176}
+      \range{pages}{5}
+    \endentry
+    \entry{vihavainen2011extreme}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5dd3681d700749aa845563d023e73a42}{%
+           family={Vihavainen},
+           familyi={V\bibinitperiod},
+           given={Arto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41ccb12b77076261aa780d36bd07db1a}{%
+           family={Paksula},
+           familyi={P\bibinitperiod},
+           given={Matti},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1f138f6acda7eb341c531bd0c903aa3}{%
+           family={Luukkainen},
+           familyi={L\bibinitperiod},
+           given={Matti},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{85b6351cade80e1d08a52f8165e9367c}
+      \strng{fullhash}{f476ab36b50e434648d7bea7f798bdee}
+      \strng{bibnamehash}{f476ab36b50e434648d7bea7f798bdee}
+      \strng{authorbibnamehash}{f476ab36b50e434648d7bea7f798bdee}
+      \strng{authornamehash}{85b6351cade80e1d08a52f8165e9367c}
+      \strng{authorfullhash}{f476ab36b50e434648d7bea7f798bdee}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 42nd ACM Technical Symposium on Computer Science Education}
+      \field{title}{Extreme Apprenticeship Method in Teaching Programming for Beginners}
+      \field{year}{2011}
+      \field{pages}{93\bibrangedash 98}
+      \range{pages}{6}
+    \endentry
+    \entry{vscode}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d1c9b8165b97419eaa86413d8aa02ce7}{%
+           family={{Visual Studio Code}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \strng{fullhash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \strng{bibnamehash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \strng{authorbibnamehash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \strng{authornamehash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \strng{authorfullhash}{d1c9b8165b97419eaa86413d8aa02ce7}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Consultado el 29/1/2025}
+      \field{title}{Documentación oficial de Visual Studio Code}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://code.visualstudio.com/
+      \endverb
+      \verb{url}
+      \verb https://code.visualstudio.com/
+      \endverb
+    \endentry
+    \entry{vygotsky1978mind}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=650d0181b6986d342c4efa569df57cdd}{%
+           family={Vygotsky},
+           familyi={V\bibinitperiod},
+           given={Lev\bibnamedelima Semenovich},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea60a212c22a0d36fa7c259d1b4b52d0}{%
+           family={Cole},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{75c7698cb25f72f2659a1807ce8fd665}
+      \strng{fullhash}{75c7698cb25f72f2659a1807ce8fd665}
+      \strng{bibnamehash}{75c7698cb25f72f2659a1807ce8fd665}
+      \strng{authorbibnamehash}{75c7698cb25f72f2659a1807ce8fd665}
+      \strng{authornamehash}{75c7698cb25f72f2659a1807ce8fd665}
+      \strng{authorfullhash}{75c7698cb25f72f2659a1807ce8fd665}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mind in Society: Development of Higher Psychological Processes}
+      \field{year}{1978}
+    \endentry
+    \entry{wong2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=71b72230ff626ebf4c0a8bc4c805e08c}{%
+           family={Wong-Aitken},
+           familyi={W\bibinithyphendelim A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67acaa2ea8f6c50f2a1a76e495777d8e}{%
+           family={Cukierman},
+           familyi={C\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=060cea460d424cef7181907129b3f8c1}{%
+           family={Chilana},
+           familyi={C\bibinitperiod},
+           given={Parmit\bibnamedelima K.},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{44809271a5b6e60742c4b7089a1850e6}
+      \strng{fullhash}{dfc5dc2cc6cdada1dab520f30917dd8e}
+      \strng{bibnamehash}{dfc5dc2cc6cdada1dab520f30917dd8e}
+      \strng{authorbibnamehash}{dfc5dc2cc6cdada1dab520f30917dd8e}
+      \strng{authornamehash}{44809271a5b6e60742c4b7089a1850e6}
+      \strng{authorfullhash}{dfc5dc2cc6cdada1dab520f30917dd8e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 27th ACM Conference on Innovation and Technology in Computer Science Education Vol. 1}
+      \field{title}{``It Depends on Whether or Not I'm Lucky'' How Students in an Introductory Programming Course Discover, Select, and Assess the Utility of Web-Based Resources}
+      \field{year}{2022}
+      \field{pages}{512\bibrangedash 518}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1145/3502718.3524751
+      \endverb
+    \endentry
+    \entry{wrenn2018whotests}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fb271211c517d3b1a32c82483f5209c7}{%
+           family={Wrenn},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7416298c547d841aa97cdf04c4564f7}{%
+           family={Krishnamurthi},
+           familyi={K\bibinitperiod},
+           given={Shriram},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b4c9b20a2597002b002a6acd0b2c3a8}{%
+           family={Fisler},
+           familyi={F\bibinitperiod},
+           given={Kathi},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{b2ef98300277d053dbd267353d9f9948}
+      \strng{fullhash}{2292c36aa5cab6cdb8e1d52fc4ba6110}
+      \strng{bibnamehash}{2292c36aa5cab6cdb8e1d52fc4ba6110}
+      \strng{authorbibnamehash}{2292c36aa5cab6cdb8e1d52fc4ba6110}
+      \strng{authornamehash}{b2ef98300277d053dbd267353d9f9948}
+      \strng{authorfullhash}{2292c36aa5cab6cdb8e1d52fc4ba6110}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 2018 ACM Conference on International Computing Education Research (ICER '18)}
+      \field{title}{Who Tests the Testers?}
+      \field{year}{2018}
+      \field{pages}{51\bibrangedash 59}
+      \range{pages}{9}
+    \endentry
+    \entry{youtube}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8dd1bae8da2e2408210d0656fbe6b7d1}{%
+           family={{YouTube}},
+           familyi={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \strng{fullhash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \strng{bibnamehash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \strng{authorbibnamehash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \strng{authornamehash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \strng{authorfullhash}{8dd1bae8da2e2408210d0656fbe6b7d1}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: January 19, 2025}
+      \field{title}{YouTube – Video Sharing Platform}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.youtube.com/
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{postgresql}
+  \missing{rodriguez}
+\endrefsection
+\endinput
+

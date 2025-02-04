@@ -1,2 +1,32 @@
 \chapter*{Introducción}\label{chapter:introduction}
 \addcontentsline{toc}{chapter}{Introducción}
+
+La programación es una habilidad esencial en el mundo actual, con aplicaciones que van más allá del desarrollo tecnológico. Su importancia radica en su capacidad para resolver problemas en diversas áreas del conocimiento, desde la ciencia y la ingeniería hasta las humanidades y las ciencias sociales. En un entorno cada vez más digitalizado, la programación permite comprender y transformar procesos, sistemas y datos, lo que la convierte en una herramienta clave para el progreso y la innovación.
+
+En el ámbito académico, la programación es un componente fundamental en la formación de profesionales en Ciencia de la Computación. Los cursos introductorios de programación son el primer contacto de los estudiantes con los conceptos y herramientas básicas, por lo que deben proporcionar una base sólida para el desarrollo de habilidades más avanzadas en este campo.
+
+El estudio independiente en cursos introductorios de programación enfrenta desafíos que pueden afectar el rendimiento académico de los estudiantes. Según~\cite{proskuraLytvynova2020}, la falta de supervisión constante por parte del docente puede llevar a confusiones en la priorización de contenidos y en la gestión del tiempo, especialmente cuando los estudiantes deben equilibrar el aprendizaje de la programación con otras responsabilidades académicas. Además,~\cite{overklift2019} señala que la ausencia de un docente disponible para resolver dudas durante el estudio puede resultar en la acumulación de conceptos no comprendidos, generando frustración y desmotivación.
+
+Varios estudios han abordado problemas relacionados con la enseñanza y el aprendizaje de la programación. Por ejemplo,~\cite{Gabbay2022, Hanafi2023, Messer2024} estudia el uso de plataformas de autoevaluación que permiten a los estudiantes recibir retroalimentación inmediata sobre sus códigos, lo que ha demostrado ser efectivo para el rendimiento del estudiante.
+
+Por otro lado,~\cite{dong2025buildaitutoradapt} sugiere la implementación de sistemas de tutoría virtual que integren chatbots inteligentes para resolver dudas en tiempo real. Estos sistemas, basados en modelos de lenguaje de gran tamaño (LLMs), como \textit{ChatGPT}~\cite{chatgpt}, proporcionan respuestas adaptándose a las necesidades individuales de los estudiantes.
+
+En la asignatura Programación de la carrera Ciencias de la Computación en la Facultad de Matemática y Computación de la Universidad de La Habana (\mbox{MATCOM}), los estudiantes enfrentan desafíos en el proceso de aprendizaje. Los profesores han observado que existe una dependencia significativa del apoyo docente para avanzar en la disciplina.
+
+El objetivo general de este trabajo es diseñar e implementar un sistema que apoye a los estudiantes de Ciencia de la Computación de (\mbox{MATCOM}) en el estudio independiente de la asignatura Programación.
+
+Los objetivos específicos de esta investigación son:
+\begin{itemize}
+    \item Realizar una revisión de la bibliografía existente sobre sistemas de apoyo al aprendizaje de programación y metodologías de estudio independiente.
+    \item Identificar las necesidades específicas de los estudiantes de Matcom en relación con el estudio independiente de programación.
+    \item Recopilar ejercicios de Programación organizados por temas y elaborar soluciones detalladas que expliquen los procedimientos a los estudiantes.
+    \item Diseñar un sistema que incluya funcionalidades como proporcionar retroalimentación inmediata sobre los ejercicios, resolver dudas comunes de los estudiantes y guiar en la resolución de problemas.
+    \item Implementar un prototipo del sistema a través de un bot de Telegram.
+    \item Proponer recomendaciones para mejorar el sistema.
+\end{itemize}
+
+Este trabajo propone un sistema diseñado específicamente para apoyar el estudio independiente de la asignatura Programación en la carrera Ciencia de la Computación en \mbox{MATCOM}. A diferencia de las soluciones existentes, este sistema se enfoca en integrar recursos adaptados al plan de estudios de la facultad con mecanismos de retroalimentación personalizada y seguimiento del progreso del estudiante. Además, aborda problemas identificados en el proceso de estudio independiente, como la falta de retroalimentación oportuna y la dependencia excesiva del apoyo docente. El sistema busca no solo facilitar el aprendizaje de la programación, sino también motivar a los estudiantes a través de una herramienta que les permita avanzar a su propio ritmo y recibir apoyo constante.
+
+Además, dado que la mayoría de los estudiantes de la facultad están familiarizados con el uso de Telegram, se realiza una implementación de este sistema como un bot en dicha plataforma.
+
+La estructura de este documento es la siguiente: en el capítulo~\ref{chapter:background} se presentan algunos de los fundamentos de la enseñanza de programación, se analiza la importancia del estudio independiente en el aprendizaje de la programación y se describe el curso de Programación que se imparte en primer año de Ciencia de la Computación en \mbox{MATCOM}. En el capítulo~\ref{chapter:exercises} se describe el proceso de recopilación y diseño de un conjunto de ejercicios, así como el enfoque adoptado para presentar sus soluciones y pistas que guíen al estudiante durante el proceso de solución. En el capítulo~\ref{chapter:proposal} se presenta una propuesta del sistema detallando el flujo de cada funcionalidad. En el capítulo~\ref{chapter:implementation} se exponen los detalles de implementación del bot de Telegram.

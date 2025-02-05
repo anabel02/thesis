@@ -205,19 +205,20 @@ Con la nueva propuesta, el sistema de evaluación automática ejecutará el cód
 
 \subsection{Personalización del Curso}
 
-Si se desea personalizar los temas y ejercicios del curso, es necesario crear un archivo JSON en la carpeta \texttt{data} con el siguiente formato:
+Si se desea personalizar los temas y ejercicios del curso, es necesario crear un archivo \texttt{topics.json} en la carpeta \texttt{data} con el siguiente formato:
 \begin{itemize}
-    \item \texttt{titulo\_tema} (tipo \texttt{string}): Título del tema.
-    \item \texttt{descripcion\_tema} (tipo \texttt{string}): Descripción general del tema.
-    \item \texttt{ejercicios} (tipo \texttt{array}): Lista de ejercicios asociados al tema. Cada ejercicio contiene:
+    \item \texttt{title} (tipo \texttt{string}): Título del tema.
+    \item \texttt{description} (tipo \texttt{string}): Descripción general del tema.
+    \item \texttt{exercises} (tipo \texttt{array}): Lista de ejercicios asociados al tema. Cada ejercicio contiene:
     \begin{itemize}
-        \item \texttt{titulo\_ejercicio} (tipo \texttt{string}): Título del ejercicio.
-        \item \texttt{cuerpo\_ejercicio} (tipo \texttt{string}): Enunciado o descripción del ejercicio.
-        \item \texttt{solucion\_ejercicio} (tipo \texttt{string}): Solución completa del ejercicio.
-        \item \texttt{pistas} (tipo \texttt{array}): Lista de pistas asociadas al ejercicio, donde cada pista tiene:
+        \item \texttt{title} (tipo \texttt{string}): Título del ejercicio.
+        \item \texttt{content} (tipo \texttt{string}): Enunciado o descripción del ejercicio.
+        \item \texttt{difficulty} (tipo \texttt{string}): Dificultad del ejercicio: \textit{basic}, \textit{intermediate} o \textit{advanced}.
+        \item \texttt{solution} (tipo \texttt{string}): Solución completa del ejercicio.
+        \item \texttt{hints} (tipo \texttt{array}): Lista de pistas asociadas al ejercicio, donde cada pista tiene:
         \begin{itemize}
-            \item \texttt{contenido} (tipo \texttt{string}): Texto de la pista.
-            \item \texttt{nivel} (tipo \texttt{number}): Nivel de detalle de la pista, que define el orden en que se entregarán al usuario. Las pistas se muestran de menor a mayor nivel (0, 1, 2, \ldots), se recomienda comenzar con sugerencias generales e ir avanzando hacia indicaciones más específicas.
+            \item \texttt{text} (tipo \texttt{string}): Texto de la pista.
+            \item \texttt{level} (tipo \texttt{number}): Nivel de detalle de la pista, que define el orden en que se entregarán al usuario. Las pistas se muestran de menor a mayor nivel (0, 1, 2, \ldots), se recomienda comenzar con sugerencias generales e ir avanzando hacia indicaciones más específicas.
         \end{itemize}
     \end{itemize}
 \end{itemize}

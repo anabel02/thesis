@@ -23,7 +23,7 @@ Los ejercicios se han recopilado de diversas fuentes, incluyendo:
 Los ejercicios recopilados se han organizado por temas para facilitar su integración en las clases prácticas. Los temas principales son los siguientes: 
 
 \begin{itemize}  
-    \item Operaciones Básicas:  
+    \item Operaciones básicas:  
     Ejercicios centrados en el uso de tipos de datos, operaciones aritméticas y manipulación de variables. Estos ejercicios introducen la secuencialidad de los programas.  
 
     \item Condicionales:  
@@ -41,7 +41,7 @@ Los ejercicios recopilados se han organizado por temas para facilitar su integra
     \item Modificación de \textit{arrays}:  
     Problemas que involucran operaciones como agregar, eliminar, ordenar o modificar elementos en arreglos.  
 
-    \item Resolución de Problemas:  
+    \item Resolución de problemas:  
     Ejercicios diseñados para desarrollar habilidades en la descomposición y análisis de problemas mediante algoritmos.
 
     \item \textit{Arrays} bidimensionales:  
@@ -166,7 +166,7 @@ Los ejemplos presentados en las figuras~\ref{fig:basic},~\ref{fig:intermediate},
         \textbf{Salida}: El entero no negativo correspondiente al número decimal.\\
         
         \textbf{Ejemplos:}\\
-        
+
         \centering
         \begin{tabular}{|p{1.5cm}|p{1.5cm}|p{7cm}|}
             \hline
@@ -204,7 +204,7 @@ En la figura~\ref{fig:solution} de la página~\pageref{fig:solution} se presenta
     \begin{framed}
         \textbf{Solución: ¿Es primo?}
 
-        Dado que un número \(n\) es primo si solo es divisible por 1 y por sí mismo, y además se conoce que si \(d\) es divisor de \(n\) entonces para determinar si un número \(n\) es primo, basta con verificar si es divisible por algún número \(d\) tal que \(2 \leq d < n\). Si encontramos algún divisor en ese rango, podemos concluir que \(n\) no es primo.
+        Dado que un número \(n\) es primo si solo es divisible por 1 y por sí mismo, y además se conoce que si \(d\) es divisor de \(n\) entonces \(d \leq n\), para determinar si un número \(n\) es primo, basta con verificar si es divisible por algún número \(d\) tal que \(2 \leq d < n\). Si encontramos algún divisor en ese rango, podemos concluir que \(n\) no es primo.
 
         Una primera implementación podría iterar desde \(2\) hasta \(n - 1\), verificando si \(n\) es divisible por algún número:
       
@@ -221,7 +221,7 @@ En la figura~\ref{fig:solution} de la página~\pageref{fig:solution} se presenta
     }
     \end{lstlisting}
         
-        La solución anterior realiza iteraciones innecesarias, ya que basta con comprobar divisores hasta la raíz cuadrada de \(n\). Esto se debe a que si \(n\) tiene un divisor mayor que \(\sqrt{n}\), necesariamente debe tener otro menor que \(\sqrt{n}\). Reduciendo el rango de búsqueda, podemos mejorar la eficiencia del algoritmo:
+        La solución anterior es correcta, aunque realiza iteraciones innecesarias, ya que basta con comprobar divisores hasta la raíz cuadrada de \(n\). Esto se debe a que si \(n\) tiene un divisor mayor que \(\sqrt{n}\), necesariamente debe tener otro menor que \(\sqrt{n}\). Reduciendo el rango de búsqueda, podemos mejorar la eficiencia del algoritmo:
         
     \begin{lstlisting}
     bool IsPrime(int n)

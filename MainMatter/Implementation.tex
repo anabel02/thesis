@@ -1,4 +1,5 @@
 \chapter{Detalles de Implementación}\label{chapter:implementation}
+
 En este capítulo se analizan los detalles de implementación de un bot de Telegram con las funcionalidades mostradas en el Capítulo~\ref{chapter:proposal}. En la sección~\ref{sec:technical-details} se mencionan las tecnologías y herramientas utilizadas en la implementación del bot. En la sección~\ref{sec:database} se explica el diseño de la base de datos. En la sección~\ref{sec:features} se analiza la implementación de cada una de las funcionalidades.
 
 \section{Detalles técnicos}\label{sec:technical-details}
@@ -13,27 +14,27 @@ Esta adopción generalizada de Telegram elimina la necesidad de que los estudian
 
 Otra razón importante para esta elección son las ventajas técnicas que ofrece Telegram. Su API es gratuita y está bien documentada, lo que facilita la implementación de funcionalidades. Asimismo, Telegram es accesible desde múltiples dispositivos (dispositivos móviles, web y desktop) e incluso permite sesiones simultáneas, garantizando una disponibilidad constante y comodidad para los estudiantes.
 
-\section{Diseño de la base de datos}\label{sec:database}
-
-El esquema de la base de datos está estructurado en varias tablas interrelacionadas que gestionan la información de usuarios, estudiantes, temas, ejercicios y pistas. Las tablas son: \texttt{users}, \texttt{students}, \texttt{topics}, \texttt{exercises}, \texttt{exercise\_hints}, \texttt{student\_hints} y \texttt{student\_exercise}.
+En la siguiente sección, se describe el diseño del sistema mediante diagramas que representan las funcionalidades principales, proporcionando una visión de cómo interactúan los componentes del bot.
 
 \section{Arquitectura y funcionalidades del sistema}\label{sec:features}
+
+El esquema de la base de datos está estructurado en varias tablas interrelacionadas—\texttt{users}, \texttt{students}, \texttt{topics}, \texttt{exercises}, \texttt{exercise\_hints}, \texttt{student\_hints} y \texttt{student\_exercise}—que gestionan la información de usuarios, estudiantes, temas, ejercicios y pistas.
 
 En esta sección se describe el diseño del sistema mediante diagramas que representan las funcionalidades principales. La Figura~\ref{fig:legend} muestra una leyenda que explica los componentes utilizados en los diagramas. Las flechas indican el flujo de la interacción.
 
 \begin{figure}[h!]
   \centering
       \begin{tikzpicture}[node distance=0.5cm and 1cm]
-      \node (startstop) [startstop] {texto};
+      \node (startstop) [startstop] {Estudiante ingresa\\ nombre y apellidos};
       \node (startstopLabel) [right=of startstop, font=\footnotesize] {Interacción del usuario};
   
-      \node (process) [process, below=of startstop] {texto};
+      \node (process) [process, below=of startstop] {Mensaje de bienvenida y\\ lista de comandos disponibles};
       \node (processLabel) [right=of process, font=\footnotesize] {Respuesta del sistema};
   
-      \node (decision) [decision, below=of process] {texto};
+      \node (decision) [decision, below=of process] {¿Quedan \\ ejercicios \\ disponibles?};
       \node (decisionLabel) [right=of decision, font=\footnotesize] {Punto de decisión};
       \end{tikzpicture}
-      \caption{Leyenda de los componentes de los diagramas}\label{fig:legend}
+      \caption{Leyenda de los componentes de los diagramas.}\label{fig:legend}
 \end{figure}
 
 \subsection{Registro}
@@ -52,8 +53,10 @@ Al acceder por primera vez, la herramienta solicita al estudiante ingresar su no
   \draw [arrow2] (sDatos) -- (datos);
   \draw [arrow2] (datos) -- (bienvenida);
   \end{tikzpicture}
-  \caption{Diagrama del flujo de registro}\label{fig:register}
+  \caption{Diagrama del flujo de registro.}\label{fig:register}
 \end{figure}
+
+Después del registro, lo más común es que el estudiante revise el listado de temas disponibles para comenzar su estudio.
 
 \subsection{Listado de temas}
 
@@ -75,8 +78,10 @@ Si el nombre del tema no resulta suficientemente claro, el estudiante puede soli
     \draw [arrow2] (explorar) -- node[above] {Sí} (descripcionSolicitud);
     \draw [arrow2] (descripcionSolicitud) -- (descripcion);
   \end{tikzpicture}
-\caption{Diagrama del flujo de temas}\label{fig:topics}
+\caption{Diagrama del flujo de temas.}\label{fig:topics}
 \end{figure}
+
+Durante el estudio o después de una clase, es común que los estudiantes tengan dudas sobre el contenido, como por ejemplo: ``¿qué es un array de direcciones?''. Para resolver estas inquietudes, la aplicación cuenta con un módulo de resolución de dudas.
 
 \subsection{Resolución de dudas}
 
@@ -122,7 +127,7 @@ La aplicación incluye un sistema de resolución de dudas que permite a los estu
     \draw[arrow] (reply) -- ++(0,1) -| (user);
     
     \end{tikzpicture}
-    \caption{Sistema de preguntas y respuestas basado en Generación Aumentada por Recuperación (RAG)}\label{fig:q-a-diagram}
+    \caption{Sistema de preguntas y respuestas basado en Generación Aumentada por Recuperación (RAG).}\label{fig:q-a-diagram}
 \end{figure}
 
 Como se explica en el Capítulo~\ref{chapter:rag} el proceso de construcción del recuperador consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
@@ -137,9 +142,11 @@ El \textit{prompt} extendido se envía al LLM \textit{gemini-1.5-flash}, que gen
 
 Este flujo de trabajo muestra cómo el sistema RAG combina la búsqueda de información con la generación de texto, con el objetivo de reducir el tiempo que los estudiantes invertirían en buscar respuestas a través de medios tradicionales, como la revisión manual del libro o la consulta directa al profesor. Al incorporar referencias específicas al libro de Katrib, el sistema no solo proporciona respuestas más confiables, sino que también fomenta la capacidad crítica de los estudiantes, permitiéndoles contrastar la información generada con fuentes autorizadas. De esta manera, se busca minimizar la dependencia exclusiva de LLMs o fuentes en línea que podrían no ser del todo fiables, especialmente para usuarios con poca experiencia.
 
+Además de resolver dudas, la aplicación ofrece una experiencia de aprendizaje activo mediante la práctica con ejercicios.
+
 \subsection{Práctica con ejercicios sugeridos. Pistas y soluciones.}
 
-La aplicación ofrece una experiencia de aprendizaje personalizada al sugerir ejercicios adaptados al nivel del estudiante. Durante la resolución, el estudiante puede solicitar pistas que se dan en orden. En cualquier momento, el estudiante puede acceder a la solución completa. Una vez que el estudiante completa su implementación la manda al bot. Este flujo está descrito en la Figura~\ref{fig:exercises}.
+La aplicación ofrece una experiencia de aprendizaje personalizada al sugerir ejercicios adaptados al nivel del estudiante. Durante la resolución, el estudiante puede solicitar pistas que se dan en orden. En cualquier momento, el estudiante puede acceder a la solución completa. Una vez que el estudiante completa su implementación la manda al bot. Este flujo está descrito en la Figura~\ref{fig:exercises} de la página~\pageref{fig:exercises}.
 
 El nivel del estudiante se calcula en función de su desempeño previo en la aplicación, considerando dos factores principales: la cantidad de ejercicios resueltos y la complejidad de los ejercicios que ha completado. Por ejemplo, si un estudiante resuelve 5 ejercicios básicos sin pedir pistas ni soluciones, la aplicación comenzará a proponer problemas de nivel intermedio.
 
@@ -170,30 +177,36 @@ El nivel del estudiante se calcula en función de su desempeño previo en la apl
     \draw [arrow2] (sugerenciaPista) --  (conversion);
     
   \end{tikzpicture}
-\caption{Diagrama del flujo del sistema de ejercicios}\label{fig:exercises}
+\caption{Diagrama del flujo del sistema de ejercicios.}\label{fig:exercises}
 \end{figure}
 
-Para mejorar esta funcionalidad, se propone implementar un sistema de evaluación automática de la correctitud de la solución. Actualmente, cuando un estudiante envía su código, este se almacena en la base de datos y el ejercicio se marca como resuelto sin verificar su correctitud. Si bien este enfoque es funcional, no proporciona retroalimentación al estudiante acerca de la calidad o precisión de su solución.
+Para mejorar esta funcionalidad, se propone implementar un sistema de evaluación automática de la correctitud de la solución. Actualmente, cuando un estudiante envía su código, este se almacena en la base de datos, el ejercicio se marca como ``pendiente de revisión'' y queda a la espera de que un profesor lo revise. Si bien este enfoque es funcional, la retroalimentación que proporciona al estudiante puede demorar.
 
-Con la nueva propuesta, el sistema de evaluación automática ejecutará el código del estudiante y comparará la salida generada con los casos de prueba predefinidos. Si la salida coincide con los resultados esperados, el ejercicio se marcará como resuelto. En caso contrario, el sistema proporcionará retroalimentación al estudiante  sobre los errores encontrados.
+Con la nueva propuesta, el sistema de evaluación automática ejecutará el código del estudiante y comparará la salida generada con los casos de prueba predefinidos. Si la salida coincide con los resultados esperados, el ejercicio se marcará como resuelto. En caso contrario, el sistema proporcionará retroalimentación inmediata al estudiante sobre los errores encontrados. De todas formas, con este sistema de evaluación automática, también se almacenaría el código de las soluciones en la base de datos, dejando al profesor la posibilidad de revisarlos.
 
-\subsection{Personalización del Curso}
+A continuación se describe cómo los profesores podrían cambiar el contenido del curso, ya sea los materiales de los que se recupera información para resolver dudas, como de los ejercicios.
 
-Si se desea personalizar los temas y ejercicios del curso, es necesario crear un archivo JSON en la carpeta \texttt{data} con el siguiente formato:
+\subsection{Personalización del curso}
+
+Si se desea cambiar los temas y ejercicios del curso, es necesario crear un archivo JSON en la carpeta \texttt{data} con el siguiente formato:
+
 \begin{itemize}
-    \item \texttt{titulo\_tema} (tipo \texttt{string}): Título del tema.
-    \item \texttt{descripcion\_tema} (tipo \texttt{string}): Descripción general del tema.
-    \item \texttt{ejercicios} (tipo \texttt{array}): Lista de ejercicios asociados al tema. Cada ejercicio contiene:
+    \item \texttt{title} (tipo \texttt{string}): Título del tema.
+    \item \texttt{description} (tipo \texttt{string}): Descripción general del tema.
+    \item \texttt{exercises} (tipo \texttt{array}): Lista de ejercicios asociados al tema. Cada ejercicio contiene:
     \begin{itemize}
-        \item \texttt{titulo\_ejercicio} (tipo \texttt{string}): Título del ejercicio.
-        \item \texttt{cuerpo\_ejercicio} (tipo \texttt{string}): Enunciado o descripción del ejercicio.
-        \item \texttt{solucion\_ejercicio} (tipo \texttt{string}): Solución completa del ejercicio.
-        \item \texttt{pistas} (tipo \texttt{array}): Lista de pistas asociadas al ejercicio, donde cada pista tiene:
+        \item \texttt{title} (tipo \texttt{string}): Título del ejercicio.
+        \item \texttt{content} (tipo \texttt{string}): Enunciado o descripción del ejercicio.
+        \item \texttt{difficulty} (tipo \texttt{string}): Dificultad del ejercicio: \textit{basic}, \textit{intermediate} o \textit{advanced}.
+        \item \texttt{solution} (tipo \texttt{string}): Solución completa del ejercicio.
+        \item \texttt{hints} (tipo \texttt{array}): Lista de pistas asociadas al ejercicio, donde cada pista tiene:
         \begin{itemize}
-            \item \texttt{contenido} (tipo \texttt{string}): Texto de la pista.
-            \item \texttt{nivel} (tipo \texttt{number}): Nivel de detalle de la pista, que define el orden en que se entregarán al usuario. Las pistas se muestran de menor a mayor nivel (0, 1, 2, \ldots), se recomienda comenzar con sugerencias generales e ir avanzando hacia indicaciones más específicas.
+            \item \texttt{text} (tipo \texttt{string}): Texto de la pista.
+            \item \texttt{level} (tipo \texttt{number}): Nivel de detalle de la pista, que define el orden en que se entregarán al usuario. Las pistas se muestran de menor a mayor nivel (0, 1, 2, \ldots), se recomienda comenzar con sugerencias generales e ir avanzando hacia indicaciones más específicas.
         \end{itemize}
     \end{itemize}
 \end{itemize}
 
 Para añadir más documentos al sistema de preguntas y respuestas, es necesario colocar los archivos en formato PDF dentro de la carpeta \texttt{data/corpus}. Cuando se ejecute, la aplicación procesará estos documentos.
+
+En este capítulo se mostraron las particularidades del sistema de acuerdo a su implementación.

@@ -1,12 +1,12 @@
 \chapter{Descripción del sistema propuesto}\label{chapter:proposal}
 
-En este capítulo se presenta una propuesta de un sistema diseñado para apoyar el estudio independiente en el curso de Programación en la carrera Ciencia de la Computación de \mbox{MATCOM}.
+En este capítulo se presenta una propuesta de un sistema diseñado para apoyar el estudio independiente en el curso de Programación de la carrera de Ciencia de la Computación de \mbox{MATCOM}.
 
 El sistema determina el nivel de cada estudiante y, en función de este, propone ejercicios adaptados a sus necesidades. Los estudiantes pueden solicitar pistas para resolver los ejercicios. El sistema registra el estado de cada actividad: si el estudiante ha comenzado a trabajar en ella, si tiene dudas o si ha completado el ejercicio, permitiendo un seguimiento detallado de su progreso.
 
 Por otro lado, los profesores pueden monitorear el avance de los estudiantes, identificar dificultades comunes y ajustar el contenido o las estrategias de enseñanza según sea necesario. Esta información les ayuda a brindar retroalimentación oportuna y a personalizar el apoyo ofrecido.
 
-La implementación de estas funcionalidades se realizó mediante un bot de Telegram. Sin embargo, es importante destacar que estas tareas también podrían realizarse con herramientas más simples, como hojas de cálculo o archivos de texto. De hecho, durante varios años, algunos profesores han gestionado procesos similares utilizando estas herramientas básicas~\cite{rodriguez}. En este sentido, la aplicación no es solo una solución tecnológica, sino una propuesta para mejorar la experiencia de aprendizaje.
+La implementación de estas funcionalidades se realizó mediante un bot de Telegram. Sin embargo, es importante destacar que estas tareas también podrían realizarse con herramientas más simples, como hojas de cálculo o archivos de texto. De hecho, durante varios años, algunos profesores de \mbox{MATCOM} han gestionado procesos similares utilizando estas herramientas básicas~\cite{rodriguez}. En este sentido, la aplicación no es solo una solución tecnológica, sino una propuesta para mejorar la experiencia de aprendizaje.
 
 En la sección~\ref{sec:students} se describe el flujo propuesto para los estudiantes. En la sección~\ref{sec:teachers} se explican las acciones disponibles para los profesores.
 
@@ -22,7 +22,7 @@ Una vez completado el registro, el estudiante puede comenzar a explorar los tema
 
 \subsection{Listado de temas}
 
-Cuando el usuario lo solicita, se le presenta un listado organizado de los temas disponibles para su estudio. Esta funcionalidad permite al estudiante identificar rápidamente los temas que se ajustan al contenido visto en conferencias y clases prácticas. Por ejemplo, algunos de los temas disponibles pueden ser condicionales, arreglos y \textit{backtracking}.
+Cuando el usuario lo solicita, se le presenta un listado de los temas disponibles para su estudio. Esta funcionalidad permite al estudiante identificar rápidamente los temas que se ajustan al contenido visto en conferencias y clases prácticas. Por ejemplo, algunos de los temas disponibles pueden ser condicionales, \textit{arrays} y \textit{backtracking}.
 
 Si al usuario no le queda claro de qué va el tema solamente por el nombre, también puede pedir una descripción del mismo, que incluye por qué se necesita estudiar el tema, definiciones básicas y ejemplos. Esta funcionalidad es útil para estudiantes que están comenzando y necesitan una comprensión más profunda de los conceptos básicos.
 
@@ -30,11 +30,11 @@ A medida que el estudiante explora los temas, ya sea en conferencias, clases pr�
 
 \subsection{Resolución de dudas}
 
-Tradicionalmente, el estudiante podría recurrir a buscar respuestas en el libro de texto, pero este proceso puede ser lento y no siempre resuelve la duda. Otra opción sería utilizar herramientas como \textit{ChatGPT}, pero estas no siempre están alineadas con el contenido específico del curso.
+Tradicionalmente, el estudiante podría recurrir a buscar respuestas a sus dudas en el libro de texto, pero este proceso puede ser lento y no siempre resuelve la duda. Otra opción sería utilizar herramientas como \textit{ChatGPT}; sin embargo, estas pueden generar alucinaciones, es decir, respuestas que parecen coherentes pero que son incorrectas, lo cual representa un riesgo, especialmente para estudiantes que aún no han desarrollado la capacidad crítica necesaria para distinguir entre información precisa y errónea.
 
-Para simplificar este proceso, el sistema incluye una sección dedicada a la resolución de dudas. El estudiante puede formular preguntas en lenguaje natural, y el sistema responde con explicaciones, acompañadas de referencias a la bibliografía oficial del curso. Esta funcionalidad garantiza que las respuestas estén alineadas con el material de estudio, de esta manera el estudiante puede ir a ampliar en el libro si lo necesita. 
+Para simplificar este proceso, el sistema incluye una sección dedicada a la resolución de dudas. El estudiante puede formular preguntas en lenguaje natural, y el sistema responde con explicaciones, acompañadas de referencias a la bibliografía oficial del curso. Esta funcionalidad garantiza que las respuestas estén alineadas con el material de estudio, de esta manera el estudiante puede ir a consultar en el libro si lo necesita. 
 
-Para implementar esta funcionalidad, se puede utilizar un sistema de Generación Aumentada por Recuperación (RAG, por sus siglas en inglés), como se describe en el Capítulo~\ref{chapter:rag}. 
+Para implementar esta funcionalidad, se puede utilizar un sistema de Generación Aumentada por Recuperación (RAG, por sus siglas en inglés), que se presenta en el Capítulo~\ref{chapter:rag}. 
 
 Además de resolver dudas, el sistema también ofrece herramientas para que los estudiantes practiquen y refuercen sus conocimientos a través de ejercicios adaptados a su nivel.
 
@@ -50,7 +50,7 @@ Una vez que el estudiante resuelve un ejercicio, envía el código y el sistema 
 
 Después de que el estudiante envía la solución a un ejercicio, el sistema evalúa la solución y le informa al estudiante si es correcta o incorrecta. Si la solución es correcta, se le puede sugerir al estudiante que explore formas de mejorar la eficiencia del código, fomentando el desarrollo de habilidades de programación más avanzadas.
 
-En caso de que la solución sea incorrecta, el sistema identifica el error y se lo comunica al estudiante. Además, el sistema registra la cantidad de intentos que el estudiante ha realizado para resolver el ejercicio, lo que permite monitorear su progreso y adaptar futuras recomendaciones de ejercicios según su desempeño. Esta funcionalidad no solo ayuda a identificar áreas de mejora, sino que también motiva al estudiante a persistir en la resolución de problemas.
+En caso de que la solución sea incorrecta, el sistema identifica el error y se lo comunica al estudiante. Además, el sistema registra la cantidad de intentos que el estudiante ha realizado para resolver el ejercicio, lo que permite monitorear su progreso y adaptar futuras recomendaciones de ejercicios según su desempeño. Esta funcionalidad tiene como objetivo ayudar a identificar áreas de mejora y motivar al estudiante a persistir en la resolución de problemas.
 
 Si el estudiante se encuentra con dificultades durante la resolución de un ejercicio, se le ofrecen pistas para guiarlo. A continuación se explica cómo funciona este proceso.
 
@@ -60,7 +60,7 @@ Durante la resolución de ejercicios, es posible que el estudiante enfrente difi
 
 Este sistema permite al estudiante recibir ayuda gradualmente, sin revelar la solución completa, con la intención de que lo motive a descubrirla por sí mismo mientras refuerza su comprensión del tema. Por ejemplo, si el ejercicio consiste en implementar un algoritmo de ordenamiento, la primera pista podría ser una descripción general del algoritmo, mientras que las pistas posteriores podrían detallar cómo implementar cada paso o cómo manejar casos específicos.
 
-Este sistema de pistas escalonadas no solo evita que el estudiante se sienta abrumado, sino que también le permite avanzar a su propio ritmo. Además, al descubrir la solución por sí mismo, el estudiante gana confianza en sus habilidades y desarrolla una mayor capacidad para resolver problemas de manera independiente.
+Este sistema de pistas escalonadas busca evitar que el estudiante se sienta abrumado, a la vez que le permite avanzar a su propio ritmo. Además, al descubrir la solución por sí mismo, el estudiante puede ganar confianza en sus habilidades y desarrollar una mayor capacidad para resolver problemas de manera independiente.
 
 En caso de que el estudiante no logre resolver el ejercicio incluso con las pistas, se ofrece la opción de consultar la solución completa. En la siguiente sección se explica esta funcionalidad.
 
@@ -76,7 +76,7 @@ Además de apoyar a los estudiantes, el sistema también ofrece funcionalidades 
 
 \section{Flujo para los profesores}\label{sec:teachers}
 
-El sistema está diseñado para que los profesores puedan gestionar y organizar el contenido del curso, adaptándolo a las necesidades específicas de los estudiantes de programación. A continuación, se detallan las funcionalidades clave disponibles para los docentes.
+El sistema está diseñado para que los profesores puedan gestionar y organizar el contenido del curso, adaptándolo a las necesidades específicas de los estudiantes. A continuación, se detallan las funcionalidades disponibles para los docentes.
 
 \subsection{Creación de contenido}
 
@@ -98,4 +98,4 @@ En este capítulo se ha presentado una propuesta diseñada para apoyar el estudi
 
 El flujo propuesto está diseñado para guiar al estudiante a través de su proceso de aprendizaje. Cada etapa está planificada para fomentar la autonomía, el pensamiento crítico y el progreso continuo. Esta propuesta tiene el potencial de transformar la manera en que los estudiantes y profesores abordan el estudio de la programación, ofreciendo un apoyo personalizado y accesible en cualquier momento.
 
-Para construir esta herramienta, fue necesario recopilar ejercicios agrupados por los temas del curso de Programación de la carrera de Ciencia de la Computación en \mbox{MATCOM}, diseñar soluciones y desarrollar un conjunto de pistas progresivas para cada ejercicio. En el siguiente capítulo, se aborda esta parte del trabajo.
+En el siguiente capítulo se detalla la implementación de este sistema mediante un bot de Telegram.

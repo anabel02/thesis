@@ -1,4 +1,4 @@
-\chapter{Ejercicios}\label{chapter:exercises}
+\chapter{Estrategia para la confección de ejercicios}\label{chapter:exercises}
 
 Los ejercicios son una herramienta fundamental en el proceso de aprendizaje de la Programación, ya que permiten a los estudiantes aplicar y consolidar los conocimientos adquiridos, tal como se analizó en el capítulo~\ref{chapter:background}.
 
@@ -27,7 +27,7 @@ Los ejercicios recopilados se han organizado por temas para facilitar su integra
     Ejercicios centrados en el uso de tipos de datos, operaciones aritméticas y manipulación de variables. Estos ejercicios introducen la secuencialidad de los programas.  
 
     \item Condicionales:  
-    Problemas relacionados con el uso de estructuras de control condicionales (\texttt{if}, \texttt{else}, \texttt{else if}, \texttt{switch case}). Se enfoca en las operaciones booleanas y la aplicación de lógica para seleccionar y ejecutar bloques de código según diferentes condiciones.
+    Problemas relacionados con el uso de estructuras de control condicionales (\texttt{if}, \texttt{else}, \texttt{else if}, \texttt{switch case}). Se enfoca en las operaciones \textit{booleanas} y la aplicación de lógica para seleccionar y ejecutar bloques de código según diferentes condiciones.
 
     \item Métodos:
     Ejercicios dedicados al diseño y uso de métodos, destacando su aplicación para estructurar soluciones mediante la modularidad del código.  
@@ -39,7 +39,7 @@ Los ejercicios recopilados se han organizado por temas para facilitar su integra
     Ejercicios sobre el manejo de \textit{arrays}, incluyendo iteraciones, búsquedas y acceso a datos.  
 
     \item Modificación de \textit{arrays}:  
-    Problemas que involucran operaciones como agregar, eliminar, ordenar o modificar elementos en arreglos.  
+    Problemas que involucran operaciones como agregar, eliminar, ordenar o modificar elementos en \textit{arrays}.  
 
     \item Resolución de problemas:  
     Ejercicios diseñados para desarrollar habilidades en la descomposición y análisis de problemas mediante algoritmos.
@@ -59,10 +59,10 @@ Los ejercicios intermedios exigen una mayor integración de conceptos aprendidos
 
 Los ejercicios avanzados requieren resolver problemas que combinan varios conceptos y exigen análisis detallado. Los estudiantes deben explorar diferentes enfoques y estrategias para encontrar soluciones.
 
-Los ejemplos presentados en las figuras~\ref{fig:basic},~\ref{fig:intermediate},~\ref{fig:advanced}, de las páginas~\pageref{fig:basic},~\pageref{fig:intermediate}, y~\pageref{fig:advanced} respectivamente, ilustran distintos niveles de dificultad dentro del tema Ciclos y reflejan la estructura utilizada para diseñar los ejercicios. Esta estructura tiene como objetivo garantizar claridad y consistencia e incluye un título, una descripción, definiciones necesarias, formato de entradas y salidas y ejemplos de ejecuciones. A continuación se describen estos elementos.
+El ejemplo presentado en la figura~\ref{fig:basic} de la página~\pageref{fig:basic}, refleja la estructura utilizada para diseñar los ejercicios. Esta estructura tiene como objetivo garantizar claridad y consistencia e incluye un título, una descripción, definiciones necesarias, formato de entradas y salidas y ejemplos de ejecuciones. A continuación se describen estos elementos.
 
 \begin{itemize}
-    \item Título del ejercicio: un título para identificar a los ejercicios.
+    \item Título del ejercicio: Se incluye un título para identificar a los ejercicios.
     
     \item Descripción del problema:  
     Se indica la orden del ejercicio y el problema que se debe resolver. Por ejemplo: ``Escribe un programa que determine si un entero es primo o no''
@@ -114,83 +114,13 @@ Los ejemplos presentados en las figuras~\ref{fig:basic},~\ref{fig:intermediate},
 \caption{Ejemplo de ejercicio básico.}\label{fig:basic}
 \end{figure}
 
-\begin{figure}[h!]
-    \centering
-    \begin{minipage}{12cm}
-    \begin{framed}
-        \textbf{N-ésimo número primo}
-    
-        Implemente un método que devuelva el $n$-ésimo primo de la sucesión de números primos.\\
-
-        \textbf{Entrada}: Un número entero positivo \(n\) que representa el índice del primo a encontrar.
-        
-        \textbf{Salida}: Un número entero positivo, el \(n\)-ésimo número primo.\\
-        
-        \textbf{Ejemplos:}
-        
-        \centering
-        \begin{tabular}{|c|c|}
-        \hline
-        Entrada & Salida \\
-        \hline
-        1    & 2  \\
-        3    & 5  \\
-        5    & 11  \\
-        10   & 29  \\
-        15   & 47  \\
-        \hline
-        \end{tabular}
-    \end{framed}
-    \end{minipage}
-\caption{Ejemplo de ejercicio intermedio.}\label{fig:intermediate}
-\end{figure}
-
-
-\begin{figure}[h!]
-    \centering
-    \begin{minipage}{12cm}
-    \begin{framed}
-        \textbf{Representación binaria}
-    
-        Implemente un método que convierta un número de binario a decimal.\\
-        Un número binario es una representación en base 2 de un número entero. El número binario está compuesto solo por los dígitos \(0\) y \(1\), donde cada posición en el número tiene un valor que es una potencia de 2, comenzando desde la derecha (posición 0).
-
-        Para convertir un número binario a decimal, se puede utilizar la siguiente fórmula:
-        \[
-        n = \sum_{i=0}^{k} b_i \cdot 2^i,
-        \]
-        donde \(b_i\) es el \(i\)-ésimo dígito del número binario, comenzando desde la derecha, y \(k\) es el índice de la posición más significativa (la izquierda).\\
-
-        \textbf{Entrada}: Un número binario representado como un string.
-
-        \textbf{Salida}: El entero no negativo correspondiente al número decimal.\\
-        
-        \textbf{Ejemplos:}\\
-
-        \centering
-        \begin{tabular}{|p{1.5cm}|p{1.5cm}|p{7cm}|}
-            \hline
-            \textbf{Entrada} & \textbf{Salida} & \textbf{Explicación} \\
-            \hline
-            ``\(1101\)''  & \(13\)     & \(1101_2 = 1 \cdot 2^3 + 1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0 = 13\). \\ 
-                         &            & El número binario \(1101_2\) equivale a \(13\) en decimal. \\
-            \hline
-            ``\(10101\)'' & \(21\)     & \(10101_2 = 1 \cdot 2^4 + 0 \cdot 2^3 + 1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0  = 21\). \\ 
-                         &            & El número binario \(10101_2\) equivale a \(21\) en decimal. \\
-            \hline
-            \end{tabular}
-    \end{framed}
-    \end{minipage}
-\caption{Ejemplo de ejercicio avanzado.}\label{fig:advanced}
-\end{figure}
-
 Estos ejercicios se acompañan de soluciones que proporcionan explicaciones paso a paso para ayudar a los estudiantes a comprender los conceptos involucrados. En la siguiente sección, se describe el enfoque adoptado para la elaboración de estas soluciones.
 
 \section{Solución de ejercicios}
 
 El objetivo de estas soluciones es proporcionar una guía adicional para los estudiantes, ayudándoles a comprender no solo los resultados finales, sino también los enfoques seguidos para alcanzarlos. A través del análisis de cada solución, los estudiantes podrán observar cómo se aplican los conceptos teóricos en ejercicios prácticos.
 
-Se recomienda que los estudiantes intenten resolver cada ejercicio por sí mismos antes de consultar las soluciones propuestas. Este enfoque fomenta la práctica activa y el aprendizaje autónomo, permitiendo que los estudiantes refuercen sus habilidades al enfrentarse directamente con el problema. Una vez que hayan intentado resolverlo, podrán utilizar las soluciones como una herramienta para comparar su solución y analizar posibles áreas de mejora.
+Se recomienda que los estudiantes intenten resolver cada ejercicio por sí mismos antes de consultar las soluciones propuestas. Este enfoque fomenta la práctica activa y el aprendizaje autónomo, permitiendo que los estudiantes refuercen sus habilidades al enfrentarse directamente con el problema. Una vez que hayan logrado resolverlo, podrán utilizar las soluciones propuestas como una herramienta para comparar su solución y analizar posibles áreas de mejora.
 
 Al revisar las soluciones proporcionadas, es recomendable que los estudiantes analicen no solo el código final, sino también las decisiones tomadas durante su desarrollo. Así, las soluciones actúan no solo como un medio de validación, sino también como una oportunidad para mejorar la comprensión teórica.
 
@@ -252,7 +182,7 @@ Las pistas son una herramienta complementaria diseñada para guiar a los estudia
 Cada pista dentro de un ejercicio está numerada según el orden en que debe ser consultada. Por ejemplo, para el ejercicio presentado en la figura~\ref{fig:basic}, que consiste en identificar si un número es primo o no, se brindan las siguientes pistas:
 \begin{enumerate}
     \item Conocemos que un número primo es un número entero mayor que 1 que solo es divisible por 1 y por sí mismo. ¿Cómo puedes verificar si un número es divisible por otro?
-    \item Sea \(n\) un número entero, todos sus divisores son menores o iguales que \(n\). ¿Cómo puedes verificar la divisibilidad desde 2 hasta la \(n - 1\)?
+    \item Sea \(n\) un número entero, todos sus divisores son menores o iguales que \(n\). ¿Cómo puedes verificar la divisibilidad desde 2 hasta \(n - 1\)?
     \item Si el número es 2, es primo. Si es menor que 2 no es primo. Para números \(n\) mayores que 2, solo necesitas hacer un bucle desde \(d = 2\) hasta \(d = n -1\) verificando si n es divisible entre d, o sea comprobar que \(n \% d == 0\).
 \end{enumerate}
 

@@ -24,12 +24,13 @@
 \RequirePackage[
   backend=biber,
 	style=numeric,
-	citestyle=authoryear,
+	citestyle=numeric,
+  sorting=none,
   hyperref=true,
 	backref=true
 	]{biblatex}
 \RequirePackage[linktocpage,breaklinks,colorlinks,%
-                linkcolor=black,anchorcolor=black,citecolor=black,%
+                linkcolor=black,anchorcolor=black,citecolor=black,
                 filecolor=black,menucolor=black,runcolor=black,%
                 urlcolor=black]{hyperref}
                 
@@ -74,58 +75,58 @@
 \setcounter{totalnumber}{4}
 \renewcommand{\textfraction}{0.07}
 
-% Whole biblatex hyperref to bibliography
-\DeclareCiteCommand{\cite}
-  {\usebibmacro{prenote}}
-  {\usebibmacro{citeindex}%
-   \printtext[bibhyperref]{\usebibmacro{cite}}}
-  {\multicitedelim}
-  {\usebibmacro{postnote}}
+% % Whole biblatex hyperref to bibliography
+% \DeclareCiteCommand{\cite}
+%   {\usebibmacro{prenote}}
+%   {\usebibmacro{citeindex}%
+%    \printtext[bibhyperref]{\usebibmacro{cite}}}
+%   {\multicitedelim}
+%   {\usebibmacro{postnote}}
 
-\DeclareCiteCommand*{\cite}
-  {\usebibmacro{prenote}}
-  {\usebibmacro{citeindex}%
-   \printtext[bibhyperref]{\usebibmacro{citeyear}}}
-  {\multicitedelim}
-  {\usebibmacro{postnote}}
+% \DeclareCiteCommand*{\cite}
+%   {\usebibmacro{prenote}}
+%   {\usebibmacro{citeindex}%
+%    \printtext[bibhyperref]{\usebibmacro{citeyear}}}
+%   {\multicitedelim}
+%   {\usebibmacro{postnote}}
 
-\DeclareCiteCommand{\parencite}[\mkbibparens]
-  {\usebibmacro{prenote}}
-  {\usebibmacro{citeindex}%
-    \printtext[bibhyperref]{\usebibmacro{cite}}}
-  {\multicitedelim}
-  {\usebibmacro{postnote}}
+% \DeclareCiteCommand{\parencite}[\mkbibparens]
+%   {\usebibmacro{prenote}}
+%   {\usebibmacro{citeindex}%
+%     \printtext[bibhyperref]{\usebibmacro{cite}}}
+%   {\multicitedelim}
+%   {\usebibmacro{postnote}}
 
-\DeclareCiteCommand*{\parencite}[\mkbibparens]
-  {\usebibmacro{prenote}}
-  {\usebibmacro{citeindex}%
-    \printtext[bibhyperref]{\usebibmacro{citeyear}}}
-  {\multicitedelim}
-  {\usebibmacro{postnote}}
+% \DeclareCiteCommand*{\parencite}[\mkbibparens]
+%   {\usebibmacro{prenote}}
+%   {\usebibmacro{citeindex}%
+%     \printtext[bibhyperref]{\usebibmacro{citeyear}}}
+%   {\multicitedelim}
+%   {\usebibmacro{postnote}}
 
-\DeclareCiteCommand{\footcite}[\mkbibfootnote]
-  {\usebibmacro{prenote}}
-  {\usebibmacro{citeindex}%
-  \printtext[bibhyperref]{ \usebibmacro{cite}}}
-  {\multicitedelim}
-  {\usebibmacro{postnote}}
+% \DeclareCiteCommand{\footcite}[\mkbibfootnote]
+%   {\usebibmacro{prenote}}
+%   {\usebibmacro{citeindex}%
+%   \printtext[bibhyperref]{ \usebibmacro{cite}}}
+%   {\multicitedelim}
+%   {\usebibmacro{postnote}}
 
-\DeclareCiteCommand{\footcitetext}[\mkbibfootnotetext]
-  {\usebibmacro{prenote}}
-  {\usebibmacro{citeindex}%
-   \printtext[bibhyperref]{\usebibmacro{cite}}}
-  {\multicitedelim}
-  {\usebibmacro{postnote}}
+% \DeclareCiteCommand{\footcitetext}[\mkbibfootnotetext]
+%   {\usebibmacro{prenote}}
+%   {\usebibmacro{citeindex}%
+%    \printtext[bibhyperref]{\usebibmacro{cite}}}
+%   {\multicitedelim}
+%   {\usebibmacro{postnote}}
 
-\DeclareCiteCommand{\textcite}
-  {\boolfalse{cbx:parens}}
-  {\usebibmacro{citeindex}%
-   \printtext[bibhyperref]{\usebibmacro{textcite}}}
-  {\ifbool{cbx:parens}
-     {\bibcloseparen\global\boolfalse{cbx:parens}}
-     {}%
-   \multicitedelim}
-  {\usebibmacro{textcite:postnote}}
+% \DeclareCiteCommand{\textcite}
+%   {\boolfalse{cbx:parens}}
+%   {\usebibmacro{citeindex}%
+%    \printtext[bibhyperref]{\usebibmacro{textcite}}}
+%   {\ifbool{cbx:parens}
+%      {\bibcloseparen\global\boolfalse{cbx:parens}}
+%      {}%
+%    \multicitedelim}
+%   {\usebibmacro{textcite:postnote}}
 
 % % Backreferences in the bibliography.
 % \backrefspanish

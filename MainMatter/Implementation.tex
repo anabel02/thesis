@@ -1,6 +1,6 @@
-\chapter{Detalles de Implementación}\label{chapter:implementation}
+\chapter{Detalles de implementación}\label{chapter:implementation}
 
-En este capítulo se analizan los detalles de implementación de un bot de Telegram con las funcionalidades mostradas en el Capítulo~\ref{chapter:proposal}. En la sección~\ref{sec:technical-details} se mencionan las tecnologías y herramientas utilizadas en la implementación del bot. En la sección~\ref{sec:database} se explica el diseño de la base de datos. En la sección~\ref{sec:features} se analiza la implementación de cada una de las funcionalidades.
+En este capítulo se analizan los detalles de implementación de un bot de Telegram con las funcionalidades mostradas en el Capítulo~\ref{chapter:proposal}. En la sección~\ref{sec:technical-details} se mencionan las tecnologías y herramientas utilizadas en la implementación del bot. En la sección~\ref{sec:features} se analiza la implementación de cada una de las funcionalidades.
 
 \section{Detalles técnicos}\label{sec:technical-details}
 
@@ -53,7 +53,7 @@ Al acceder por primera vez, la herramienta solicita al estudiante ingresar su no
   \draw [arrow2] (sDatos) -- (datos);
   \draw [arrow2] (datos) -- (bienvenida);
   \end{tikzpicture}
-  \caption{Diagrama del flujo de registro.}\label{fig:register}
+  \caption{Diagrama del flujo del registro.}\label{fig:register}
 \end{figure}
 
 Después del registro, lo más común es que el estudiante revise el listado de temas disponibles para comenzar su estudio.
@@ -78,7 +78,7 @@ Si el nombre del tema no resulta suficientemente claro, el estudiante puede soli
     \draw [arrow2] (explorar) -- node[above] {Sí} (descripcionSolicitud);
     \draw [arrow2] (descripcionSolicitud) -- (descripcion);
   \end{tikzpicture}
-\caption{Diagrama del flujo de temas.}\label{fig:topics}
+\caption{Diagrama del flujo del listado temas.}\label{fig:topics}
 \end{figure}
 
 Durante el estudio o después de una clase, es común que los estudiantes tengan dudas sobre el contenido, como por ejemplo: ``¿qué es un array de direcciones?''. Para resolver estas inquietudes, la aplicación cuenta con un módulo de resolución de dudas.
@@ -130,7 +130,7 @@ La aplicación incluye un sistema de resolución de dudas que permite a los estu
     \caption{Sistema de preguntas y respuestas basado en Generación Aumentada por Recuperación (RAG).}\label{fig:q-a-diagram}
 \end{figure}
 
-Como se explica en el Capítulo~\ref{chapter:rag} el proceso de construcción del recuperador consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
+Como se explica en el Capítulo~\ref{chapter:rag} el proceso de construcción del componente de recuperación consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
 
 El corpus del sistema está compuesto por los capítulos del libro ``Empezar a programar: Un enfoque multiparadigma con C\#'' en formato PDF. Este contenido se convierte a texto utilizando herramientas de extracción que preservan su estructura original. Para manejar el contenido, se divide en fragmentos de longitud fija de 2000 caracteres con un solapamiento de 200 caracteres, con el objetivo de que no se pierda el contexto entre fragmentos consecutivos. Cada fragmento se transforma en una representación numérica mediante el modelo de embeddings \textit{models/text-embedding-004} de Google.
 

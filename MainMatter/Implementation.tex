@@ -1,12 +1,8 @@
 \chapter{Detalles de implementación}\label{chapter:implementation}
 
-En este capítulo se analizan los detalles de implementación de un bot de Telegram con las funcionalidades mostradas en el Capítulo~\ref{chapter:proposal}. En la sección~\ref{sec:technical-details} se mencionan las tecnologías y herramientas utilizadas en la implementación del bot. En la sección~\ref{sec:features} se analiza la implementación de cada una de las funcionalidades.
+En este capítulo se describen los detalles de implementación de un bot de Telegram diseñado para apoyar el estudio independiente de los estudiantes de programación. En la Sección~\ref{sec:technical-details} se presentan las tecnologías y herramientas utilizadas, así como las razones detrás de su selección. En la Sección~\ref{sec:features} se analiza la arquitectura del sistema y se describen las funcionalidades principales, como el registro de usuarios, el listado de temas, la resolución de dudas y la práctica con ejercicios. Finalmente, se discute cómo los profesores pueden personalizar el contenido del curso.
 
 \section{Detalles técnicos}\label{sec:technical-details}
-
-La aplicación se desarrolla utilizando Python como lenguaje de programación. Para la gestión de la base de datos, se utiliza PostgreSQL~\cite{postgresql}, un sistema de gestión de bases de datos relacional que es escalable y de código abierto.
-
-\subsection{Selección de la plataforma: ¿Por qué Telegram?}
 
 Se desarrolla un bot de Telegram debido a que los estudiantes de la facultad ya están familiarizados con esta herramienta desde el primer año de la carrera. En \mbox{MATCOM}, Telegram se utiliza ampliamente como medio de comunicación, donde cada asignatura cuenta con al menos un grupo de Telegram para facilitar la interacción entre estudiantes y profesores, algunas asignaturas también disponen de canales. 
 
@@ -14,11 +10,13 @@ Esta adopción generalizada de Telegram elimina la necesidad de que los estudian
 
 Otra razón importante para esta elección son las ventajas técnicas que ofrece Telegram. Su API es gratuita y está bien documentada, lo que facilita la implementación de funcionalidades. Asimismo, Telegram es accesible desde múltiples dispositivos (dispositivos móviles, web y desktop) e incluso permite sesiones simultáneas, garantizando una disponibilidad constante y comodidad para los estudiantes.
 
+El bot se desarrolla utilizando Python como lenguaje de programación debido a su amplia gama de bibliotecas disponibles. Para la gestión de datos, se utilizó PostgreSQL~\cite{postgresql}, un sistema gestor de bases de datos relacional escalable y de código abierto.
+
 En la siguiente sección, se describe el diseño del sistema mediante diagramas que representan las funcionalidades principales, proporcionando una visión de cómo interactúan los componentes del bot.
 
 \section{Arquitectura y funcionalidades del sistema}\label{sec:features}
 
-El esquema de la base de datos está estructurado en varias tablas interrelacionadas—\texttt{users}, \texttt{students}, \texttt{topics}, \texttt{exercises}, \texttt{exercise\_hints}, \texttt{student\_hints} y \texttt{student\_exercise}—que gestionan la información de usuarios, estudiantes, temas, ejercicios y pistas.
+El esquema de la base de datos está estructurado en varias tablas interrelacionadas \texttt{users}, \texttt{students}, \texttt{topics}, \texttt{exercises}, \texttt{exercise\_hints}, \texttt{student\_hints} y \texttt{student\_exercise} que gestionan la información de usuarios, estudiantes, temas, ejercicios y pistas.
 
 En esta sección se describe el diseño del sistema mediante diagramas que representan las funcionalidades principales. La Figura~\ref{fig:legend} muestra una leyenda que explica los componentes utilizados en los diagramas. Las flechas indican el flujo de la interacción.
 
@@ -83,7 +81,7 @@ Si el nombre del tema no resulta suficientemente claro, el estudiante puede soli
 
 Durante el estudio o después de una clase, es común que los estudiantes tengan dudas sobre el contenido, como por ejemplo: ``¿qué es un array de direcciones?''. Para resolver estas inquietudes, la aplicación cuenta con un módulo de resolución de dudas.
 
-\subsection{Resolución de dudas}
+\subsection{Sistema de resolución de dudas basado en RAG}
 
 La aplicación incluye un sistema de resolución de dudas que permite a los estudiantes formular preguntas en lenguaje natural. Utilizando un RAG, el sistema proporciona respuestas basadas en la bibliografía del curso. La Figura~\ref{fig:q-a-diagram} muestra el funcionamiento de este sistema.
 
@@ -209,4 +207,4 @@ Si se desea cambiar los temas y ejercicios del curso, es necesario crear un arch
 
 Para añadir más documentos al sistema de preguntas y respuestas, es necesario colocar los archivos en formato PDF dentro de la carpeta \texttt{data/corpus}. Cuando se ejecute, la aplicación procesará estos documentos.
 
-En este capítulo se mostraron las particularidades del sistema de acuerdo a su implementación.
+En este capítulo se han descrito los detalles de implementación del bot de Telegram. Las funcionalidades implementadas, como el registro de usuarios, la resolución de dudas y la práctica con ejercicios, están diseñadas para mejorar la experiencia de aprendizaje de los estudiantes. Además, la posibilidad de personalizar el contenido del curso asegura que el sistema pueda adaptarse a las necesidades de diferentes asignaturas y profesores.

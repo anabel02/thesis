@@ -10,7 +10,7 @@ Esta adopción generalizada de Telegram elimina la necesidad de que los estudian
 
 Otra razón importante para esta elección son las ventajas técnicas que ofrece Telegram. Su API es gratuita y está bien documentada, lo que facilita la implementación de funcionalidades. Asimismo, Telegram es accesible desde múltiples dispositivos (dispositivos móviles, web y desktop) e incluso permite sesiones simultáneas, garantizando una disponibilidad constante y comodidad para los estudiantes.
 
-El bot se desarrolla utilizando Python como lenguaje de programación debido a su amplia gama de bibliotecas disponibles. Para la gestión de datos, se utilizó PostgreSQL~\cite{postgresql}, un sistema gestor de bases de datos relacional escalable y de código abierto.
+El bot se desarrolla utilizando Python como lenguaje de programación debido a su amplia gama de bibliotecas. Para la gestión de datos, se utilizó PostgreSQL~\cite{postgresql}, un sistema de bases de datos relacional escalable y de código abierto.
 
 En la siguiente sección, se describe el diseño del sistema mediante diagramas que representan las funcionalidades principales, proporcionando una visión de cómo interactúan los componentes del bot.
 
@@ -35,6 +35,8 @@ En esta sección se describe el diseño del sistema mediante diagramas que repre
       \caption{Leyenda de los componentes de los diagramas.}\label{fig:legend}
 \end{figure}
 
+Las funcionalidades disponibles son el registro de los estudiantes, listar los temas de la asignatura, responder dudas sobre el contenido y recomendar ejercicios, así como ofrecer pistas para guiar en la resolución de los ejercicios. El primer paso es el registro de los estudiantes.
+
 \subsection{Registro}
 
 Al acceder por primera vez, la herramienta solicita al estudiante ingresar su nombre completo. Luego, muestra un mensaje de bienvenida y una guía básica que explica las funcionalidades disponibles, siguiendo el flujo descrito en la Figura~\ref{fig:register}. Esta introducción tiene como objetivo que el usuario comprenda cómo aprovechar la aplicación para su estudio.
@@ -58,9 +60,9 @@ Después del registro, lo más común es que el estudiante revise el listado de 
 
 \subsection{Listado de temas}
 
-Cuando el usuario lo solicita, la aplicación muestra un listado organizado de los temas disponibles para su estudio. Los temas se presentan en el orden de estudio definido en el diseño del curso de Programación, como se describe en la Sección~\ref{sec:matcom}.
+Cuando el usuario lo solicita, la aplicación muestra un listado organizado de los temas disponibles para su estudio. Los temas se presentan en el orden definido en el diseño del curso de Programación, que se describe en la Sección~\ref{sec:matcom}.
 
-Si el nombre del tema no resulta suficientemente claro, el estudiante puede solicitar una descripción detallada del mismo. Este flujo se ilustra en la Figura~\ref{fig:topics}.
+Si el nombre del tema no resulta suficientemente claro, el estudiante puede solicitar una descripción detallada del mismo. Este flujo se ilustra en la Figura~\ref{fig:topics} de la página~\pageref{fig:topics}.
 
 \begin{figure}[h!]
   \centering
@@ -83,7 +85,7 @@ Durante el estudio o después de una clase, es común que los estudiantes tengan
 
 \subsection{Sistema de resolución de dudas basado en RAG}
 
-La aplicación incluye un sistema de resolución de dudas que permite a los estudiantes formular preguntas en lenguaje natural. Utilizando un RAG, el sistema proporciona respuestas basadas en la bibliografía del curso. La Figura~\ref{fig:q-a-diagram} muestra el funcionamiento de este sistema.
+La aplicación incluye un sistema de resolución de dudas que permite a los estudiantes formular preguntas en lenguaje natural. Utilizando un RAG, el sistema proporciona respuestas basadas en la bibliografía del curso. La Figura~\ref{fig:q-a-diagram} de la página~\pageref{fig:q-a-diagram} muestra el funcionamiento de este sistema.
 
 \begin{figure}[h!]
   \centering
@@ -128,19 +130,17 @@ La aplicación incluye un sistema de resolución de dudas que permite a los estu
     \caption{Sistema de preguntas y respuestas basado en Generación Aumentada por Recuperación (RAG).}\label{fig:q-a-diagram}
 \end{figure}
 
-Como se explica en el Capítulo~\ref{chapter:rag} el proceso de construcción del componente de recuperación consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
+Como se explica en el Capítulo~\ref{chapter:rag} el proceso de construcción del \textit{retriever} consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
 
-El corpus del sistema está compuesto por los capítulos del libro ``Empezar a programar: Un enfoque multiparadigma con C\#'' en formato PDF. Este contenido se convierte a texto utilizando herramientas de extracción que preservan su estructura original. Para manejar el contenido, se divide en fragmentos de longitud fija de 2000 caracteres con un solapamiento de 200 caracteres, con el objetivo de que no se pierda el contexto entre fragmentos consecutivos. Cada fragmento se transforma en una representación numérica mediante el modelo de embeddings \textit{models/text-embedding-004} de Google.
+El corpus del sistema está compuesto por los capítulos del libro ``Empezar a programar: Un enfoque multiparadigma con C\#'' en formato PDF. Este contenido se convierte a texto utilizando herramientas de extracción que preservan su estructura original. Para manejar el contenido, se divide en fragmentos de longitud fija de 2000 caracteres con un solapamiento de 200 caracteres, con el objetivo de que no se pierda el contexto entre fragmentos consecutivos. Cada fragmento se transforma en una representación numérica mediante el modelo de embeddings \textit{models/text-embedding-004}.
 
 Durante este proceso, a cada fragmento se le asocian metadatos, como el nombre del documento y el número de página correspondiente. Estos metadatos se almacenan junto con los vectores en la base de datos vectorial, lo que permite, durante la fase de generación, incorporar referencias en las respuestas proporcionadas al usuario.
 
-Cuando un estudiante formula una pregunta, esta se procesa mediante el mismo modelo \textit{models/text-embedding-004}, que convierte la pregunta en una representación vectorial. Para medir la relevancia entre una consulta y los fragmentos almacenados en la base de datos vectorial, se emplea la similitud coseno. El sistema utiliza los 5 fragmentos más similares para generar el \textit{prompt} extendido, que combina la pregunta con el contenido relevante del libro.
+Cuando un estudiante formula una pregunta, esta se procesa mediante el mismo modelo \textit{models/text-embedding-004}, que convierte la pregunta en una representación vectorial. Para medir la relevancia entre una consulta y los fragmentos almacenados en la base de datos vectorial, se emplea la similitud coseno. El sistema utiliza los 5 fragmentos más similares para generar el \textit{prompt} extendido, que combina la pregunta con el contenido relevante del libro. El \textit{prompt} extendido se envía al modelo \textit{gemini-1.5-flash}, que genera una respuesta.
 
-El \textit{prompt} extendido se envía al LLM \textit{gemini-1.5-flash}, que genera una respuesta detallada. Además, las respuestas están enriquecidas con referencias específicas al libro, permitiendo al estudiante verificar la información en una fuente confiable.
+Este flujo de trabajo muestra cómo el sistema RAG combina la búsqueda de información con la generación de texto, con el objetivo de reducir el tiempo que los estudiantes invertirían en buscar respuestas a través de medios tradicionales, como la revisión manual del libro o la consulta directa al profesor. Al incorporar referencias específicas al libro, el sistema no solo proporciona respuestas más confiables, sino que también fomenta la capacidad crítica de los estudiantes, permitiéndoles contrastar la información generada con fuentes autorizadas. De esta manera, se busca minimizar la dependencia exclusiva de LLMs o fuentes en línea que podrían no ser fiables, especialmente para usuarios con poca experiencia.
 
-Este flujo de trabajo muestra cómo el sistema RAG combina la búsqueda de información con la generación de texto, con el objetivo de reducir el tiempo que los estudiantes invertirían en buscar respuestas a través de medios tradicionales, como la revisión manual del libro o la consulta directa al profesor. Al incorporar referencias específicas al libro de Katrib, el sistema no solo proporciona respuestas más confiables, sino que también fomenta la capacidad crítica de los estudiantes, permitiéndoles contrastar la información generada con fuentes autorizadas. De esta manera, se busca minimizar la dependencia exclusiva de LLMs o fuentes en línea que podrían no ser del todo fiables, especialmente para usuarios con poca experiencia.
-
-Además de resolver dudas, la aplicación ofrece una experiencia de aprendizaje activo mediante la práctica con ejercicios.
+Además de resolver dudas, la aplicación cuenta con un sistema de sugerencia de ejercicios, así como apoyo en cada paso de la resolución de estos ejercicios.
 
 \subsection{Práctica con ejercicios sugeridos. Pistas y soluciones.}
 
@@ -182,12 +182,13 @@ Para mejorar esta funcionalidad, se propone implementar un sistema de evaluació
 
 Con la nueva propuesta, el sistema de evaluación automática ejecutará el código del estudiante y comparará la salida generada con los casos de prueba predefinidos. Si la salida coincide con los resultados esperados, el ejercicio se marcará como resuelto. En caso contrario, el sistema proporcionará retroalimentación inmediata al estudiante sobre los errores encontrados. De todas formas, con este sistema de evaluación automática, también se almacenaría el código de las soluciones en la base de datos, dejando al profesor la posibilidad de revisarlos.
 
-A continuación se describe cómo los profesores podrían cambiar el contenido del curso, ya sea los materiales de los que se recupera información para resolver dudas, como de los ejercicios.
+A continuación se describe cómo los profesores podrían cambiar el contenido del curso, ya sea los materiales de los que se recupera información para resolver dudas, como los ejercicios.
 
 \subsection{Personalización del curso}
 
-Si se desea cambiar los temas y ejercicios del curso, es necesario crear un archivo JSON en la carpeta \texttt{data} con el siguiente formato:
+Si se desea cambiar los temas y ejercicios del curso, es necesario crear un archivo \texttt{topics.json} en la carpeta \texttt{data}. Este archivo debe seguir un formato específico para que el sistema pueda interpretarlo correctamente.
 
+El contenido del archivo debe ser un objeto JSON con un campo llamado topics, que es un array de temas. Cada tema debe contener la siguiente información:
 \begin{itemize}
     \item \texttt{title} (tipo \texttt{string}): Título del tema.
     \item \texttt{description} (tipo \texttt{string}): Descripción general del tema.
@@ -199,11 +200,49 @@ Si se desea cambiar los temas y ejercicios del curso, es necesario crear un arch
         \item \texttt{solution} (tipo \texttt{string}): Solución completa del ejercicio.
         \item \texttt{hints} (tipo \texttt{array}): Lista de pistas asociadas al ejercicio, donde cada pista tiene:
         \begin{itemize}
-            \item \texttt{text} (tipo \texttt{string}): Texto de la pista.
-            \item \texttt{level} (tipo \texttt{number}): Nivel de detalle de la pista, que define el orden en que se entregarán al usuario. Las pistas se muestran de menor a mayor nivel (0, 1, 2, \ldots), se recomienda comenzar con sugerencias generales e ir avanzando hacia indicaciones más específicas.
+            \item \texttt{content} (tipo \texttt{string}): Texto de la pista.
+            \item \texttt{order} (tipo \texttt{number}): Nivel de detalle de la pista, que define el orden en que se entregarán al usuario. Las pistas se muestran de menor a mayor nivel (0, 1, 2, \ldots), se recomienda comenzar con sugerencias generales e ir avanzando hacia indicaciones más específicas.
         \end{itemize}
     \end{itemize}
 \end{itemize}
+
+En la Figura~\ref{fig:json} de la página~\pageref{fig:json}, se muestra un ejemplo del archivo \texttt{topics.json} con un tema y un ejercicio:
+
+\begin{figure}[h!]
+\begin{lstlisting}
+{
+  "topics": [
+    {
+        "title": "Ciclos",
+        "description": "...",
+        "exercises": [
+            {
+                "title": "Es primo",
+                "content": "...",
+                "difficulty": "Basic",
+                "solution": "...",
+                "hints": [
+                    {
+                        "order": 1,
+                        "content": "Conocemos que un número primo es un número entero mayor que 1 que solo es divisible por 1 y por sí mismo. ¿Cómo puedes verificar si un número es divisible por otro?"
+                    },
+                    {
+                        "order": 2,
+                        "content": "Sea n un número entero, todos sus divisores son menores o iguales que n. ¿Cómo puedes verificar la divisibilidad desde 2 hasta n - 1?"
+                    },
+                    {
+                        "order": 3,
+                        "content": "Si el número es 2, es primo. Si es menor que 2 no es primo. Para números n mayores que 2, solo necesitas hacer un bucle desde d = 2 hasta d = n -1 verificando si n es divisible entre d, o sea comprobar que n % d == 0."
+                    }
+                ]
+            }
+        ]
+    }
+  ]
+}
+\end{lstlisting}
+\caption{Ejemplo del formato del JSON para personalización de ejercicios}\label{fig:json}
+\end{figure}
 
 Para añadir más documentos al sistema de preguntas y respuestas, es necesario colocar los archivos en formato PDF dentro de la carpeta \texttt{data/corpus}. Cuando se ejecute, la aplicación procesará estos documentos.
 

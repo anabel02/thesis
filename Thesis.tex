@@ -16,6 +16,7 @@
 \usepackage{graphicx}
 \usepackage{framed}
 \usepackage{tikz}
+\usepackage[utf8]{inputenc}
 \usepackage[spanish]{cleveref}
 \usetikzlibrary{arrows.meta, positioning}
 \usetikzlibrary{3d, shapes.geometric}
@@ -58,12 +59,28 @@
     showspaces=false,                
     showstringspaces=false,
     showtabs=false,                  
-    tabsize=4
+    tabsize=4,
+    inputencoding=utf8,
+    literate=%
+    {á}{{\'a}}1
+    {é}{{\'e}}1
+    {í}{{\'i}}1
+    {ó}{{\'o}}1
+    {ú}{{\'u}}1
+    {Á}{{\'A}}1
+    {É}{{\'E}}1
+    {Í}{{\'I}}1
+    {Ó}{{\'O}}1
+    {Ú}{{\'U}}1
+    {ñ}{{\~n}}1
+    {Ñ}{{\~N}}1
+    {¡}{{\textexclamdown}}1
+    {¿}{{\textquestiondown}}1
 }
 
 \lstset{style=mystyle}
 
-\title{Sistema de apoyo para el estudio independiente en Programación}
+\title{Sistema para apoyar el estudio independiente en Programación}
 \author{\\\vspace{0.25cm}Anabel Benítez González}
 \advisor{\\\vspace{0.25cm}MSc. Fernando Rodríguez Flores}
 \degree{Licenciado en Ciencia de la Computación}

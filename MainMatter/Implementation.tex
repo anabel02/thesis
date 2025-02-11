@@ -1,6 +1,6 @@
 \chapter{Detalles de implementación}\label{chapter:implementation}
 
-En este capítulo se describen los detalles de implementación de un bot de Telegram diseñado para apoyar el estudio independiente de los estudiantes de programación. En la Sección~\ref{sec:technical-details} se presentan las tecnologías y herramientas utilizadas, así como las razones detrás de su selección. En la Sección~\ref{sec:features} se analiza la arquitectura del sistema y se describen las funcionalidades principales, como el registro de usuarios, el listado de temas, la resolución de dudas y la práctica con ejercicios. Finalmente, se discute cómo los profesores pueden personalizar el contenido del curso.
+En este capítulo se describen los detalles de implementación de un bot de Telegram diseñado para apoyar el estudio independiente de los estudiantes de programación. En la \Cref{sec:technical-details} se presentan las tecnologías y herramientas utilizadas, así como las razones detrás de su selección. En la \Cref{sec:features} se analiza la arquitectura del sistema y se describen las funcionalidades principales, como el registro de usuarios, el listado de temas, la resolución de dudas y la práctica con ejercicios. Finalmente, se discute cómo los profesores pueden personalizar el contenido del curso.
 
 \section{Detalles técnicos}\label{sec:technical-details}
 
@@ -18,7 +18,7 @@ En la siguiente sección, se describe el diseño del sistema mediante diagramas 
 
 El esquema de la base de datos está estructurado en varias tablas interrelacionadas \texttt{users}, \texttt{students}, \texttt{topics}, \texttt{exercises}, \texttt{exercise\_hints}, \texttt{student\_hints} y \texttt{student\_exercise} que gestionan la información de usuarios, estudiantes, temas, ejercicios y pistas.
 
-En esta sección se describe el diseño del sistema mediante diagramas que representan las funcionalidades principales. La Figura~\ref{fig:legend} muestra una leyenda que explica los componentes utilizados en los diagramas. Las flechas indican el flujo de la interacción.
+En esta sección se describe el diseño del sistema mediante diagramas que representan las funcionalidades principales. La \Cref{fig:legend} muestra una leyenda que explica los componentes utilizados en los diagramas. Las flechas indican el flujo de la interacción.
 
 \begin{figure}[h!]
   \centering
@@ -39,7 +39,7 @@ Las funcionalidades disponibles son el registro de los estudiantes, listar los t
 
 \subsection{Registro}
 
-Al acceder por primera vez, la herramienta solicita al estudiante ingresar su nombre completo. Luego, muestra un mensaje de bienvenida y una guía básica que explica las funcionalidades disponibles, siguiendo el flujo descrito en la Figura~\ref{fig:register}. Esta introducción tiene como objetivo que el usuario comprenda cómo aprovechar la aplicación para su estudio.
+Al acceder por primera vez, la herramienta solicita al estudiante ingresar su nombre completo. Luego, muestra un mensaje de bienvenida y una guía básica que explica las funcionalidades disponibles, siguiendo el flujo descrito en la \Cref{fig:register}. Esta introducción tiene como objetivo que el usuario comprenda cómo aprovechar la aplicación para su estudio.
 
 \begin{figure}[h!]
   \centering
@@ -60,9 +60,9 @@ Después del registro, lo más común es que el estudiante revise el listado de 
 
 \subsection{Listado de temas}
 
-Cuando el usuario lo solicita, la aplicación muestra un listado organizado de los temas disponibles para su estudio. Los temas se presentan en el orden definido en el diseño del curso de Programación, que se describe en la Sección~\ref{sec:matcom}.
+Cuando el usuario lo solicita, la aplicación muestra un listado organizado de los temas disponibles para su estudio. Los temas se presentan en el orden definido en el diseño del curso de Programación, que se describe en la \Cref{sec:matcom}.
 
-Si el nombre del tema no resulta suficientemente claro, el estudiante puede solicitar una descripción detallada del mismo. Este flujo se ilustra en la Figura~\ref{fig:topics} de la página~\pageref{fig:topics}.
+Si el nombre del tema no resulta suficientemente claro, el estudiante puede solicitar una descripción detallada del mismo. Este flujo se ilustra en la \Cref{fig:topics} de la página~\pageref{fig:topics}.
 
 \begin{figure}[h!]
   \centering
@@ -85,7 +85,7 @@ Durante el estudio o después de una clase, es común que los estudiantes tengan
 
 \subsection{Sistema de resolución de dudas basado en RAG}
 
-La aplicación incluye un sistema de resolución de dudas que permite a los estudiantes formular preguntas en lenguaje natural. Utilizando un RAG, el sistema proporciona respuestas basadas en la bibliografía del curso. La Figura~\ref{fig:q-a-diagram} de la página~\pageref{fig:q-a-diagram} muestra el funcionamiento de este sistema.
+La aplicación incluye un sistema de resolución de dudas que permite a los estudiantes formular preguntas en lenguaje natural. Utilizando un RAG, el sistema proporciona respuestas basadas en la bibliografía del curso. La \Cref{fig:q-a-diagram} de la página~\pageref{fig:q-a-diagram} muestra el funcionamiento de este sistema.
 
 \begin{figure}[h!]
   \centering
@@ -130,7 +130,7 @@ La aplicación incluye un sistema de resolución de dudas que permite a los estu
     \caption{Sistema de preguntas y respuestas basado en Generación Aumentada por Recuperación (RAG).}\label{fig:q-a-diagram}
 \end{figure}
 
-Como se explica en el Capítulo~\ref{chapter:rag} el proceso de construcción del \textit{retriever} consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
+Como se explica en el \Cref{chapter:rag} el proceso de construcción del \textit{retriever} consta de tres etapas: dividir el corpus en fragmentos, codificar los fragmentos y construir la base de datos vectorial.
 
 El corpus del sistema está compuesto por los capítulos del libro ``Empezar a programar: Un enfoque multiparadigma con C\#'' en formato PDF. Este contenido se convierte a texto utilizando herramientas de extracción que preservan su estructura original. Para manejar el contenido, se divide en fragmentos de longitud fija de 2000 caracteres con un solapamiento de 200 caracteres, con el objetivo de que no se pierda el contexto entre fragmentos consecutivos. Cada fragmento se transforma en una representación numérica mediante el modelo de embeddings \textit{models/text-embedding-004}.
 
@@ -144,7 +144,7 @@ Además de resolver dudas, la aplicación cuenta con un sistema de sugerencia de
 
 \subsection{Práctica con ejercicios sugeridos. Pistas y soluciones.}
 
-La aplicación ofrece una experiencia de aprendizaje personalizada al sugerir ejercicios adaptados al nivel del estudiante. Durante la resolución, el estudiante puede solicitar pistas que se dan en orden. En cualquier momento, el estudiante puede acceder a la solución completa. Una vez que el estudiante completa su implementación la manda al bot. Este flujo está descrito en la Figura~\ref{fig:exercises} de la página~\pageref{fig:exercises}.
+La aplicación ofrece una experiencia de aprendizaje personalizada al sugerir ejercicios adaptados al nivel del estudiante. Durante la resolución, el estudiante puede solicitar pistas que se dan en orden. En cualquier momento, el estudiante puede acceder a la solución completa. Una vez que el estudiante completa su implementación la manda al bot. Este flujo está descrito en la \Cref{fig:exercises} de la página~\pageref{fig:exercises}.
 
 El nivel del estudiante se calcula en función de su desempeño previo en la aplicación, considerando dos factores principales: la cantidad de ejercicios resueltos y la complejidad de los ejercicios que ha completado. Por ejemplo, si un estudiante resuelve 5 ejercicios básicos sin pedir pistas ni soluciones, la aplicación comenzará a proponer problemas de nivel intermedio.
 
@@ -206,7 +206,7 @@ El contenido del archivo debe ser un objeto JSON con un campo llamado topics, qu
     \end{itemize}
 \end{itemize}
 
-En la Figura~\ref{fig:json} de la página~\pageref{fig:json}, se muestra un ejemplo del archivo \texttt{topics.json} con un tema y un ejercicio:
+En la \Cref{fig:json} de la página~\pageref{fig:json}, se muestra un ejemplo del archivo \texttt{topics.json} con un tema y un ejercicio:
 
 \begin{figure}[h!]
 \begin{lstlisting}

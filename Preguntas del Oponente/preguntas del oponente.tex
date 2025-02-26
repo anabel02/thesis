@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Respuestas a la oponencia}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Pregunta 1}
+
+Haces una descripción del curso de programación en MATCOM. ¿En qué basas la afirmación de que el estudio independiente tiene baja efectividad? ¿Crees que tiene que ver con la estructura de dicho curso? ¿Consideras que herramientas como la tuya son la solución óptima a este problema, o crees que a nivel docente pudieran cambiarse algunas metodologías para darle solución?
+
+\subsection{Respuesta:}
+
+La afirmación sobre la baja efectividad del estudio independiente se basa en varios factores. En primer lugar, en encuestas realizadas a estudiantes y en la comunicación constante con los profesores, se ha identificado que año tras año existe una queja recurrente: los estudiantes no estudian lo suficiente por su cuenta. Esto sugiere que, aunque el curso de programación en MATCOM requiere un alto grado de autoaprendizaje, muchos estudiantes no logran consolidar los conocimientos de manera efectiva sin un acompañamiento más cercano.
+
+Además, la falta de seguimiento individualizado por parte de los profesores agrava esta situación. Como en la facultad hay pocos docentes, y algunos de ellos están a cargo de hasta cuatro asignaturas distintas, es normal que no puedan dedicarle suficiente tiempo a cada materia en particular, y mucho menos a cada estudiante individualmente. Esto significa que los estudiantes que se rezagan o que tienen dudas específicas muchas veces no encuentran la orientación necesaria en el momento adecuado, lo que dificulta su aprendizaje autónomo.
+
+Dado este contexto, la propuesta de implementar un bot especializado en programación busca aliviar esta falta de seguimiento. No solo proporcionaría respuestas inmediatas a dudas técnicas, y ayudaría al estudiante en la resolución de ejercicios, sino que también recopilaría datos sobre el progreso de los estudiantes. Estos datos permitirían identificar patrones de aprendizaje, medir el desempeño individual y detectar a tiempo qué conceptos requieren más atención, ofreciendo información útil para mejorar la enseñanza. Aunque no reemplaza la enseñanza tradicional, la herramienta propuesta sí complementa la labor docente, proporcionando una solución práctica ante la limitación de recursos humanos y permitiendo el acceso a apoyo educativo de manera más inmediata.
+
+
+\subsubsection{Mejoras a nivel docente}
+
+Actualmente, las conferencias tienden a enfocarse en la motivación y la inspiración de los estudiantes, un enfoque respaldado por \cite{Jenkins2001}. Sin embargo, este énfasis en lo motivacional puede, en ocasiones, dejar de lado la profundización en el contenido, lo que resulta en que los estudiantes lleguen a las clases prácticas (CP) sin una comprensión clara de los temas abordados durante las conferencias.
+
+Una posible solución a este desafío sería complementar las conferencias con materiales de estudio, como documentos en formato PDF que sinteticen y desarrollen el contenido impartido. Estos recursos, diseñados específicamente para el estudio autónomo, permitirían a los estudiantes prepararse de manera anticipada, llegando a las CP con una base conceptual más sólida.
+
+Adicionalmente, esta propuesta podría integrarse con metodologías, como el modelo de \textit{Flipped Classroom} (Aula Invertida), donde los estudiantes revisan el material previamente y las sesiones presenciales se dedican a la aplicación práctica, la resolución de dudas y el debate.
+
+En conclusión, la combinación de conferencias motivacionales con materiales de estudio podría representar una estrategia efectiva para abordar las limitaciones actuales.
+
+\section{Pregunta 2}
+
+La cantidad de ejercicios es limitada (existiendo en internet y en la base conocimientos de las IAs una gran cantidad), ¿crees factible generar los ejercicios, sus pistas, y su retroalimentación de forma automática? En cualquier caso, ¿cómo crees que se pudiera hacer y qué ventajas y desventajas le verías? ¿Considerarías también agregar una búsqueda automática de ejercicios en las páginas que mencionas?
+
+\subsection{Respuesta:}  
+
+Los ejercicios actuales han sido diseñados siguiendo los objetivos del curso de Programación, aplicando metodologías como la introducción progresiva de conceptos y el aumento gradual de la dificultad. Sin embargo, es natural que algunos estudiantes requieran una mayor cantidad de ejercicios o variaciones adaptadas a su ritmo de aprendizaje. Dado que la creación manual de más ejercicios supondría una carga adicional significativa para los docentes (quienes ya deben atender múltiples asignaturas) se hace necesario explorar soluciones automatizadas que complementen el material disponible.
+
+La generación automática de ejercicios, pistas y retroalimentación es una alternativa factible que permitiría ampliar los recursos sin depender exclusivamente del trabajo docente. Investigaciones recientes han demostrado que los modelos de lenguaje pueden generar contenido educativo con un grado razonable de calidad. En particular, \cite{Sarsa_2022} analizaron la capacidad de OpenAI Codex para producir ejercicios de programación y explicaciones de código, concluyendo que la mayoría del contenido generado es novedoso y útil, aunque requiere revisión antes de ser utilizado por los estudiantes.  
+
+La generación de pistas también podría automatizarse mediante modelos de lenguaje, una forma de abordarlo es usando técnicas de \textit{prompt engineering} tomando como referencia una solución válida del ejercicio. El proceso comenzaría con sugerencias generales sobre el enfoque de resolución y, en caso de que el estudiante continúe atascado, se le proporcionarían indicaciones progresivamente más específicas, guiándolo sin revelar directamente la solución.
+
+Asimismo, añadir un sistema de evaluación automática, permitiría ofrecer retroalimentación, identificar patrones de fallos comunes y comparar el código del estudiante con soluciones óptimas. También pudiera evaluarse complementarlo con el análisis de los errores mediante un LLM, proporcionando sugerencias de mejora en tiempo real, enfoques similares se encuentran en \cite{Messer2024, Gabbay2022, Gabbay2024}.
+
+Entre las principales ventajas de esta automatización se encuentran la posibilidad de personalizar los ejercicios según el nivel de cada estudiante y la retroalimentación inmediata, lo que reduciría la dependencia del tiempo de los profesores. No obstante, también existen desafíos importantes, como garantizar la calidad de los ejercicios, la precisión de la retroalimentación y evitar errores en la validación de respuestas. Como indica \cite{Sarsa_2022}, aunque estos modelos tienen un gran potencial para asistir a los docentes, sigue siendo necesaria una supervisión humana antes de entregar el contenido a los estudiantes.
+
+Otra alternativa para ampliar los recursos disponibles es la integración de plataformas externas. La incorporación de una búsqueda automática de ejercicios en plataformas como LeetCode, Codeforces y GeeksforGeeks permitiría a los estudiantes acceder de manera inmediata a problemas relevantes, que ya cuentan con mecanismos de evaluación automática, y en algunos casos soluciones y retroalimentación. Para su implementación, se podrían emplear técnicas de web scraping o el uso de APIs proporcionadas por las plataformas, en caso de estar disponibles. De esta forma, se lograría un equilibrio entre la automatización y la confiabilidad de los ejercicios, el desafío en este caso radica en asegurar que los problemas sean adecuados para el curso, que podría resolverse con una revisión del docente.
+
+\begin{thebibliography}{99}
+
+    \bibitem{Messer2024}
+    Marcus Messer, Neil C. C. Brown, Michael Kölling, Miaojing Shi, 
+    \textit{Automated Grading and Feedback Tools for Programming Education: A Systematic Review}, 
+    ACM Transactions on Computing Education, \textbf{24}(1), 10, 2024, \href{https://doi.org/10.1145/3636515}{doi:10.1145/3636515}.
+    
+    \bibitem{Sarsa_2022}
+    Sami Sarsa, Paul Denny, Arto Hellas, Juho Leinonen, 
+    \textit{Automatic Generation of Programming Exercises and Code Explanations Using Large Language Models}, 
+    Proceedings of the 2022 ACM Conference on International Computing Education Research - Volume 1 (ICER 2022), 27--43, ACM, August 2022, \href{https://doi.org/10.1145/3501385.3543957}{doi:10.1145/3501385.3543957}.
+    
+    \bibitem{Gabbay2022}
+    Hagit Gabbay, Anat Cohen, 
+    \textit{Investigating the Effect of Automated Feedback on Learning Behavior in MOOCs for Programming}, 
+    Proceedings of the 2022 International Conference on Educational Technology, 2022, \href{https://doi.org/10.5281/zenodo.6853125}{doi:10.5281/zenodo.6853125}.
+    
+    \bibitem{Gabbay2024}
+    Hagit Gabbay, Anat Cohen, 
+    \textit{Combining LLM-Generated and Test-Based Feedback in a MOOC for Programming}, 
+    Proceedings of the Eleventh ACM Conference on Learning @ Scale, 177–187, ACM, 2024, \href{https://doi.org/10.1145/3657604.3662040}{doi:10.1145/3657604.3662040}.
+
+    \bibitem{Jenkins2001}
+    Tony Jenkins.
+    \newblock Teaching Programming – A Journey from Teacher to Motivator.
+    \newblock School of Computing, University of Leeds, Leeds, UK, 2001.
+    \newblock URL: \url{http://www.comp.leeds.ac.uk/tony}.
+    
+\end{thebibliography}
+
+\end{document}
